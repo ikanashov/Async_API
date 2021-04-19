@@ -1,6 +1,17 @@
 # Проектная работа 5 спринта
 
-В папке **tasks** ваша команда найдёт задачи, которые необходимо выполнить во втором спринте второго модуля.
+## Задания на 5 спринт
+0. [00 Ревью в проекте (Оценка 5)](./tasks/00_review.md)
+1. [01 SOLID. Elastic Search (Оценка 5)](./tasks/01_SOLID_ES.md)
+2. [02 SOLID. Redis (Оценка 5)](./tasks/02_SOLID_redis.md)
+3. [03 SOLID. Views (Оценка 8)](./tasks/03_SOLID_views.md)
+4. [04 Инфраструктура для функциональных тестов (Оценка 13)](./tasks/04_functional_test_infra.md)
+5. [05 Функциональные тесты - film api (Оценка 5)](./tasks/05_functional_test_film.md)
+6. [06 Функциональные тесты - person api (Оценка 5)](./tasks/06_functional_test_person.md)
+7. [07 Функциональные тесты - genre api (Оценка 5)](./tasks/07_functional_test_genre.md)
+8. [08 Функциональные тесты - search api (Оценка 8)](./tasks/08_functional_test_search.md)
+9. [09 OpenAPI документация для клиентов сервиса (Оценка 5)](./tasks/09_openapi.md)
+10. [10 Exponential backoff (Оценка 8)](./tasks/10_backoff.md)
 
 Как и в прошлом спринте, мы оценили задачи в стори поинтах.
 
