@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Забираем переменные настройки redis для поключения 
+source .env
+
+#Подключаемся к базе данных устанавливем схемы
+sudo docker-compose exec rediscinema redis-cli -h rediscinema -p $REDIS_PORT -a ${REDIS_PASSWORD}

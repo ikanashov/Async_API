@@ -1,0 +1,69 @@
+version: '3'
+services:
+  rediscinema:
+    restart: unless-stopped
+    container_name: ${DOCKER_PREFIX}cinemaRedis
+    environment:
+      - REDIS_PASSWORD=$REDIS_PASSWORD
+      - REDIS_PORT=$REDIS_PORT
+    build: ./redis/
+    volumes:
+      - ./redis/production:/data
+    networks:
+      - Async2Cinema
+  elasticcinema01:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.2
+    container_name: ${DOCKER_PREFIX}cinemaES01
+    environment:
+      - node.name=elasticcinema01
+      - http.port=$ELASTIC_PORT
+      - discovery.type=single-node
+      - xpack.security.enabled=true
+      - ELASTIC_PASSWORD=$ELASTIC_PASSWORD
+      - ELASTIC_INDEX=$ELASTIC_INDEX
+      - path.repo=/usr/share/elasticsearch/backup
+    volumes:
+      - ./elastic/production:/usr/share/elasticsearch/data
+      - ./elastic/backup:/usr/share/elasticsearch/backup
+    networks:
+      - Async2Cinema
+  clientapicinema:
+    restart: unless-stopped
+    container_name: ${DOCKER_PREFIX}clientApi
+    environment:
+      - REDIS_HOST=rediscinema
+      - REDIS_PORT=$REDIS_PORT
+      - REDIS_PASSWORD=$REDIS_PASSWORD
+      - ELASTIC_HOST=elasticcinema01
+      - ELASTIC_PORT=$ELASTIC_PORT
+      - ELASTIC_USER=$ELASTIC_USER
+      - ELASTIC_PASSWORD=$ELASTIC_PASSWORD
+      - ELASTIC_INDEX=$ELASTIC_INDEX
+      - UVICORN_PORT=$UVICORN_PORT
+    build: ./src/
+    command: /docker-entrypoint.sh
+    networks:
+      - Async2Cinema
+    depends_on:
+      - rediscinema
+      - elasticcinema01
+  nginxcinema:
+    restart: unless-stopped
+    container_name: ${DOCKER_PREFIX}cinemaNginx
+    environment:
+      - UVICORN_SERVICE_NAME=clientapicinema
+      - UVICORN_PORT=$UVICORN_PORT
+    build: ./nginx/
+    ports:
+      - $NGINX_HTTP_PORT:80
+    networks: 
+      - Async2Cinema
+    depends_on:
+      - clientapicinema
+networks:
+  Async2Cinema:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: $DOCKER_NETWORK_ADDRESS

@@ -1,6 +1,12 @@
-# Проектная работа 5 спринта
+# [Порядок запуска сервисов с помощью docker-compose](docker_service.md)
 
-## Задания на 5 спринт
+# Назначение и имена контейнеров в docker-compose
+**rediscinema** - redis for cache  
+**elasticcinema01** - хранилище elastic  
+**clientapicinema** - собственно сам модуль FastApi  
+**nginxcinema** - nginx который отдает это все во внешний мир  
+
+## Перечень заданий на 5 спринт
 0. [00 Ревью в проекте (Оценка 5)](./tasks/00_review.md)
 1. [01 SOLID. Elastic Search (Оценка 5)](./tasks/01_SOLID_ES.md)
 2. [02 SOLID. Redis (Оценка 5)](./tasks/02_SOLID_redis.md)
