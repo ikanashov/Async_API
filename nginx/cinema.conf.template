@@ -1,0 +1,16 @@
+  server {
+    listen       80 default_server;
+    listen       [::]:80 default_server;
+    server_name  _;
+    client_max_body_size 4G;
+
+    root /usr/share/nginx/html;
+    
+    location @backend {
+        proxy_pass http://${UVICORN_SERVICE_NAME}:${UVICORN_PORT};
+    }
+    
+    location / {
+        try_files $uri $uri/ @backend;
+    }
+} 
