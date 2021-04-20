@@ -1,4 +1,4 @@
-version: '3'
+version: '3.5'
 services:
   rediscinema:
     restart: unless-stopped
@@ -62,6 +62,7 @@ services:
       - clientapicinema
 networks:
   Async2Cinema:
+    name: ${DOCKER_PREFIX}-net
     driver: bridge
     ipam:
       driver: default
