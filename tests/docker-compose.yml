@@ -1,0 +1,23 @@
+version: '3.5'
+services:
+  functestclientapicinema:
+    restart: unless-stopped
+    container_name: ${DOCKER_PREFIX}TestclientApi
+    environment:
+      - REDIS_HOST=rediscinema
+      - REDIS_PORT=$REDIS_PORT
+      - REDIS_PASSWORD=$REDIS_PASSWORD
+      - ELASTIC_HOST=elasticcinema01
+      - ELASTIC_PORT=$ELASTIC_PORT
+      - ELASTIC_USER=$ELASTIC_USER
+      - ELASTIC_PASSWORD=$ELASTIC_PASSWORD
+      - ELASTIC_INDEX=$ELASTIC_INDEX
+      - UVICORN_PORT=$UVICORN_PORT
+    build: ./functional/
+    command: /docker-entrypoint.sh
+    networks:
+      - Async2Test
+networks:
+  Async2Test:
+    external: true
+    name: ${DOCKER_PREFIX}-net
