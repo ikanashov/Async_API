@@ -1,4 +1,5 @@
 # [Порядок запуска сервисов с помощью docker-compose](docker_service.md)
+# [Порядок запуска функциональных тестов](./tests/README.md)
 
 # Назначение и имена контейнеров в docker-compose
 **rediscinema** - redis for cache  
