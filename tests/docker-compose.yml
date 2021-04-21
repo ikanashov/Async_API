@@ -1,7 +1,7 @@
 version: '3.5'
 services:
   functestclientapicinema:
-    restart: unless-stopped
+    restart: 'no'
     container_name: ${DOCKER_PREFIX}TestclientApi
     environment:
       - REDIS_HOST=rediscinema
