@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo docker-compose up --build -d
+
 cd tests
 
 if [ -d venv ]; then
