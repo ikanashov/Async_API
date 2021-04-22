@@ -1,3 +1,7 @@
+import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+
 import asyncio
 import aiohttp
 import pytest
@@ -7,7 +11,7 @@ from multidict import CIMultiDictProxy
 
 from loguru import logger
 
-SERVICE_URL = 'http://SERVER_FOR_TEST:8088'
+from core.config import cnf
 
 
 @dataclass
@@ -37,9 +41,9 @@ async def session():
 
 @pytest.fixture
 def make_get_request(session):
-    async def inner(method: str, params: dict = None) -> HTTPResponse:
+    async def inner(service: str, method: str = '', params: dict = None) -> HTTPResponse:
         params = params or {}
-        url = SERVICE_URL + '/api/v1/film' + method  # в боевых системах старайтесь так не делать!
+        url = cnf.NGINX_URL + cnf.API_URL + service + method  # в боевых системах старайтесь так не делать!
         async with session.get(url, params=params) as response:
           return HTTPResponse(
             body=await response.json(),
@@ -47,17 +51,3 @@ def make_get_request(session):
             status=response.status,
           )
     return inner
-
-
-@pytest.mark.asyncio
-async def test_search_detailed(make_get_request):
-    # Выполнение запроса
-    response = await make_get_request('/search', {'query': 'Star Wars'})
-    
-    logger.debug('I am here')
-
-    # Проверка результата
-    assert response.status == 200
-    assert len(response.body) == 50
-
-    #assert response.body == expected
