@@ -1,3 +1,3 @@
 #!/bin/sh
 
-python src/main.py
+pytest -s -q

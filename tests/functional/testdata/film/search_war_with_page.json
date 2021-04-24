@@ -1,0 +1,52 @@
+[
+    {
+      "uuid": "0a8a656a-18bd-4637-9b8a-8edf2663b0da",
+      "title": "Star Wars: Racer Revenge",
+      "imdb_rating": 7.2
+    },
+    {
+      "uuid": "0e551cf5-567b-4e96-8f2d-5020a45cab4e",
+      "title": "Star Wars: The Last Jedi",
+      "imdb_rating": 8.0
+    },
+    {
+      "uuid": "111b6d70-ce31-4333-a3ed-fa312e47e908",
+      "title": "Star Wars Cantina Karaoke",
+      "imdb_rating": 6.7
+    },
+    {
+      "uuid": "3acfe150-b2f6-4579-a954-986b136f0182",
+      "title": "The Unauthorized 'Star Wars' Story",
+      "imdb_rating": 5.1
+    },
+    {
+      "uuid": "4b58f7a5-29d1-4e6e-9765-c482ff2e3cd4",
+      "title": "Star Wars: Obi-Wan",
+      "imdb_rating": 6.2
+    },
+    {
+      "uuid": "4c8e4bb1-a487-4c80-9faa-e580abfe5ce7",
+      "title": "'Star Wars': Feel the Force",
+      "imdb_rating": 7.1
+    },
+    {
+      "uuid": "560f5084-48bb-4e5e-aea5-fecdac2e889a",
+      "title": "The Star Wars Holiday Special",
+      "imdb_rating": 2.1
+    },
+    {
+      "uuid": "639d417f-991a-4b94-a01a-e9069a646ede",
+      "title": "Exile: A Star Wars Story",
+      "imdb_rating": 5.8
+    },
+    {
+      "uuid": "76079faf-2c38-4404-9fa9-364a16abe8cd",
+      "title": "Star Wars: Rogue Squadron",
+      "imdb_rating": 8.1
+    },
+    {
+      "uuid": "8690dd11-b4a5-4fe0-8fa7-4894136924f3",
+      "title": "Kenobi: A Star Wars Story",
+      "imdb_rating": 7.8
+    }
+  ]

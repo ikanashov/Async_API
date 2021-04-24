@@ -1,0 +1,34 @@
+{
+  "uuid": "e8cd613e-ff38-4f22-92ed-9d456badad9b",
+  "title": "Larry the Cable Guy's Star-Studded Christmas Extravaganza",
+  "imdb_rating": 5.6,
+  "description": "N/A",
+  "genre": [
+    "Comedy"
+  ],
+  "actors": [
+    {
+      "uuid": "769a9d7b-70ff-47ab-8aeb-ae3d2103ea7f",
+      "full_name": "Larry the Cable Guy"
+    },
+    {
+      "uuid": "b2559ee9-1292-45c1-9743-39ddb31b8a3c",
+      "full_name": "Joey Fatone"
+    },
+    {
+      "uuid": "d5f285c9-9291-4310-a83c-e935c1f3f81f",
+      "full_name": "Jennifer Aspen"
+    },
+    {
+      "uuid": "f4f0abf3-b97c-4b3c-adf8-d4b4432b79b6",
+      "full_name": "Charlie Callas"
+    }
+  ],
+  "writers": null,
+  "directors": [
+    {
+      "uuid": "8d900396-c23b-4f5e-bc9f-80fbd095acce",
+      "full_name": "Ryan Polito"
+    }
+  ]
+}

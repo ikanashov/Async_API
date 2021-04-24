@@ -1,0 +1,27 @@
+[
+    {
+      "uuid": "da2712f0-d4b7-4144-a868-259e3d34e018",
+      "title": "Wishes on a Falling Star",
+      "imdb_rating": 8.5
+    },
+    {
+      "uuid": "af8d25ed-a1c6-4dcb-b2db-64de6dc0a5e2",
+      "title": "World Premiere 'Star Wars III: Revenge of the Sith'",
+      "imdb_rating": 7.9
+    },
+    {
+      "uuid": "eff64d6b-fb62-432b-b53a-3e6ba7547829",
+      "title": "All About Ann: Governor Richards of the Lone Star State",
+      "imdb_rating": 7.8
+    },
+    {
+      "uuid": "a6a4e4e5-886d-4d66-a2dc-d3165f6cb6a3",
+      "title": "A Star Is Born World Premiere",
+      "imdb_rating": 5.8
+    },
+    {
+      "uuid": "7b65166c-8f6c-4d08-a263-36e1541c606f",
+      "title": "Exclusiv - Das Star-Magazin",
+      "imdb_rating": 3
+    }
+  ]

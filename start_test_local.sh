@@ -17,6 +17,6 @@ fi
 cd functional
 
 echo "Install requirements"
-pip install -r requirements.txt
+pip install -q -r requirements.txt
 
 ./docker-entrypoint.sh

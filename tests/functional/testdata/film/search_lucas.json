@@ -1,0 +1,42 @@
+[
+    {
+      "uuid": "93f37259-df85-4f95-8a80-39e45755d1b2",
+      "title": "Saving Star Wars",
+      "imdb_rating": 5.5
+    },
+    {
+      "uuid": "0e42ee97-8d67-4f76-bf06-1fc524c12e35",
+      "title": "From Star Wars to Star Wars: The Story of Industrial Light & Magic",
+      "imdb_rating": 7.2
+    },
+    {
+      "uuid": "2e15708c-4a6f-4f96-9c66-c66924464716",
+      "title": "Star Wars: Shortened!",
+      "imdb_rating": 7.8
+    },
+    {
+      "uuid": "31d0daaa-290c-4189-b87e-6204f7edbee7",
+      "title": "Star Wars: The Force Unleashed",
+      "imdb_rating": 7.9
+    },
+    {
+      "uuid": "d0fd8dba-2889-4b91-b445-910b03fe234e",
+      "title": "From 'Star Wars' to 'Jedi': The Making of a Saga",
+      "imdb_rating": 7.7
+    },
+    {
+      "uuid": "e9c41ecd-eac0-4a63-81f8-858beb777733",
+      "title": "Quentin Tarantino's Star Wars",
+      "imdb_rating": 4.8
+    },
+    {
+      "uuid": "a12493e6-851f-4398-aaba-22348b8ab02e",
+      "title": "Empire of Dreams: The Story of the 'Star Wars' Trilogy",
+      "imdb_rating": 8.3
+    },
+    {
+      "uuid": "fe4c79b9-2240-467e-8bd7-0cb8012b0759",
+      "title": "The Making of 'Star Wars'",
+      "imdb_rating": 7.5
+    }
+  ]

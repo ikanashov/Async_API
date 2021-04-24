@@ -1,0 +1,55 @@
+{
+    "uuid": "2c709722-5879-443b-9764-4473f6afb189",
+    "title": "Star Trek V: The Final Frontier",
+    "imdb_rating": 5.5,
+    "description": "When the newly-christened starship Enterprise's shakedown cruise goes poorly, Captain Kirk and crew put her into Spacedock for repairs. But an urgent mission interrupts their Earth-bound shore leave. A renegade Vulcan named Sybok has taken three ambassadors hostage on Nimbus III, the Planet of Galactic Peace. This event also attracts the attention of a Klingon captain who wants to make a name for himself and sets out to pursue the Enterprise. Sybok's ragtag army captures the Enterprise and takes her on a journey to the center of the galaxy in search of the Supreme Being.",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "actors": [
+      {
+        "uuid": "15b1b8bf-96cb-4023-af3d-7295367b1a0d",
+        "full_name": "James Doohan"
+      },
+      {
+        "uuid": "213e692f-35dd-4cf5-a941-0104c75ac1d5",
+        "full_name": "DeForest Kelley"
+      },
+      {
+        "uuid": "77b017ca-5268-4cba-b7f0-e26c27870669",
+        "full_name": "William Shatner"
+      },
+      {
+        "uuid": "cf9de816-bb66-44e9-9782-a228f83832cf",
+        "full_name": "Leonard Nimoy"
+      }
+    ],
+    "writers": [
+      {
+        "uuid": "0648ef0f-4116-4038-9f33-4fa8200ed359",
+        "full_name": "Harve Bennett"
+      },
+      {
+        "uuid": "77b017ca-5268-4cba-b7f0-e26c27870669",
+        "full_name": "William Shatner"
+      },
+      {
+        "uuid": "8c19cd92-fba5-41c0-87db-6969f9d78c56",
+        "full_name": "David Loughery"
+      },
+      {
+        "uuid": "9d480c4d-0890-4aaf-a9b3-d2587843344e",
+        "full_name": "Gene Roddenberry"
+      }
+    ],
+    "directors": [
+      {
+        "uuid": "77b017ca-5268-4cba-b7f0-e26c27870669",
+        "full_name": "William Shatner"
+      }
+    ]
+  }

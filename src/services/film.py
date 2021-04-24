@@ -72,7 +72,7 @@ class FilmService:
             filter_.query.term.genre.value = genre_filter
             genre_filter = filter_.json()
 
-        key = self.cachekey(str(page_size) + str(page_number) + str(genre_filter))
+        key = self.cachekey(str(sort) + str(page_size) + str(page_number) + str(genre_filter))
         data = await self._get_data_from_cache(key)
         if data:
             films = [SFilm(**row) for row in orjson.loads(data)]
