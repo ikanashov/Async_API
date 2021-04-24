@@ -1,0 +1,34 @@
+[
+    {
+        "name" : "empty_search",
+        "parameter" : "",
+        "status" : "422",
+        "lenght" : "1",
+        "body" : "search_error.json"
+    },
+    {
+        "name" : "search_lucas",
+        "parameter" : {"query" : "lucas"},
+        "status" : "200",
+        "lenght" : "8",
+        "body" : "search_lucas.json"
+    },
+    {
+        "name" : "search_star",
+        "parameter" : {"query" : "star"},
+        "status" : "200",
+        "lenght" : "50",
+        "body" : "search_star.json"
+    },
+    {
+        "name" : "search_war_with_page",
+        "parameter" : {
+            "query" : "war",
+            "page[size]" : "10",
+            "page[number]" : "15"
+        },
+        "status" : "200",
+        "lenght" : "10",
+        "body" : "search_war_with_page.json"
+    }
+]
