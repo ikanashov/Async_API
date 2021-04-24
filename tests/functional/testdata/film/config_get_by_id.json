@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "get_film_by_id_1",
+        "film_id" : "2c709722-5879-443b-9764-4473f6afb189",
+        "parameter" : "",
+        "status" : "200",
+        "lenght" : "8",
+        "body" : "get_by_id_1.json"
+    },
+    {
+        "name" : "get_film_by_id_2",
+        "film_id" : "e8cd613e-ff38-4f22-92ed-9d456badad9b",
+        "parameter" : "",
+        "status" : "200",
+        "lenght" : "8",
+        "body" : "get_by_id_2.json"
+    },
+    {
+        "name" : "get_film_by_id_not_found",
+        "film_id" : "not_found",
+        "parameter" : "",
+        "status" : "404",
+        "lenght" : "1",
+        "body" : "get_by_id_not_found.json"
+    }
+]

@@ -41,3 +41,19 @@ async def test_film(make_get_request, read_json_data):
         if test['body'] != '':
             assert response.body == await read_json_data('film/' + test['body']), test
         logger.info(f"{test['name']} passed")
+
+@pytest.mark.asyncio
+async def test_get_film_by_id(make_get_request, read_json_data):
+    # Имя файла надо убрать в конфиг
+    testsconfig = await read_json_data('film/config_get_by_id.json')
+    for test in testsconfig:
+        logger.info(f"start test : {test['name']} ")
+        response = await make_get_request('film/' + test['film_id'])
+        assert response.status == int(test['status']), test
+        #logger.info('pass response test'), test
+        assert len(response.body) == int(test['lenght']), test
+        #logger.info('response lenght is ok')
+        #logger.debug(f'response body : {response.body}')
+        if test['body'] != '':
+            assert response.body == await read_json_data('film/' + test['body']), test
+        logger.info(f"{test['name']} passed")
