@@ -20,6 +20,7 @@ class FuncTestSettings(BaseSettings):
     NGINX_HTTP_PORT: int = 8088
     NGINX_BASE_URL: str = 'http://dev.usurt.ru'
     NGINX_URL: str = NGINX_BASE_URL + ':' + str(NGINX_HTTP_PORT)
+    TEST_JSON_PATH: str = 'testdata/'
 
     class Config:
         # Файл .env должен находится в корне проекта
