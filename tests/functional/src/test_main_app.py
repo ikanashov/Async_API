@@ -17,12 +17,13 @@ async def test_film(make_get_request):
     # logger.info('response lenght is ok')
     # assert response.body == expected
 
+
 @pytest.mark.asyncio
 async def test_genres(make_get_request):
     # Выполнение запроса
     response = await make_get_request('genre')
 
-    #logger.debug('do response test')
+    # logger.debug('do response test')
 
     # Проверка результата
     assert response.status == 200
@@ -30,6 +31,7 @@ async def test_genres(make_get_request):
     assert len(response.body) == 28
     # logger.info('response lenght is ok')
     # assert response.body == expected
+
 
 @pytest.mark.asyncio
 async def test_persons(make_get_request):

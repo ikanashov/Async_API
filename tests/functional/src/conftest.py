@@ -1,19 +1,18 @@
+import asyncio
+import json
 import os
 import sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
-
-import json
+from dataclasses import dataclass
 from pathlib import Path
 
-import asyncio
 import aiohttp
-import pytest
 
-from dataclasses import dataclass
 from multidict import CIMultiDictProxy
 
-from loguru import logger
+import pytest
 
+# this need to add script start dir to import path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 from core.config import cnf
 
 
@@ -22,6 +21,7 @@ class HTTPResponse:
     body: dict
     headers: CIMultiDictProxy[str]
     status: int
+
 
 # https://github.com/pytest-dev/pytest-asyncio/issues/68
 # https://github.com/pytest-dev/pytest-asyncio/issues/171
@@ -47,11 +47,11 @@ def make_get_request(session):
         params = params or {}
         url = cnf.NGINX_URL + cnf.API_URL + service + method  # в боевых системах старайтесь так не делать!
         async with session.get(url, params=params) as response:
-          return HTTPResponse(
-            body=await response.json(),
-            headers=response.headers,
-            status=response.status,
-          )
+            return HTTPResponse(
+                body=await response.json(),
+                headers=response.headers,
+                status=response.status,
+            )
     return inner
 
 
@@ -59,8 +59,7 @@ def make_get_request(session):
 @pytest.fixture
 async def read_json_data(request):
     async def inner(datafilename: str) -> dict:
-        # logger.debug('read json data')
-        jsonpath =  Path(Path.cwd(), cnf.TEST_JSON_PATH, datafilename)
+        jsonpath = Path(Path.cwd(), cnf.TEST_JSON_PATH, datafilename)
         with jsonpath.open() as fp:
             data = json.load(fp)
         return data
