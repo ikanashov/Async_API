@@ -38,8 +38,8 @@ class FilmGenreDetail(FilmGenre):
 
 
 class FilmPersonDetail(FilmPerson):
-    role: List[str]
-    film_ids: List[UUID4]
+    role: List[Optional[str]]
+    film_ids: List[Optional[UUID4]]
 
 
 class Page:

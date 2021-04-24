@@ -1,0 +1,121 @@
+[
+  {
+    "uuid": "5486f458-bb4f-458b-9cc5-1701a9627bcd",
+    "full_name": "Luca Boni",
+    "role": [
+      "director",
+      "writer"
+    ],
+    "film_ids": [
+      "0a9724e0-a030-48bb-9d06-002a43440c9c"
+    ]
+  },
+  {
+    "uuid": "b2b46ffe-5298-428c-ab59-1413af1c7136",
+    "full_name": "Mat Lucas",
+    "role": [
+      "actor"
+    ],
+    "film_ids": [
+      "87ea1e58-8ea6-4c82-a3e6-24bd04f5d0ce",
+      "de6ee278-4984-47a6-8fa5-71390d68b748"
+    ]
+  },
+  {
+    "uuid": "766898b3-54cd-4142-915e-46ecc7ffc250",
+    "full_name": "Stu Lucas",
+    "role": [
+      "actor"
+    ],
+    "film_ids": [
+      "4ad8e044-ecb5-4362-b44c-998808a4f27b"
+    ]
+  },
+  {
+    "uuid": "81bf1c0e-fa7c-423f-b6d5-c676dca68dc9",
+    "full_name": "George Lucas",
+    "role": [
+      "actor",
+      "director",
+      "writer"
+    ],
+    "film_ids": [
+      "050f6a13-dd20-4688-b8e5-778dc431c39e",
+      "0d32a92d-477b-4256-b9ca-c1a99d5e0436",
+      "1a3dea74-f6ec-434d-a53e-f46aea4450b8",
+      "31d0daaa-290c-4189-b87e-6204f7edbee7",
+      "3884a6c9-e6ad-4263-8bdf-cf8099bc4190",
+      "3980c4fb-e0ed-42bf-9a7f-77b601b5c8ca",
+      "4b58f7a5-29d1-4e6e-9765-c482ff2e3cd4",
+      "560f5084-48bb-4e5e-aea5-fecdac2e889a",
+      "563ade47-2040-4b67-ab45-e3f3e21fd2bd",
+      "5789d549-9355-4775-a9fa-428826a43319",
+      "5ceca66d-71c6-4727-a2b5-1d5bed7c3497",
+      "639d417f-991a-4b94-a01a-e9069a646ede",
+      "673ea930-4326-43f4-9882-8019903c41a3",
+      "6e7e29fe-aa2a-49b7-88bc-bdc508f1a5fd",
+      "7db6656d-e291-4217-96c4-7e221e8dd052",
+      "81d40dfd-3413-4be9-9f9a-ecd4824ba6ba",
+      "83bd29c3-bb21-4ca9-bb6a-b1334ea1edde",
+      "879ad88e-40ed-4678-9cae-6b132b427efa",
+      "88d0f058-a352-46a0-be50-ec99e85e2c8a",
+      "8c99d52e-69b1-44f5-b5d6-cd5b8aa0b085",
+      "972b5979-884c-4c7c-b0cb-c2c6c25d4257",
+      "974c68d5-0650-4881-a60a-ccfbeaf7ad55",
+      "9cbb0d70-4497-43a2-a5ac-8135b2a187dc",
+      "9db5e8e0-24b6-4c5e-967e-96b7d5333aac",
+      "9ffcf4d4-3a6b-4f8a-bc6a-319f47fcb5c8",
+      "a12493e6-851f-4398-aaba-22348b8ab02e",
+      "a4437cdf-1039-4cad-bbc8-a7c129778a6e",
+      "a6e3be12-ff74-489c-91de-18d4426e57a3",
+      "a9d545e6-38d9-401c-bfd3-8c14baf670db",
+      "b06ddc9e-6479-42d4-8239-1f633ccf4120",
+      "bf288a5d-83e7-4155-be19-cade1f1a3cef",
+      "c013e14e-90ae-469a-8cf9-c5ef2be75251",
+      "c10b5e9a-75f9-4375-b056-baa5587f14c1",
+      "ca6aa136-0731-400d-89ca-a644bc825e64",
+      "d0fd8dba-2889-4b91-b445-910b03fe234e",
+      "db1831c2-d7fa-429a-af7f-7219c0435bd0",
+      "df3d2e71-cc29-402f-aebc-3fd6cdb151ca",
+      "e3942c59-71ff-483f-9ce6-42d8926e1274",
+      "e77abfd6-4550-47e0-80a8-58a88a0adc9a",
+      "ed800b7e-0434-406a-88da-90d318a66d35",
+      "f66ee8f8-ec9f-40de-ad88-1c87e498737c",
+      "f6eedc72-2b91-4872-8f81-48d04cf59f3a",
+      "faa9e11f-e901-44c8-be78-0d8244f10ec9",
+      "fe4c79b9-2240-467e-8bd7-0cb8012b0759",
+      "fed5bf2c-032a-4892-8deb-546dd0078d89",
+      "ffe1d9a6-505b-42a6-90e3-e1a90b6229a6"
+    ]
+  },
+  {
+    "uuid": "a5f5df5b-3b6a-4042-9644-818b39bec7a6",
+    "full_name": "Lukas Kristjanson",
+    "role": [
+      "writer"
+    ],
+    "film_ids": [
+      "c5348b55-68b1-4273-8fbd-9c1372c16039"
+    ]
+  },
+  {
+    "uuid": "47bcd34a-0e24-4f22-aa4a-7d998687ab8f",
+    "full_name": "Lucie Arnaz",
+    "role": [
+      "actor"
+    ],
+    "film_ids": [
+      "f23afba8-721d-43c7-aaec-b6481633342c"
+    ]
+  },
+  {
+    "uuid": "371d859a-c46b-4e16-b174-3210afc3412d",
+    "full_name": "Diego Luna",
+    "role": [
+      "actor"
+    ],
+    "film_ids": [
+      "8c99d52e-69b1-44f5-b5d6-cd5b8aa0b085"
+    ]
+  }
+]

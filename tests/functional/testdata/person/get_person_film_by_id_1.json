@@ -1,0 +1,232 @@
+[
+  {
+    "uuid": "050f6a13-dd20-4688-b8e5-778dc431c39e",
+    "title": "Star Wars: Episode IX - The Rise of Skywalker",
+    "imdb_rating": 6.7
+  },
+  {
+    "uuid": "0d32a92d-477b-4256-b9ca-c1a99d5e0436",
+    "title": "Star Wars: Episode II - Attack of the Clones",
+    "imdb_rating": 6.5
+  },
+  {
+    "uuid": "1a3dea74-f6ec-434d-a53e-f46aea4450b8",
+    "title": "Star Tours: The Adventures Continue",
+    "imdb_rating": 8.3
+  },
+  {
+    "uuid": "31d0daaa-290c-4189-b87e-6204f7edbee7",
+    "title": "Star Wars: The Force Unleashed",
+    "imdb_rating": 7.9
+  },
+  {
+    "uuid": "3884a6c9-e6ad-4263-8bdf-cf8099bc4190",
+    "title": "Star Wars: The Lesser Evil",
+    "imdb_rating": 6.5
+  },
+  {
+    "uuid": "3980c4fb-e0ed-42bf-9a7f-77b601b5c8ca",
+    "title": "Star Wars: The Legacy Revealed",
+    "imdb_rating": 7.8
+  },
+  {
+    "uuid": "4b58f7a5-29d1-4e6e-9765-c482ff2e3cd4",
+    "title": "Star Wars: Obi-Wan",
+    "imdb_rating": 6.2
+  },
+  {
+    "uuid": "560f5084-48bb-4e5e-aea5-fecdac2e889a",
+    "title": "The Star Wars Holiday Special",
+    "imdb_rating": 2.1
+  },
+  {
+    "uuid": "563ade47-2040-4b67-ab45-e3f3e21fd2bd",
+    "title": "Star Wars: Episode V - The Empire Strikes Back: Deleted Scenes",
+    "imdb_rating": 7.6
+  },
+  {
+    "uuid": "5789d549-9355-4775-a9fa-428826a43319",
+    "title": "Star Wars: Episode VII - The Force Awakens",
+    "imdb_rating": 7.9
+  },
+  {
+    "uuid": "5ceca66d-71c6-4727-a2b5-1d5bed7c3497",
+    "title": "Star Wars: Episode V - The Empire Strikes Back",
+    "imdb_rating": 8.7
+  },
+  {
+    "uuid": "639d417f-991a-4b94-a01a-e9069a646ede",
+    "title": "Exile: A Star Wars Story",
+    "imdb_rating": 5.8
+  },
+  {
+    "uuid": "673ea930-4326-43f4-9882-8019903c41a3",
+    "title": "Star Wars: The Force Unleashed - Ultimate Sith Edition",
+    "imdb_rating": 8.1
+  },
+  {
+    "uuid": "6e7e29fe-aa2a-49b7-88bc-bdc508f1a5fd",
+    "title": "Star Wars: The Clone Wars",
+    "imdb_rating": 8.2
+  },
+  {
+    "uuid": "7db6656d-e291-4217-96c4-7e221e8dd052",
+    "title": "Lego Star Wars III: The Clone Wars",
+    "imdb_rating": 7.5
+  },
+  {
+    "uuid": "81d40dfd-3413-4be9-9f9a-ecd4824ba6ba",
+    "title": "Star Wars: Episode IV - A New Hope",
+    "imdb_rating": 8.6
+  },
+  {
+    "uuid": "83bd29c3-bb21-4ca9-bb6a-b1334ea1edde",
+    "title": "Star Wars: Yoda Stories",
+    "imdb_rating": 6.6
+  },
+  {
+    "uuid": "879ad88e-40ed-4678-9cae-6b132b427efa",
+    "title": "Lego Star Wars: The Video Game",
+    "imdb_rating": 8.2
+  },
+  {
+    "uuid": "88d0f058-a352-46a0-be50-ec99e85e2c8a",
+    "title": "Star Wars: Episode IV: A New Hope - Deleted Scenes",
+    "imdb_rating": 8.4
+  },
+  {
+    "uuid": "8c99d52e-69b1-44f5-b5d6-cd5b8aa0b085",
+    "title": "Rogue One: A Star Wars Story",
+    "imdb_rating": 7.8
+  },
+  {
+    "uuid": "972b5979-884c-4c7c-b0cb-c2c6c25d4257",
+    "title": "Star Wars",
+    "imdb_rating": 6.6
+  },
+  {
+    "uuid": "974c68d5-0650-4881-a60a-ccfbeaf7ad55",
+    "title": "Star Wars: Episode VIII - The Last Jedi",
+    "imdb_rating": 7.0
+  },
+  {
+    "uuid": "9cbb0d70-4497-43a2-a5ac-8135b2a187dc",
+    "title": "Star Wars Jedi: Fallen Order",
+    "imdb_rating": 8.8
+  },
+  {
+    "uuid": "9db5e8e0-24b6-4c5e-967e-96b7d5333aac",
+    "title": "Star Wars: Evolution of the Lightsaber Duel",
+    "imdb_rating": 6.8
+  },
+  {
+    "uuid": "9ffcf4d4-3a6b-4f8a-bc6a-319f47fcb5c8",
+    "title": "Star Wars: The Force Unleashed II",
+    "imdb_rating": 7.1
+  },
+  {
+    "uuid": "a12493e6-851f-4398-aaba-22348b8ab02e",
+    "title": "Empire of Dreams: The Story of the 'Star Wars' Trilogy",
+    "imdb_rating": 8.3
+  },
+  {
+    "uuid": "a4437cdf-1039-4cad-bbc8-a7c129778a6e",
+    "title": "Lego Star Wars: The Empire Strikes Out",
+    "imdb_rating": 7.3
+  },
+  {
+    "uuid": "a6e3be12-ff74-489c-91de-18d4426e57a3",
+    "title": "The Mythology of 'Star Wars'",
+    "imdb_rating": 6.8
+  },
+  {
+    "uuid": "a9d545e6-38d9-401c-bfd3-8c14baf670db",
+    "title": "Star Wars: The Force Unleashed",
+    "imdb_rating": 8.2
+  },
+  {
+    "uuid": "b06ddc9e-6479-42d4-8239-1f633ccf4120",
+    "title": "Star Wars: Shadows of the Empire",
+    "imdb_rating": 8.2
+  },
+  {
+    "uuid": "bf288a5d-83e7-4155-be19-cade1f1a3cef",
+    "title": "Star Wars: The Clone Wars",
+    "imdb_rating": 7.0
+  },
+  {
+    "uuid": "c013e14e-90ae-469a-8cf9-c5ef2be75251",
+    "title": "Star Wars: Episode VI - Return of the Jedi",
+    "imdb_rating": 8.3
+  },
+  {
+    "uuid": "c10b5e9a-75f9-4375-b056-baa5587f14c1",
+    "title": "Star Wars Empire at War: Forces of Corruption",
+    "imdb_rating": 8.1
+  },
+  {
+    "uuid": "ca6aa136-0731-400d-89ca-a644bc825e64",
+    "title": "Star Tours",
+    "imdb_rating": 8.0
+  },
+  {
+    "uuid": "d0fd8dba-2889-4b91-b445-910b03fe234e",
+    "title": "From 'Star Wars' to 'Jedi': The Making of a Saga",
+    "imdb_rating": 7.7
+  },
+  {
+    "uuid": "db1831c2-d7fa-429a-af7f-7219c0435bd0",
+    "title": "Star Wars: Episode I - The Phantom Menace",
+    "imdb_rating": 6.5
+  },
+  {
+    "uuid": "df3d2e71-cc29-402f-aebc-3fd6cdb151ca",
+    "title": "Kara: A Star Wars Story",
+    "imdb_rating": 6.8
+  },
+  {
+    "uuid": "e3942c59-71ff-483f-9ce6-42d8926e1274",
+    "title": "Star Wars: Episode III - Revenge of the Sith",
+    "imdb_rating": 7.5
+  },
+  {
+    "uuid": "e77abfd6-4550-47e0-80a8-58a88a0adc9a",
+    "title": "Star Wars: Rebel Assault",
+    "imdb_rating": 6.8
+  },
+  {
+    "uuid": "ed800b7e-0434-406a-88da-90d318a66d35",
+    "title": "Star Wars Legends: Legacy of the Force",
+    "imdb_rating": 7.1
+  },
+  {
+    "uuid": "f66ee8f8-ec9f-40de-ad88-1c87e498737c",
+    "title": "Star Wars: Episode III - Revenge of the Sith",
+    "imdb_rating": 7.3
+  },
+  {
+    "uuid": "f6eedc72-2b91-4872-8f81-48d04cf59f3a",
+    "title": "Solo: A Star Wars Story",
+    "imdb_rating": 6.9
+  },
+  {
+    "uuid": "faa9e11f-e901-44c8-be78-0d8244f10ec9",
+    "title": "Lego Star Wars II: The Original Trilogy",
+    "imdb_rating": 8.4
+  },
+  {
+    "uuid": "fe4c79b9-2240-467e-8bd7-0cb8012b0759",
+    "title": "The Making of 'Star Wars'",
+    "imdb_rating": 7.5
+  },
+  {
+    "uuid": "fed5bf2c-032a-4892-8deb-546dd0078d89",
+    "title": "Star Wars: Hoshino",
+    "imdb_rating": 7.4
+  },
+  {
+    "uuid": "ffe1d9a6-505b-42a6-90e3-e1a90b6229a6",
+    "title": "Lego Star Wars: The Complete Saga",
+    "imdb_rating": 8.5
+  }
+]
