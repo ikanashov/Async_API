@@ -2,6 +2,9 @@ import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 
+import json
+from pathlib import Path
+
 import asyncio
 import aiohttp
 import pytest
@@ -19,7 +22,6 @@ class HTTPResponse:
     body: dict
     headers: CIMultiDictProxy[str]
     status: int
-
 
 # https://github.com/pytest-dev/pytest-asyncio/issues/68
 # https://github.com/pytest-dev/pytest-asyncio/issues/171
@@ -50,4 +52,16 @@ def make_get_request(session):
             headers=response.headers,
             status=response.status,
           )
+    return inner
+
+
+# https://stackoverflow.com/questions/50329629/how-to-access-a-json-filetest-data-like-config-json-in-conftest-py
+@pytest.fixture
+async def read_json_data(request):
+    async def inner(datafilename: str) -> dict:
+        # logger.debug('read json data')
+        jsonpath =  Path(Path.cwd(), cnf.TEST_JSON_PATH, datafilename)
+        with jsonpath.open() as fp:
+            data = json.load(fp)
+        return data
     return inner
