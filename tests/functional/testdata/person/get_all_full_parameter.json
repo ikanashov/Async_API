@@ -1,0 +1,52 @@
+[
+  {
+    "uuid": "7d542ce9-87d7-4832-ba41-c693566cd699",
+    "full_name": "Rosina Lawrence",
+    "role": [
+      "actor"
+    ],
+    "film_ids": [
+      "196572bf-5ad9-4861-a99d-9bf96cd0921c"
+    ]
+  },
+  {
+    "uuid": "95db7685-ccc3-4a01-a9e8-e03733d913f4",
+    "full_name": "Rosina Galli",
+    "role": [
+      "actor"
+    ],
+    "film_ids": [
+      "db431588-a1a8-40dc-99af-dfeff639d239"
+    ]
+  },
+  {
+    "uuid": "d67fe7c0-162c-4523-9f81-292c9e17ec8e",
+    "full_name": "Rosie Marcel",
+    "role": [
+      "actor"
+    ],
+    "film_ids": [
+      "7bdd0d05-78fc-4b24-a447-49fc4ddccacc"
+    ]
+  },
+  {
+    "uuid": "43c31eb3-9fd7-4e69-a5c8-55a1fb045909",
+    "full_name": "Rosemarie Stack",
+    "role": [
+      "actor"
+    ],
+    "film_ids": [
+      "a6a4e4e5-886d-4d66-a2dc-d3165f6cb6a3"
+    ]
+  },
+  {
+    "uuid": "5d99a67a-2184-4e04-a751-3a4e354ad0c6",
+    "full_name": "Rose McIver",
+    "role": [
+      "actor"
+    ],
+    "film_ids": [
+      "0c784b34-45b5-45b2-ab49-3deb50725144"
+    ]
+  }
+]

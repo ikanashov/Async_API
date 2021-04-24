@@ -1,0 +1,15 @@
+{
+  "detail": [
+    {
+      "loc": [
+        "query",
+        "page[size]"
+      ],
+      "msg": "ensure this value is greater than or equal to 1",
+      "type": "value_error.number.not_ge",
+      "ctx": {
+        "limit_value": 1
+      }
+    }
+  ]
+}
