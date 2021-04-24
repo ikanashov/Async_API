@@ -45,5 +45,5 @@ async def films_by_person(person_id: str, film_service: FilmService = Depends(ge
     person = await film_service.get_person_by_id(person_id)
     if not person:
         raise HTTPException(status_code=HTTPStatus.NOT_FOUND, detail='person not found')
-    films = [await film_service.get_film_by_id(film_id) for film_id in person.filmids]
+    films = [await film_service.get_film_by_id(film_id) for film_id in person.filmids if film_id != None]
     return films
