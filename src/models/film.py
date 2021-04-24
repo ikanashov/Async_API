@@ -32,8 +32,8 @@ class SFilmPersonDetail(BaseModelOrjson):
     full_name: str
     birth_date: Optional[date]
     death_date: Optional[date]
-    role: List[str]
-    filmids: List[str] = Field(..., alias='film_ids')
+    role: List[Optional[str]] = Field(...)
+    filmids: List[Optional[str]] = Field(..., alias='film_ids')
     directorfilmids: Optional[List[str]]
     actorsfilmids: Optional[List[str]]
     writersfilmids: Optional[List[str]]
