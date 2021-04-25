@@ -4,14 +4,16 @@ import sys
 
 import backoff
 
-from elasticsearch import Elasticsearch
 from elasticsearch import ConnectionError as ESConnectionError
+from elasticsearch import Elasticsearch
+
 
 # this need to add script start dir to import path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 from core.config import cnf
 
 logging.getLogger('backoff').addHandler(logging.StreamHandler())
+
 
 class IsESReady:
     def __init__(self):
