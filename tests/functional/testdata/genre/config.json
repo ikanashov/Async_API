@@ -1,0 +1,90 @@
+[
+    {
+        "name" : "get_all_default",
+        "parameter" : "",
+        "status" : "200",
+        "lenght" : "28",
+        "body" : "get_all_default_body.json"
+    },
+    {
+        "name" : "get_all_sort_test_1",
+        "parameter" : {"sort" : "name:asc"},
+        "status" : "200",
+        "lenght" : "28",
+        "body" : "get_all_default_body.json"
+    },
+    {
+        "name" : "get_all_sort_test_2",
+        "parameter" : {"sort" : "name"},
+        "status" : "200",
+        "lenght" : "28",
+        "body" : "get_all_default_body.json"
+    },
+    {
+        "name" : "get_all_sort_test_3",
+        "parameter" : {"sort" : "-name"},
+        "status" : "200",
+        "lenght" : "28",
+        "body" : "get_all_sort_desc.json"
+    },
+    {
+        "name" : "get_all_sort_test_4",
+        "parameter" : {"sort" : "name:desc"},
+        "status" : "200",
+        "lenght" : "28",
+        "body" : "get_all_sort_desc.json"
+    },
+    {
+        "name" : "get_all_page_size_error",
+        "parameter" : {"page[size]" : "-1"},
+        "status" : "422",
+        "lenght" : "1",
+        "body" : "get_all_page_size_error.json"
+    },
+    {
+        "name" : "get_all_page_size_1",
+        "parameter" : {"page[size]" : "1"},
+        "status" : "200",
+        "lenght" : "1",
+        "body" : "get_all_page_size_1.json"
+    },
+    {
+        "name" : "get_all_page_size_100",
+        "parameter" : {"page[size]" : "100"},
+        "status" : "200",
+        "lenght" : "28",
+        "body" : "get_all_default_body.json"
+    },
+    {
+        "name" : "get_all_page_number_error",
+        "parameter" : {"page[number]" : "-1"},
+        "status" : "422",
+        "lenght" : "1",
+        "body" : "get_all_page_number_error.json"
+    },
+    {
+        "name" : "get_all_page_number_1",
+        "parameter" : {"page[number]" : "1"},
+        "status" : "200",
+        "lenght" : "28",
+        "body" : "get_all_default_body.json"
+    },
+    {
+        "name" : "get_all_page_number_85",
+        "parameter" : {"page[number]" : "85"},
+        "status" : "200",
+        "lenght" : "0",
+        "body" : "empty.json"
+    },
+    {
+        "name" : "get_all_full_parameter",
+        "parameter" : {
+            "sort" : "name:desc",
+            "page[size]" : "2",
+            "page[number]" : "10"
+        },
+        "status" : "200",
+        "lenght" : "2",
+        "body" : "get_all_full_parameter.json"
+    }
+]
