@@ -1,0 +1,17 @@
+[
+    {
+        "id": "f53ed0c6-166d-4ab1-8b76-607087f64c27",
+        "name": "ActionTest",
+        "description": "Action for test"
+    },
+    {
+        "id": "44fcb83d-89db-4595-a5e7-6690a24140fd",
+        "name": "AdventureTest",
+        "description": "Adventure for test"
+    },
+    {
+        "id": "31cc909a-51c3-4487-939c-9157aa5fba9a",
+        "name": "FantasyTest",
+        "description": "Fantasy for test"
+    }
+]
