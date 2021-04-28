@@ -19,8 +19,8 @@ async def test_film_service(redis, elastic, read_json_data):
     logger.info('test cache film service')
     data = await read_json_data('cache_test.json')
     film_service: FilmService = FilmService(redis, elastic)
-    assert film_service.cachekey(data[0]['input']) == data[0]['output']
-    await film_service._put_data_to_cache(data[1]['key'], data[1]['text'])
+    assert film_service.cachekey(data['testkey']['input']) == data['testkey']['output']
+    await film_service._put_data_to_cache(data['testputgetdata']['key'], data['testputgetdata']['text'])
     # get data return byte, maybe must return str
-    assert await film_service._get_data_from_cache(data[1]['key']) == bytes(data[1]['text'], 'utf-8')
+    assert await film_service._get_data_from_cache(data['testputgetdata']['key']) == bytes(data['testputgetdata']['text'], 'utf-8')
     logger.info('end test cache film service')
