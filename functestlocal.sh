@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# sudo docker-compose up --build -d
+sudo docker-compose build -q
+sudo docker-compose up -d
 
 cd tests
 
