@@ -1,0 +1,29 @@
+[
+    {
+        "name": "bad_query_1",
+        "page_size": 0,
+        "page_number": 0,
+        "body": "empty.json"
+    }
+    ,
+    {
+        "name": "bad_query_1",
+        "page_size": 0,
+        "page_number": 1,
+        "body": "empty.json"
+    }
+    ,
+    {
+        "name": "query_size_10",
+        "page_size": 10,
+        "page_number": 1,
+        "body": ""
+    }
+    ,
+    {
+        "name": "query_size_134",
+        "page_size": 134,
+        "page_number": 3,
+        "body": ""
+    }
+]

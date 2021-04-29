@@ -4,35 +4,35 @@
         "parameter" : "",
         "status" : "200",
         "lenght" : "50",
-        "body" : "get_all_default_body.json"
+        "body" : ""
     },
     {
         "name" : "get_all_sort_test_1",
         "parameter" : {"sort" : "-imdb_rating"},
         "status" : "200",
         "lenght" : "50",
-        "body" : "get_all_default_body.json"
+        "body" : ""
     },
     {
         "name" : "get_all_sort_test_2",
         "parameter" : {"sort" : "imdb_rating"},
         "status" : "200",
         "lenght" : "50",
-        "body" : "get_all_sort_asc.json"
+        "body" : ""
     },
     {
         "name" : "get_all_sort_test_3",
         "parameter" : {"sort" : "imdb_rating:asc"},
         "status" : "200",
         "lenght" : "50",
-        "body" : "get_all_sort_asc.json"
+        "body" : ""
     },
     {
         "name" : "get_all_sort_test_4",
         "parameter" : {"sort" : "imdb_rating:desc"},
         "status" : "200",
         "lenght" : "50",
-        "body" : "get_all_default_body.json"
+        "body" : ""
     },
     {
         "name" : "get_all_genre_news",
@@ -81,7 +81,7 @@
         "parameter" : {"page[number]" : "1"},
         "status" : "200",
         "lenght" : "50",
-        "body" : "get_all_default_body.json"
+        "body" : ""
     },
     {
         "name" : "get_all_page_number_20",

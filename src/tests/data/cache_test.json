@@ -1,0 +1,10 @@
+{
+    "testkey": {
+        "input": "test key intput",
+        "output": "85f581d62730c9c313d60bb63f38e35f4ac9dbe73eb445974311f5d1f945d176"
+    },
+    "testputgetdata": {
+         "key": "very_test_key",
+         "text": "This is very very input data"
+    }
+}

@@ -12,5 +12,6 @@ FROM base
 
 COPY --from=builder /install /usr/local
 COPY docker-entrypoint.sh /
+COPY docker-entrypoint-test.sh /
 COPY . /app
 WORKDIR /app

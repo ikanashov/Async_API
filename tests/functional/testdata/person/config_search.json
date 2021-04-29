@@ -15,7 +15,7 @@
     },
     {
         "name" : "search_jhon_doe",
-        "parameter" : {"query" : "jhon doe"},
+        "parameter" : {"query" : "jhon"},
         "status" : "200",
         "lenght" : "50",
         "body" : "search_jhon_doe.json"

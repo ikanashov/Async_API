@@ -1,6 +1,6 @@
-import pytest
-
 from loguru import logger
+
+import pytest
 
 
 # Базовые проверки на то, что все сервисы отвечают

@@ -1,0 +1,243 @@
+[
+    {
+        "id": "2b59bae9-df5e-4e6a-8cac-71a2d7d6e34e",
+        "imdb_rating": 6.2,
+        "imdb_tconst": "tt0292256",
+        "filmtype": "videoGame",
+        "genre": [
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+        ],
+        "title": "Star Wars: Obi-Wan",
+        "description": "This videogame is focused on Obi Wan Kenobi, it tells you the story beneath Chapter One: The Ghost Meneace and how it started and all Obi Wan passed trough in this chapter by playing with him. This videogame is only for Xbox",
+        "directors_names": [
+            "Dan Connors"
+        ],
+        "actors_names": [
+            "Amanda Moody",
+            "Clint Bajakian",
+            "Grey Griffin",
+            "Gregg Berger"
+        ],
+        "writers_names": [
+            "George Lucas"
+        ],
+        "directors": [
+            {
+                "id": "1e1ced02-8b81-4db3-ab76-7a00a9b64a22",
+                "name": "Dan Connors"
+            }
+        ],
+        "actors": [
+            {
+                "id": "57a308b0-1a5d-4709-b787-e21a9291548b",
+                "name": "Amanda Moody"
+            },
+            {
+                "id": "717c1127-ddb5-4c8f-81bc-0516aa8b3725",
+                "name": "Clint Bajakian"
+            },
+            {
+                "id": "73780f84-0af1-479a-af28-aabca17d1833",
+                "name": "Grey Griffin"
+            },
+            {
+                "id": "dceb7e4e-2dc0-4829-9fff-8e0f24c182f0",
+                "name": "Gregg Berger"
+            }
+        ],
+        "writers": [
+            {
+                "id": "81bf1c0e-fa7c-423f-b6d5-c676dca68dc9",
+                "name": "George Lucas"
+            }
+        ]
+    },
+    {
+        "id": "fa744e2c-ea58-4333-8fe8-beaa7efc0c7a",
+        "imdb_rating": 8.2,
+        "imdb_tconst": "tt0458290",
+        "filmtype": "tvSeries",
+        "genre": [
+            "Action",
+            "Adventure",
+            "Animation",
+            "Drama",
+            "Fantasy",
+            "Sci-Fi"
+        ],
+        "title": "Star Wars: The Clone Wars",
+        "description": "Jedi Knights lead the Grand Army of the Republic against the droid army of the Separatists.",
+        "directors_names": null,
+        "actors_names": [
+            "Matt Lanter",
+            "Dee Bradley Baker",
+            "Tom Kane",
+            "James Arnold Taylor"
+        ],
+        "writers_names": [
+            "George Lucas"
+        ],
+        "directors": null,
+        "actors": [
+            {
+                "id": "47cccf5c-5f7c-4a66-8ebd-3296cc23232f",
+                "name": "Matt Lanter"
+            },
+            {
+                "id": "5feadb0d-0b2a-4739-95bc-1fdf193f3e55",
+                "name": "Dee Bradley Baker"
+            },
+            {
+                "id": "8cc6d4bc-0e4a-49e3-84c2-c7309594420d",
+                "name": "Tom Kane"
+            },
+            {
+                "id": "c5fc9525-3872-49b7-acb9-df48abcef43d",
+                "name": "James Arnold Taylor"
+            }
+        ],
+        "writers": [
+            {
+                "id": "81bf1c0e-fa7c-423f-b6d5-c676dca68dc9",
+                "name": "George Lucas"
+            }
+        ]
+    },
+    {
+        "id": "494e037b-68a1-43dd-b5b1-8f9bce305f70",
+        "imdb_rating": 7.5,
+        "imdb_tconst": "tt1612560",
+        "filmtype": "videoGame",
+        "genre": [
+            "Sci-Fi"
+        ],
+        "title": "Lego Star Wars III: The Clone Wars",
+        "description": "\"Anakin Skywalker and other Jedi fight their way through the Clone Wars in this interactive LEGO video game. You get to play through levels that make up seasons 1 & 2 of the TV series \"\"Star ...\"",
+        "directors_names": [
+            "Jon Burton"
+        ],
+        "actors_names": [
+            "David Acord",
+            "Ashley Eckstein",
+            "Dee Bradley Baker",
+            "Corey Burton"
+        ],
+        "writers_names": [
+            "George Lucas"
+        ],
+        "directors": [
+            {
+                "id": "f000d914-7d3b-4b80-8809-45ac26a8dc6a",
+                "name": "Jon Burton"
+            }
+        ],
+        "actors": [
+            {
+                "id": "42e85a15-c5eb-4496-be8d-a4f300dcef0d",
+                "name": "David Acord"
+            },
+            {
+                "id": "5a1c81ec-28d5-4f80-ba3f-8d7a7e20aa1f",
+                "name": "Ashley Eckstein"
+            },
+            {
+                "id": "5feadb0d-0b2a-4739-95bc-1fdf193f3e55",
+                "name": "Dee Bradley Baker"
+            },
+            {
+                "id": "f9078296-c6ab-484f-9c42-4706252dc82b",
+                "name": "Corey Burton"
+            }
+        ],
+        "writers": [
+            {
+                "id": "81bf1c0e-fa7c-423f-b6d5-c676dca68dc9",
+                "name": "George Lucas"
+            }
+        ]
+    },
+    {
+        "id": "e47277da-4761-4549-b882-3228236e9430",
+        "imdb_rating": 8.6,
+        "imdb_tconst": "tt0076759",
+        "filmtype": "movie",
+        "genre": [
+            "Action",
+            "Adventure",
+            "Fantasy",
+            "Sci-Fi"
+        ],
+        "title": "Star Wars: Episode IV - A New Hope",
+        "description": "The Imperial Forces, under orders from cruel Darth Vader, hold Princess Leia hostage in their efforts to quell the rebellion against the Galactic Empire. Luke Skywalker and Han Solo, captain of the Millennium Falcon, work together with the companionable droid duo R2-D2 and C-3PO to rescue the beautiful princess, help the Rebel Alliance and restore freedom and justice to the Galaxy.",
+        "directors_names": [
+            "George Lucas"
+        ],
+        "actors_names": [
+            "Harrison Ford",
+            "Mark Hamill",
+            "Carrie Fisher",
+            "Peter Cushing"
+        ],
+        "writers_names": [
+            "George Lucas"
+        ],
+        "directors": [
+            {
+                "id": "81bf1c0e-fa7c-423f-b6d5-c676dca68dc9",
+                "name": "George Lucas"
+            }
+        ],
+        "actors": [
+            {
+                "id": "181fa347-c422-4bb4-95db-1f3162752c91",
+                "name": "Harrison Ford"
+            },
+            {
+                "id": "65ac6003-03c4-4d6c-8877-2209ba4a1ddc",
+                "name": "Mark Hamill"
+            },
+            {
+                "id": "e5331a8c-f942-4e83-a249-81cd289b3ad5",
+                "name": "Carrie Fisher"
+            },
+            {
+                "id": "f70de105-a612-47bb-a68e-7b9a28386565",
+                "name": "Peter Cushing"
+            }
+        ],
+        "writers": [
+            {
+                "id": "81bf1c0e-fa7c-423f-b6d5-c676dca68dc9",
+                "name": "George Lucas"
+            }
+        ]
+    },
+    {
+        "id": "9f3111ea-f674-4caa-9861-c13d66875744",
+        "imdb_rating": 6.6,
+        "imdb_tconst": "tt0295630",
+        "filmtype": "videoGame",
+        "genre": [
+            "Action",
+            "Adventure",
+            "Fantasy"
+        ],
+        "title": "Star Wars",
+        "description": "Luke Skywalker, a young farmer from the desert planet of Tattooine, must save Princess Leia from the evil Darth Vader.",
+        "directors_names": null,
+        "actors_names": null,
+        "writers_names": [
+            "George Lucas"
+        ],
+        "directors": null,
+        "actors": null,
+        "writers": [
+            {
+                "id": "81bf1c0e-fa7c-423f-b6d5-c676dca68dc9",
+                "name": "George Lucas"
+            }
+        ]
+    }
+]
