@@ -19,7 +19,7 @@
 8. ~~[08 Функциональные тесты - search api (Оценка 8)](./tasks/08_functional_test_search.md)~~ Выполнено: ikanashov
 9. [09 OpenAPI документация для клиентов сервиса (Оценка 5)](./tasks/09_openapi.md)
 10. [10 Exponential backoff (Оценка 8)](./tasks/10_backoff.md)
-11. [11 Функциональные тесты для инфраструктурных сервисов (Оценка 8)](https://github.com/ikanashov/Async_API_sprint_2/issues/15)
+11. ~~[11 Функциональные тесты для инфраструктурных сервисов (Оценка 8)](https://github.com/ikanashov/Async_API_sprint_2/issues/15)~~ Выполнено: ikanashov
 
 Как и в прошлом спринте, мы оценили задачи в стори поинтах.
 
