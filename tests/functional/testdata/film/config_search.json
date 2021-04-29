@@ -18,7 +18,7 @@
         "parameter" : {"query" : "star"},
         "status" : "200",
         "lenght" : "50",
-        "body" : "search_star.json"
+        "body" : ""
     },
     {
         "name" : "search_war_with_page",
@@ -29,6 +29,6 @@
         },
         "status" : "200",
         "lenght" : "10",
-        "body" : "search_war_with_page.json"
+        "body" : ""
     }
 ]
