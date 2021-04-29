@@ -15,7 +15,4 @@ else
     python utils/wait_for_es.py
 fi
 
-echo "Wait for client api is answer"
-python utils/wait_for_nginx.py
-
-pytest -s -q -x
+pytest -vv
