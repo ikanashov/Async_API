@@ -18,4 +18,11 @@ fi
 echo "Wait for client api is answer"
 python utils/wait_for_nginx.py
 
-pytest -s -q -x
+if [[ -z "${UVICORN_PORT}" ]]; then
+    echo "UVICORT_PORT is unset, may ber run locally"
+else
+    echo "Run in docker wait for client api tests"
+    sleep 15
+fi
+
+pytest -vv
