@@ -1,5 +1,15 @@
 [
   {
+    "uuid": "766898b3-54cd-4142-915e-46ecc7ffc250",
+    "full_name": "Stu Lucas",
+    "role": [
+      "actor"
+    ],
+    "film_ids": [
+      "4ad8e044-ecb5-4362-b44c-998808a4f27b"
+    ]
+  },
+  {
     "uuid": "5486f458-bb4f-458b-9cc5-1701a9627bcd",
     "full_name": "Luca Boni",
     "role": [
@@ -19,16 +29,6 @@
     "film_ids": [
       "87ea1e58-8ea6-4c82-a3e6-24bd04f5d0ce",
       "de6ee278-4984-47a6-8fa5-71390d68b748"
-    ]
-  },
-  {
-    "uuid": "766898b3-54cd-4142-915e-46ecc7ffc250",
-    "full_name": "Stu Lucas",
-    "role": [
-      "actor"
-    ],
-    "film_ids": [
-      "4ad8e044-ecb5-4362-b44c-998808a4f27b"
     ]
   },
   {
@@ -89,16 +89,6 @@
     ]
   },
   {
-    "uuid": "a5f5df5b-3b6a-4042-9644-818b39bec7a6",
-    "full_name": "Lukas Kristjanson",
-    "role": [
-      "writer"
-    ],
-    "film_ids": [
-      "c5348b55-68b1-4273-8fbd-9c1372c16039"
-    ]
-  },
-  {
     "uuid": "47bcd34a-0e24-4f22-aa4a-7d998687ab8f",
     "full_name": "Lucie Arnaz",
     "role": [
@@ -106,6 +96,16 @@
     ],
     "film_ids": [
       "f23afba8-721d-43c7-aaec-b6481633342c"
+    ]
+  },
+  {
+    "uuid": "a5f5df5b-3b6a-4042-9644-818b39bec7a6",
+    "full_name": "Lukas Kristjanson",
+    "role": [
+      "writer"
+    ],
+    "film_ids": [
+      "c5348b55-68b1-4273-8fbd-9c1372c16039"
     ]
   },
   {
