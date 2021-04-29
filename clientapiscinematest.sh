@@ -6,4 +6,4 @@ sudo docker-compose build clientapicinema
 
 clear
 
-sudo docker-compose run clientapicinema pytest -v -s
+sudo docker-compose run clientapicinema pytest -vv # -s
