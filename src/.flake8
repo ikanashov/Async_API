@@ -1,4 +1,5 @@
 [flake8]
+application-import-names = api, core, db, models, services, tests
 max-line-length = 118
 #select = C,E,F,W,B,B9
 #ignore = E203, E501, W503

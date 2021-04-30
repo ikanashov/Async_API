@@ -4,8 +4,8 @@ from loguru import logger
 
 import pytest
 
-from services.film import FilmService
 from models.film import SFilmPersonDetail
+from services.film import FilmService
 
 
 @pytest.fixture(autouse=True)
@@ -32,7 +32,7 @@ async def test_genre_elastic(film_service: FilmService, read_json_data):
     for data in datas:
         doc = await film_service._get_person_from_elastic(data['id'])
         assert doc == SFilmPersonDetail(**data)
-    assert None == await film_service._get_person_from_elastic('not_found')
+    assert await film_service._get_person_from_elastic('not_found') is None
     logger.info('end test persons index')
 
 
