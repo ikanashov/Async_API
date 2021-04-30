@@ -68,9 +68,7 @@ class FilmService:
     ) -> Optional[List[SFilm]]:
 
         if genre_filter is not None:
-            filter_ = ESFilterGenre()
-            filter_.query.term.genre.value = genre_filter
-            genre_filter = filter_.json()
+            genre_filter = ESFilterGenre(query={'term': {'genre': {'value': genre_filter}}}).json()
 
         key = self.cachekey(str(sort) + str(page_size) + str(page_number) + str(genre_filter))
         data = await self._get_data_from_cache(key)
@@ -83,9 +81,7 @@ class FilmService:
         return films
 
     async def search_film(self, query: str, page_size: int, page_number: int) -> Optional[List[SFilm]]:
-        query_body = ESQuery()
-        query_body.query.multi_match.query = query
-        body = query_body.json(by_alias=True)
+        body = ESQuery(query={'multi_match': {'query': query}}).json(by_alias=True)
 
         key = self.cachekey(str(page_size) + str(page_number) + str(body))
         data = await self._get_data_from_cache(key)
