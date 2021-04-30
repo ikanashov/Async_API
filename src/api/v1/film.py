@@ -3,7 +3,7 @@ from typing import List
 
 from fastapi import APIRouter, Depends, HTTPException
 
-from api.v1.models import FilmDetail, FilmGenreFilter, FilmQuery, FilmShort, FilmSort, Page
+from models.api.v1 import FilmDetail, FilmGenreFilter, FilmQuery, FilmShort, FilmSort, Page
 
 from services.film import FilmService, get_film_service
 
