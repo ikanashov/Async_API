@@ -45,7 +45,7 @@ class FilmPersonDetail(FilmPerson):
 class Page:
     def __init__(
         self,
-        page_size:  int = Query(config.CLIENTAPI_DEFAULT_PAGE_SIZE, alias='page[size]', ge=1),
+        page_size: int = Query(config.CLIENTAPI_DEFAULT_PAGE_SIZE, alias='page[size]', ge=1),
         page_number: int = Query(1, alias='page[number]', ge=1)
     ) -> None:
         self.page_size = page_size
