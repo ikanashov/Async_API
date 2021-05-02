@@ -23,7 +23,8 @@ async def test_film_service(film_service: FilmService, read_json_data):
 @pytest.mark.asyncio
 async def test_redis_storage(redis: Redis, read_json_data):
     logger.info('test redis storage')
-    redis_storage = redis_db.RedisStorage(redis)
+    redis_db.redis = redis
+    redis_storage = redis_db.RedisStorage()
     data = await read_json_data('cache_test.json')
     data = data['storagetest']
     assert await redis.delete(data['key']) == 0

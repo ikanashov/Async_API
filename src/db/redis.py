@@ -13,7 +13,9 @@ async def get_redis() -> Redis:
 
 
 class RedisStorage(AbstractCacheStorage):
-    def __init__(self, redis: Redis) -> None:
+    redis: Redis = None
+
+    def __init__(self) -> None:
         self.redis = redis
 
     async def get_data(self, key: str) -> Optional[str]:
