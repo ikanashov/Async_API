@@ -21,11 +21,22 @@ class ElasticStorage(AbstractStorage):
 
     async def get_data_by_id(self, index: str, id: str) -> Optional[Any]:
         try:
-            data = await es.get_source(index, id)
+            data = await self.es.get_source(index, id)
         except NotFoundError:
             return None
         return data
 
-    async def get_data():
-        pass
-    
+    async def get_data(
+        self,
+        index: str,
+        page_size: int, page_number: int,
+        sort: str = None, body: str = None):
+        
+        from_ = page_size * (page_number - 1)
+        docs = await self.es.search(
+            index=index,
+            sort=sort,
+            size=page_size,
+            from_=from_,
+            body=body)
+        return docs['hits']['hits']
