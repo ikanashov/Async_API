@@ -1,9 +1,12 @@
 import json
 
+from elasticsearch import AsyncElasticsearch
+
 from loguru import logger
 
 import pytest
 
+from db import elastic as es_db
 from models.film import SFilm
 from services.film import FilmService
 
@@ -26,7 +29,7 @@ async def setup_films(conf, elastic, read_json_data):
 
 
 @pytest.mark.asyncio
-async def test_genre_elastic(film_service: FilmService, read_json_data):
+async def test_film_elastic(film_service: FilmService, read_json_data):
     logger.info('test get single data from films index elastic')
     datas = await read_json_data('es_films_data.json')
     for data in datas:
@@ -37,7 +40,7 @@ async def test_genre_elastic(film_service: FilmService, read_json_data):
 
 
 @pytest.mark.asyncio
-async def test_genres_elastic(film_service: FilmService, read_json_data):
+async def test_films_elastic(film_service: FilmService, read_json_data):
     logger.info('test get many films from elastic')
     try:
         await film_service._get_films_from_elastic()
@@ -52,3 +55,36 @@ async def test_genres_elastic(film_service: FilmService, read_json_data):
         if test['body'] != '':
             assert datas == await read_json_data(test['body']), test
     logger.info('end test films index')
+
+@pytest.mark.asyncio
+async def test_film_elastic_storage(conf, elastic: AsyncElasticsearch, read_json_data):
+    logger.info('test film elastic storage')
+    datas = await read_json_data('es_films_data.json')
+    es_db.es = elastic
+    es_storage = es_db.ElasticStorage()
+    for data in datas:
+        doc = await es_storage.get_data_by_id(conf.ELASTIC_INDEX, data['id'])
+        assert doc == data
+    assert await es_storage.get_data_by_id(conf.ELASTIC_INDEX, 'not_found') is None
+    logger.info('end test film elastic storage')
+
+
+@pytest.mark.asyncio
+async def test_films_elastic_storage(conf, elastic: AsyncElasticsearch, read_json_data):
+    logger.info('test get many films from elastic storage')
+    es_db.es = elastic
+    es_storage = es_db.ElasticStorage()
+    try:
+        await es_storage.get_data()
+    except Exception as err:
+        assert err.__class__ == TypeError, err
+
+    testsconfig = await read_json_data('config_es_films.json')
+    for test in testsconfig:
+        datas = await es_storage.get_data(
+            index=conf.ELASTIC_INDEX,
+            page_size=test['page_size'], page_number=test['page_number'])
+        assert len(datas) == test['page_size'], datas
+        if test['body'] != '':
+            assert datas == await read_json_data(test['body']), test
+    logger.info('end test films elastic storage')
