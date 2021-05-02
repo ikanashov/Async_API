@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import Optional
+from typing import Any, Optional
 
 
 class GetData(ABC):
@@ -13,6 +13,15 @@ class GetData(ABC):
 
     @abstractmethod
     def search(self, **params):
+        pass
+
+
+class AbstractStorage(ABC):
+    @abstractmethod
+    def get_data_by_id(self, index: str, id: str) -> Optional[Any]:
+        pass
+    
+    def get_data():
         pass
 
 
