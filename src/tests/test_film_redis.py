@@ -1,7 +1,9 @@
 from loguru import logger
 
+from aioredis import Redis
 import pytest
 
+from db import redis as redis_db
 from services.film import FilmService
 
 
@@ -15,3 +17,17 @@ async def test_film_service(film_service: FilmService, read_json_data):
     # get data return byte, maybe must return str
     assert getteddata == bytes(data['testputgetdata']['text'], 'utf-8')
     logger.info('end test cache film service')
+
+
+@pytest.mark.asyncio
+async def test_redis_storage(redis: Redis, read_json_data):
+    logger.info('test redis storage')
+    redis_storage = redis_db.RedisStorage(redis)
+    data = await read_json_data('cache_test.json')
+    data = data['storagetest']
+    assert await redis.delete(data['key']) == 0
+    await redis_storage.put_data(data['key'], data['text'], data['expire'])
+    assert await redis_storage.get_data(data['key']) == data['text']
+    assert await redis.ttl(data['key']) > data['expire'] - 1
+    await redis.delete(data['key'])
+    logger.info('end test redis storage')
