@@ -56,6 +56,7 @@ async def test_films_elastic(film_service: FilmService, read_json_data):
             assert datas == await read_json_data(test['body']), test
     logger.info('end test films index')
 
+
 @pytest.mark.asyncio
 async def test_film_elastic_storage(conf, elastic: AsyncElasticsearch, read_json_data):
     logger.info('test film elastic storage')

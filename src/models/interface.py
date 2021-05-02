@@ -20,12 +20,13 @@ class AbstractStorage(ABC):
     @abstractmethod
     def get_data_by_id(self, index: str, id: str) -> Optional[Any]:
         pass
-    
+
     def get_data(
         self,
         index: str,
         page_size: int, page_number: int,
-        sort: str = None, body: str = None):
+        sort: str = None, body: str = None
+    ):
         pass
 
 

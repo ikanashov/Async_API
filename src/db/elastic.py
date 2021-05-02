@@ -15,7 +15,7 @@ async def get_elastic() -> AsyncElasticsearch:
 
 class ElasticStorage(AbstractStorage):
     es: AsyncElasticsearch = None
-    
+
     def __init__(self) -> None:
         self.es = es
 
@@ -30,13 +30,15 @@ class ElasticStorage(AbstractStorage):
         self,
         index: str,
         page_size: int, page_number: int,
-        sort: str = None, body: str = None):
-        
+        sort: str = None, body: str = None
+    ):
+
         from_ = page_size * (page_number - 1)
         docs = await self.es.search(
             index=index,
             sort=sort,
             size=page_size,
             from_=from_,
-            body=body)
+            body=body
+        )
         return docs['hits']['hits']
