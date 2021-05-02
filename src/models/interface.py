@@ -40,6 +40,7 @@ class AbstractCacheStorage(ABC):
     def put_data(self, key: str, data: str, expire: int):
         pass
 
+
 class GetDataFromStore(ABC):
     @abstractmethod
     def get_by_id(self, id: str):

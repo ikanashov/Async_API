@@ -1,6 +1,7 @@
+from aioredis import Redis
+
 from loguru import logger
 
-from aioredis import Redis
 import pytest
 
 from db import redis as redis_db

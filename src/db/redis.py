@@ -21,6 +21,6 @@ class RedisStorage(AbstractCacheStorage):
         if not data:
             return None
         return data.decode('utf-8')
-    
+
     async def put_data(self, key: str, data: str, expire: int):
         await self.redis.set(key, data, expire=expire)
