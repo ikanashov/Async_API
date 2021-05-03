@@ -2,6 +2,7 @@ from typing import Any, Optional
 
 from elasticsearch import AsyncElasticsearch, NotFoundError
 
+from core.config import config
 from models.interface import AbstractStorage
 
 
@@ -11,6 +12,19 @@ es: AsyncElasticsearch = None
 # Функция понадобится при внедрении зависимостей
 async def get_elastic() -> AsyncElasticsearch:
     return es
+
+
+async def start_elastic():
+    global es
+    es = AsyncElasticsearch(
+        hosts=[f'{config.ELASTIC_HOST}:{config.ELASTIC_PORT}'],
+        scheme=config.ELASTIC_SCHEME,
+        http_auth=(config.ELASTIC_USER, config.ELASTIC_PASSWORD)
+    )
+
+
+async def stop_elastic():
+    await es.close()
 
 
 class ElasticStorage(AbstractStorage):
