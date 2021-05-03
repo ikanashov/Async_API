@@ -16,8 +16,7 @@ import pytest
 # this need to add script start dir to import path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 from core.config import config
-# from db import elastic
-# from db import redis
+
 from services.film import FilmService
 
 

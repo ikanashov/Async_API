@@ -7,7 +7,7 @@ from models.interface import AbstractCache, AbstractCacheStorage
 class Cache(AbstractCache):
     def __init__(self, storage: AbstractCacheStorage) -> None:
         self.storage = storage
-        
+
     @staticmethod
     def genkey(*args, **kwargs) -> str:
         param = [str(arg) for arg in args] + [f'{key}:{value}' for key, value in kwargs.items()]

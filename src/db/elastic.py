@@ -3,6 +3,7 @@ from typing import Any, Optional
 from elasticsearch import AsyncElasticsearch, NotFoundError
 
 from core.config import config
+
 from models.interface import AbstractStorage
 
 

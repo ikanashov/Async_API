@@ -3,6 +3,7 @@ from typing import Optional
 from aioredis import Redis, create_redis_pool
 
 from core.config import config
+
 from models.interface import AbstractCacheStorage
 
 

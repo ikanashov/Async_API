@@ -15,6 +15,7 @@ class GetData(ABC):
     def search(self, **params):
         pass
 
+
 # done
 class AbstractStorage(ABC):
     @abstractmethod
@@ -28,6 +29,7 @@ class AbstractStorage(ABC):
         sort: str = None, body: str = None
     ):
         pass
+
 
 # done
 class AbstractCache(ABC):
@@ -43,6 +45,7 @@ class AbstractCache(ABC):
     @abstractmethod
     def put_data(self, data: str, expire: int, *args, **kwargs):
         pass
+
 
 # done
 class AbstractCacheStorage(ABC):

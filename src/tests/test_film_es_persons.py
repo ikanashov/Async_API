@@ -7,7 +7,9 @@ from loguru import logger
 import pytest
 
 from db import elastic as es_db
+
 from models.film import SFilmPersonDetail
+
 from services.film import FilmService
 
 
