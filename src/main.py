@@ -1,7 +1,5 @@
 import logging
 
-import aioredis
-
 from elasticsearch import AsyncElasticsearch
 
 from fastapi import FastAPI
@@ -15,7 +13,7 @@ from core.config import config
 from core.logger import LOGGING
 
 from db import elastic
-from db import redis
+from db.redis import start_redis, stop_redis
 
 
 app = FastAPI(
@@ -36,11 +34,7 @@ async def startup():
     # Подключаемся к базам при старте сервера
     # Подключиться можем при работающем event-loop
     # Поэтому логика подключения происходит в асинхронной функции
-    redis.redis = await aioredis.create_redis_pool(
-        (config.REDIS_HOST, config.REDIS_PORT),
-        password=config.REDIS_PASSWORD,
-        minsize=10, maxsize=20
-    )
+    await start_redis()
     elastic.es = AsyncElasticsearch(
         hosts=[f'{config.ELASTIC_HOST}:{config.ELASTIC_PORT}'],
         scheme=config.ELASTIC_SCHEME,
@@ -51,7 +45,8 @@ async def startup():
 @app.on_event('shutdown')
 async def shutdown():
     # Отключаемся от баз при выключении сервера
-    await redis.redis.close()
+    await stop_redis()
+    # await redis.redis.close()
     await elastic.es.close()
 
 

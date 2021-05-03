@@ -1,8 +1,10 @@
 from typing import Optional
 
-from aioredis import Redis
+from aioredis import Redis, create_redis_pool
 
+from core.config import config
 from models.interface import AbstractCacheStorage
+
 
 redis: Redis = None
 
@@ -10,6 +12,19 @@ redis: Redis = None
 # Функция понадобится при внедрении зависимостей
 async def get_redis() -> Redis:
     return redis
+
+
+async def start_redis():
+    global redis
+    redis = await create_redis_pool(
+        (config.REDIS_HOST, config.REDIS_PORT),
+        password=config.REDIS_PASSWORD,
+        minsize=10, maxsize=20
+    )
+
+
+async def stop_redis():
+    await redis.close()
 
 
 class RedisStorage(AbstractCacheStorage):
