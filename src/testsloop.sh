@@ -1,6 +1,9 @@
 #!/bin/bash
 
+# https://stackoverflow.com/questions/4060212/how-to-run-a-shell-script-when-a-file-or-directory-changes
+
 echo "For run this loop needs entr util. apt install entr"
+
 
 source ./venv/bin/activate
 
