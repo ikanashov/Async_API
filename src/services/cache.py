@@ -1,0 +1,24 @@
+from hashlib import sha256
+from typing import Optional
+
+from models.interface import AbstractCache, AbstractCacheStorage
+
+
+class Cache(AbstractCache):
+    def __init__(self, storage: AbstractCacheStorage) -> None:
+        self.storage = storage
+        
+    @staticmethod
+    def genkey(*args, **kwargs) -> str:
+        param = [str(arg) for arg in args] + [f'{key}:{value}' for key, value in kwargs.items()]
+        param = ''.join(sorted(param))
+        key = sha256(param.encode()).hexdigest()
+        return key
+
+    async def get_data(self, *args, **kwargs) -> Optional[str]:
+        key = self.genkey(*args, **kwargs)
+        return await self.storage.get_data(key)
+
+    async def put_data(self, data: str, expire: int, *args, **kwargs):
+        key = self.genkey(*args, **kwargs)
+        await self.storage.put_data(key, data, expire)

@@ -15,7 +15,7 @@ class GetData(ABC):
     def search(self, **params):
         pass
 
-
+# done
 class AbstractStorage(ABC):
     @abstractmethod
     def get_data_by_id(self, index: str, id: str) -> Optional[Any]:
@@ -29,22 +29,22 @@ class AbstractStorage(ABC):
     ):
         pass
 
-
+# done
 class AbstractCache(ABC):
     @staticmethod
     @abstractmethod
-    def genkey(self, params: str) -> str:
+    def genkey(*args, **kwargs) -> str:
         pass
 
     @abstractmethod
-    def get_data(self, params: str) -> Optional[str]:
+    def get_data(self, *args, **kwargs) -> Optional[str]:
         pass
 
     @abstractmethod
-    def put_data(self, parameter: str, data: str):
+    def put_data(self, data: str, expire: int, *args, **kwargs):
         pass
 
-
+# done
 class AbstractCacheStorage(ABC):
     @abstractmethod
     def get_data(self, key: str) -> Optional[str]:
