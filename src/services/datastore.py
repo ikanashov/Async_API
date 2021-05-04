@@ -8,7 +8,7 @@ class DataStore(AbstractDataStore):
         self.cache = cache
         self.storage = storage
         self.expire = expire
-    
+
     async def get_by_id(self, index: str, id: str) -> Optional[dict]:
         data = await self.cache.get_data(index=index, id=id)
         if data:

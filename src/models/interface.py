@@ -58,7 +58,7 @@ class AbstractCacheStorage(ABC):
         pass
 
 
-#done
+# done
 class AbstractDataStore(ABC):
     @abstractmethod
     def get_by_id(self, index: str, id: str) -> Optional[dict]:

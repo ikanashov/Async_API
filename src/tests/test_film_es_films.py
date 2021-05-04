@@ -1,4 +1,5 @@
 import json
+
 from aioredis.commands import Redis
 
 from elasticsearch import AsyncElasticsearch
