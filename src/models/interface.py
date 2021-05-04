@@ -58,11 +58,17 @@ class AbstractCacheStorage(ABC):
         pass
 
 
-class GetDataFromStore(ABC):
+#done
+class AbstractDataStore(ABC):
     @abstractmethod
-    def get_by_id(self, id: str):
+    def get_by_id(self, index: str, id: str) -> Optional[dict]:
         pass
 
     @abstractmethod
-    def search(self):
+    def search(
+        self,
+        index: str,
+        page_size: int, page_number: int,
+        sort: str = None, body: str = None
+    ):
         pass
