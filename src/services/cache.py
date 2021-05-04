@@ -1,6 +1,8 @@
 from hashlib import sha256
 from typing import Optional
 
+import orjson
+
 from models.interface import AbstractCache, AbstractCacheStorage
 
 
@@ -17,8 +19,12 @@ class Cache(AbstractCache):
 
     async def get_data(self, *args, **kwargs) -> Optional[str]:
         key = self.genkey(*args, **kwargs)
-        return await self.storage.get_data(key)
+        data = await self.storage.get_data(key)
+        if data:
+            data = orjson.loads(data)
+        return data
 
     async def put_data(self, data: str, expire: int, *args, **kwargs):
         key = self.genkey(*args, **kwargs)
+        data = orjson.dumps(data)
         await self.storage.put_data(key, data, expire)
