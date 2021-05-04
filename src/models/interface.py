@@ -1,18 +1,27 @@
 from abc import ABC, abstractmethod
-from typing import Any, Optional
+from typing import Any, List, Optional
 
+from models.film import SFilm
 
-class GetData(ABC):
+# done
+class AbstractMovie(ABC):
     @abstractmethod
-    def get_by_id(self, id: str):
+    def get_film_by_id(self, film_id: str) -> Optional[SFilm]:
         pass
 
     @abstractmethod
-    def get_all(self, **params):
+    def get_all_film(
+        self,
+        sort: str,
+        page_size: int, page_number: int, genre_filter: str
+    ) -> Optional[List[SFilm]]:
         pass
 
     @abstractmethod
-    def search(self, **params):
+    def search_film(
+        self,
+        query: str, page_size: int, page_number: int
+    ) -> Optional[List[SFilm]]:
         pass
 
 
