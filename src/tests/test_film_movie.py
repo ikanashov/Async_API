@@ -12,13 +12,12 @@ from core.config import config as coreconf
 
 from db import elastic as es_db
 from db import redis as redis_db
-from services import movie as mov_db
 
 from models.film import SFilm
 
+from services import movie as mov_db
 from services.cache import Cache
 from services.datastore import DataStore
-from services.movie import Movie
 
 
 @pytest.fixture(autouse=True)
