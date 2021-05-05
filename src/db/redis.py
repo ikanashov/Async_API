@@ -29,10 +29,8 @@ async def stop_redis():
 
 
 class RedisStorage(AbstractCacheStorage):
-    redis: Redis = None
-
     def __init__(self) -> None:
-        self.redis = redis
+        self.redis: Redis = redis
 
     async def get_data(self, key: str) -> Optional[str]:
         data = await self.redis.get(key)

@@ -29,10 +29,8 @@ async def stop_elastic():
 
 
 class ElasticStorage(AbstractStorage):
-    es: AsyncElasticsearch = None
-
     def __init__(self) -> None:
-        self.es = es
+        self.es: AsyncElasticsearch = es
 
     async def get_data_by_id(self, index: str, id: str) -> Optional[Any]:
         try:
