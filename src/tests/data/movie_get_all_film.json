@@ -1,0 +1,101 @@
+[
+    {
+        "name" : "get_all_default",
+        "parameter" : {
+            "page_size": 50,
+            "page_number": 1,
+            "sort": "imdb_rating:asc",
+            "genre_filter": null
+        },
+        "lenght" : "50",
+        "body" : ""
+    },
+    {
+        "name" : "get_all_default",
+        "parameter" : {
+            "page_size": 50,
+            "page_number": 1,
+            "sort": "imdb_rating:desc",
+            "genre_filter": null
+        },
+        "lenght" : "50",
+        "body" : ""
+    },
+    {
+        "name" : "get_all_genre_news",
+        "parameter" : {
+            "page_size": 50,
+            "page_number": 1,
+            "sort": "imdb_rating:asc",
+            "genre_filter": "News"
+        },
+        "lenght" : "5",
+        "body" : "get_all_genre_news.json"
+    },
+    {
+        "name" : "get_all_genre_not_exists",
+        "parameter" : {
+            "page_size": 50,
+            "page_number": 1,
+            "sort": "imdb_rating:asc",
+            "genre_filter": "not_found"
+        },
+        "lenght" : "0",
+        "body" : "empty.json"
+    },
+    {
+        "name" : "get_all_page_size_1",
+        "parameter" : {
+            "page_size": 1,
+            "page_number": 1,
+            "sort": "imdb_rating:asc",
+            "genre_filter": null
+        },
+        "lenght":"1",
+        "body" : "get_all_page_size_1.json"
+    },
+    {
+        "name" : "get_all_page_size_1000",
+        "parameter" : {
+            "page_size": 1000,
+            "page_number": 1,
+            "sort": "imdb_rating:asc",
+            "genre_filter": null
+        },
+        "lenght" : "999",
+        "body" : ""
+    },
+    {
+        "name" : "get_all_page_number_20",
+        "parameter" : {
+            "page_size": 50,
+            "page_number": 21,
+            "sort": "imdb_rating:asc",
+            "genre_filter": null
+        },
+        "lenght" : "4",
+        "body" : ""
+    },
+    {
+        "name" : "get_all_page_number_50",
+        "parameter" : {
+            "page_size": 50,
+            "page_number": 50,
+            "sort": "imdb_rating:asc",
+            "genre_filter": null
+        },
+        "lenght" : "0",
+        "body" : "empty.json"
+    },
+    {
+        "name" : "get_all_full_parameter",
+        "parameter" : {
+            "page_size": 5,
+            "page_number": 16,
+            "sort": "imdb_rating:asc",
+            "genre_filter": "Sci-Fi"
+        },
+        "lenght" : "5",
+        "body" : "get_all_full_parameter.json"
+    }
+]

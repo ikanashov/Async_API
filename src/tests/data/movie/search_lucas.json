@@ -1,0 +1,423 @@
+[
+  {
+    "id": "93f37259-df85-4f95-8a80-39e45755d1b2",
+    "imdb_rating": 5.5,
+    "imdb_tconst": "tt0387563",
+    "filmtype": "movie",
+    "genre": [
+      "Comedy"
+    ],
+    "title": "Saving Star Wars",
+    "description": "Two Star Wars fans venture to deliver a letter to George Lucas.",
+    "directors_names": [
+      "Gary Wood"
+    ],
+    "actors_names": [
+      "Lee Ann Millen",
+      "David Prowse",
+      "Jim Peterson",
+      "Joe Urban"
+    ],
+    "writers_names": [
+      "Gary Wood"
+    ],
+    "directors": [
+      {
+        "id": "d94888a3-6de3-4a26-aa43-7584177d8dbc",
+        "name": "Gary Wood"
+      }
+    ],
+    "actors": [
+      {
+        "id": "0381711d-471f-40da-a83d-86338a0695b8",
+        "name": "Lee Ann Millen"
+      },
+      {
+        "id": "097fb881-319b-4c0b-915b-8125fdea2583",
+        "name": "David Prowse"
+      },
+      {
+        "id": "0fb3483c-3ac3-4018-a5b6-86366c4d7116",
+        "name": "Jim Peterson"
+      },
+      {
+        "id": "2812e7e8-1183-413f-b85e-8704ba41ce09",
+        "name": "Joe Urban"
+      }
+    ],
+    "writers": [
+      {
+        "id": "d94888a3-6de3-4a26-aa43-7584177d8dbc",
+        "name": "Gary Wood"
+      }
+    ]
+  },
+  {
+    "id": "0e42ee97-8d67-4f76-bf06-1fc524c12e35",
+    "imdb_rating": 7.2,
+    "imdb_tconst": "tt0220472",
+    "filmtype": "tvMovie",
+    "genre": [
+      "Documentary"
+    ],
+    "title": "From Star Wars to Star Wars: The Story of Industrial Light & Magic",
+    "description": "\"The incredible evolution of George Lucas' special effects dream factory, including an inside look at \"\"Star Wars: Episode One - The Phantom Menace.\"\"\"",
+    "directors_names": [
+      "Jon Kroll"
+    ],
+    "actors_names": [
+      "James Cameron",
+      "Rob Coleman",
+      "Ahmed Best",
+      "Samuel L. Jackson"
+    ],
+    "writers_names": [
+      "Jon Kroll"
+    ],
+    "directors": [
+      {
+        "id": "6205b38c-c1a8-433d-ab72-defb94195a2b",
+        "name": "Jon Kroll"
+      }
+    ],
+    "actors": [
+      {
+        "id": "0327f767-81d3-4816-bf10-293dce393bcf",
+        "name": "James Cameron"
+      },
+      {
+        "id": "6af14afa-7810-47dd-83fe-41e07224f716",
+        "name": "Rob Coleman"
+      },
+      {
+        "id": "88a7e04c-e54f-46ad-a76b-0b481b55490a",
+        "name": "Ahmed Best"
+      },
+      {
+        "id": "ffb105a2-261c-4292-9aec-7416c226fefe",
+        "name": "Samuel L. Jackson"
+      }
+    ],
+    "writers": [
+      {
+        "id": "6205b38c-c1a8-433d-ab72-defb94195a2b",
+        "name": "Jon Kroll"
+      }
+    ]
+  },
+  {
+    "id": "2e15708c-4a6f-4f96-9c66-c66924464716",
+    "imdb_rating": 7.8,
+    "imdb_tconst": "tt0884786",
+    "filmtype": "tvShort",
+    "genre": [
+      "Sci-Fi",
+      "Short"
+    ],
+    "title": "Star Wars: Shortened!",
+    "description": "The George Lucas Apreciation Society (GLAS) share their passion for the Star Wars saga in this hilarious, shortened version. For the first time in British TV history, they present all six movies in just under 20 minutes!",
+    "directors_names": [
+      "Peter Demetris"
+    ],
+    "actors_names": [
+      "Adam Long",
+      "Richard Lynson",
+      "Rick Bland"
+    ],
+    "writers_names": [
+      "Adam Long"
+    ],
+    "directors": [
+      {
+        "id": "9064cd0b-07cb-4688-bcd6-4c1aab605f15",
+        "name": "Peter Demetris"
+      }
+    ],
+    "actors": [
+      {
+        "id": "086810d3-ddd0-46f3-8f75-cfc3619dec37",
+        "name": "Adam Long"
+      },
+      {
+        "id": "7884f871-0b96-4008-8afe-d7fdcfd85ddb",
+        "name": "Richard Lynson"
+      },
+      {
+        "id": "bdc8db9c-92bc-40e9-b9af-8b6caffbc7ce",
+        "name": "Rick Bland"
+      }
+    ],
+    "writers": [
+      {
+        "id": "086810d3-ddd0-46f3-8f75-cfc3619dec37",
+        "name": "Adam Long"
+      }
+    ]
+  },
+  {
+    "id": "31d0daaa-290c-4189-b87e-6204f7edbee7",
+    "imdb_rating": 7.9,
+    "imdb_tconst": "tt3278680",
+    "filmtype": "video",
+    "genre": [
+      "Sci-Fi"
+    ],
+    "title": "Star Wars: The Force Unleashed",
+    "description": "Darth Vader has a secret apprentice to help him kill the last of the remaining jedi, little does he realise, this apprentice will unwittingly form the rebel alliance... A non profit, no budget fan film based on the popular video game by George Lucas and LucasArts who own all rights.",
+    "directors_names": [
+      "Shaun Robertson"
+    ],
+    "actors_names": [
+      "Joe Duffy",
+      "Carolyn Kelly",
+      "Alex Beston",
+      "George Nicholson-Sibley"
+    ],
+    "writers_names": [
+      "George Lucas"
+    ],
+    "directors": [
+      {
+        "id": "c19e2041-1b75-4393-a47a-3377fc5f55a1",
+        "name": "Shaun Robertson"
+      }
+    ],
+    "actors": [
+      {
+        "id": "1f0c9efa-317f-48dc-b8c7-3cc262b7d1b4",
+        "name": "Joe Duffy"
+      },
+      {
+        "id": "31575d8a-c43b-483a-842f-8c3d50984b86",
+        "name": "Carolyn Kelly"
+      },
+      {
+        "id": "34af8a36-55f8-4388-a0d0-ee75f66ecf73",
+        "name": "Alex Beston"
+      },
+      {
+        "id": "7663fab2-5543-4cdd-b62c-85ca40c053e4",
+        "name": "George Nicholson-Sibley"
+      }
+    ],
+    "writers": [
+      {
+        "id": "81bf1c0e-fa7c-423f-b6d5-c676dca68dc9",
+        "name": "George Lucas"
+      }
+    ]
+  },
+  {
+    "id": "d0fd8dba-2889-4b91-b445-910b03fe234e",
+    "imdb_rating": 7.7,
+    "imdb_tconst": "tt0295270",
+    "filmtype": "tvMovie",
+    "genre": [
+      "Documentary"
+    ],
+    "title": "From 'Star Wars' to 'Jedi': The Making of a Saga",
+    "description": "Ever wonder how they ever made Star Wars, Empire Strikes Back, and Return of the Jedi? Well this documentary explains it all as we're taken on a behind-the-scenes tour of the making of the Star Wars saga. It shows how the puppets are made and worked, and creator George Lucas talks about what influenced him to do it, and everything. Narrated by Luke Skywalker himself, Mark Hamill.",
+    "directors_names": null,
+    "actors_names": [
+      "Harrison Ford",
+      "Anthony Daniels",
+      "Mark Hamill",
+      "George Lucas"
+    ],
+    "writers_names": [
+      "Richard Schickel"
+    ],
+    "directors": null,
+    "actors": [
+      {
+        "id": "181fa347-c422-4bb4-95db-1f3162752c91",
+        "name": "Harrison Ford"
+      },
+      {
+        "id": "65745ae2-bff6-4c17-89c8-fdfad8687087",
+        "name": "Anthony Daniels"
+      },
+      {
+        "id": "65ac6003-03c4-4d6c-8877-2209ba4a1ddc",
+        "name": "Mark Hamill"
+      },
+      {
+        "id": "81bf1c0e-fa7c-423f-b6d5-c676dca68dc9",
+        "name": "George Lucas"
+      }
+    ],
+    "writers": [
+      {
+        "id": "87670a6a-db7e-41fb-acec-eb599f625671",
+        "name": "Richard Schickel"
+      }
+    ]
+  },
+  {
+    "id": "e9c41ecd-eac0-4a63-81f8-858beb777733",
+    "imdb_rating": 4.8,
+    "imdb_tconst": "tt0216129",
+    "filmtype": "video",
+    "genre": [
+      "Animation",
+      "Short"
+    ],
+    "title": "Quentin Tarantino's Star Wars",
+    "description": "\"We're all familiar with the story: a long time ago in a galaxy far, far away, on a planet called Tattooine, a boy named Luke Skywalker is adopted by the only remaining Jedi knight and helps the Rebellion destroy the Death Star after learning the ways of the force. However, what if \"\"Pulp Fiction\"\" director Quentin Tarantino had directed George Lucas' script, using Kenner action figures and stop computer animation?\"",
+    "directors_names": [
+      "Evan Mather"
+    ],
+    "actors_names": [
+      "Harrison Ford",
+      "Anthony Daniels",
+      "Mark Hamill",
+      "Alec Guinness"
+    ],
+    "writers_names": [
+      "Evan Mather"
+    ],
+    "directors": [
+      {
+        "id": "0a3a5d0e-edac-4070-94d8-7a5bb7454cdc",
+        "name": "Evan Mather"
+      }
+    ],
+    "actors": [
+      {
+        "id": "181fa347-c422-4bb4-95db-1f3162752c91",
+        "name": "Harrison Ford"
+      },
+      {
+        "id": "65745ae2-bff6-4c17-89c8-fdfad8687087",
+        "name": "Anthony Daniels"
+      },
+      {
+        "id": "65ac6003-03c4-4d6c-8877-2209ba4a1ddc",
+        "name": "Mark Hamill"
+      },
+      {
+        "id": "a5fa1138-b7df-4825-ad00-8929045d4638",
+        "name": "Alec Guinness"
+      }
+    ],
+    "writers": [
+      {
+        "id": "0a3a5d0e-edac-4070-94d8-7a5bb7454cdc",
+        "name": "Evan Mather"
+      }
+    ]
+  },
+  {
+    "id": "a12493e6-851f-4398-aaba-22348b8ab02e",
+    "imdb_rating": 8.3,
+    "imdb_tconst": "tt0416716",
+    "filmtype": "video",
+    "genre": [
+      "Documentary",
+      "History",
+      "Sci-Fi"
+    ],
+    "title": "Empire of Dreams: The Story of the 'Star Wars' Trilogy",
+    "description": "This documentary chronicles the making of the original Star Wars trilogy from start to finish. We get some background on George Lucas' start in the business and then continue with the making of Star Wars (1977), Star Wars: Episode V - The Empire Strikes Back (1980) and Star Wars: Episode VI - Return of the Jedi (1983). The visual/special effects and financial problems are explained as well as casting, editing, scoring and releasing the films with tons of archival footage and interviews with plenty of cast & crew members.",
+    "directors_names": [
+      "Kevin Burns",
+      "Edith Becker"
+    ],
+    "actors_names": [
+      "Steven Spielberg",
+      "Robert Clotworthy",
+      "Walter Cronkite",
+      "George Lucas"
+    ],
+    "writers_names": [
+      "Ed Singer"
+    ],
+    "directors": [
+      {
+        "id": "0ada5d03-5965-42b2-955e-689089745838",
+        "name": "Kevin Burns"
+      },
+      {
+        "id": "5951e7d3-08b9-464a-8ab1-30a45995e2af",
+        "name": "Edith Becker"
+      }
+    ],
+    "actors": [
+      {
+        "id": "2bb40ece-1918-4cd3-86e6-195067d00d2e",
+        "name": "Steven Spielberg"
+      },
+      {
+        "id": "667db3e6-6919-456d-8e60-f1971c147ea8",
+        "name": "Robert Clotworthy"
+      },
+      {
+        "id": "79177f0e-e4f6-48e8-8067-559289cfe34b",
+        "name": "Walter Cronkite"
+      },
+      {
+        "id": "81bf1c0e-fa7c-423f-b6d5-c676dca68dc9",
+        "name": "George Lucas"
+      }
+    ],
+    "writers": [
+      {
+        "id": "f95ec044-b904-4743-ba15-f30983bf34f7",
+        "name": "Ed Singer"
+      }
+    ]
+  },
+  {
+    "id": "fe4c79b9-2240-467e-8bd7-0cb8012b0759",
+    "imdb_rating": 7.5,
+    "imdb_tconst": "tt0295414",
+    "filmtype": "tvMovie",
+    "genre": [
+      "Documentary"
+    ],
+    "title": "The Making of 'Star Wars'",
+    "description": "Ever wonder how they ever managed to make a movie like Star Wars? Well, bickering droid duo C-3PO and R2-D2 host this tour of the mind of creator George Lucas and what inspired him to make the movie. Even interviewed are the cast and crew, even features scenes of when C-3PO, R2-D2, and Darth Vader planted their footprints (or in R2's case, tread-prints) into cement. Also discussed is Star Wars mania, how fans loved the movie, collected the merchandise and danced the disco music. Also shown are behind-the-scenes looks at the movie, as well as how difficult each effect was in doing since they didn't have the convenience of computer animation back then.",
+    "directors_names": [
+      "Robert Guenette"
+    ],
+    "actors_names": [
+      "Anthony Daniels",
+      "Mark Hamill",
+      "William Conrad",
+      "George Lucas"
+    ],
+    "writers_names": [
+      "Richard Schickel"
+    ],
+    "directors": [
+      {
+        "id": "935bbf1d-fbd0-4c41-ab20-c6e24ad9a630",
+        "name": "Robert Guenette"
+      }
+    ],
+    "actors": [
+      {
+        "id": "65745ae2-bff6-4c17-89c8-fdfad8687087",
+        "name": "Anthony Daniels"
+      },
+      {
+        "id": "65ac6003-03c4-4d6c-8877-2209ba4a1ddc",
+        "name": "Mark Hamill"
+      },
+      {
+        "id": "7c22544b-5238-4ce8-a365-877188765bfa",
+        "name": "William Conrad"
+      },
+      {
+        "id": "81bf1c0e-fa7c-423f-b6d5-c676dca68dc9",
+        "name": "George Lucas"
+      }
+    ],
+    "writers": [
+      {
+        "id": "87670a6a-db7e-41fb-acec-eb599f625671",
+        "name": "Richard Schickel"
+      }
+    ]
+  }
+]
