@@ -1,7 +1,5 @@
 import json
-from typing import List,Optional
-
-from loguru import logger
+from typing import List, Optional
 
 from models.elastic import ESFilterGenre, ESQuery
 from models.film import SFilm
@@ -35,7 +33,6 @@ class Movie(AbstractMovie):
             page_size=page_size, page_number=page_number,
             sort=sort, body=genre_filter
         )
-        logger.info(json.dumps(movies))
         movies = [SFilm(**movie ) for movie in movies]
         return movies
     
