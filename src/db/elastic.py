@@ -54,4 +54,4 @@ class ElasticStorage(AbstractStorage):
             from_=from_,
             body=body
         )
-        return docs['hits']['hits']
+        return [doc['_source'] for doc in docs['hits']['hits']]
