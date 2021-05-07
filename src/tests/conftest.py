@@ -100,15 +100,59 @@ async def datastore(storage, cache, conf):
     logger.info('end setup datastore')
 
 
-@pytest.fixture
-async def film_service(redis, elastic):
-    logger.info('start film_service')
-    film_service: FilmService = FilmService(redis, elastic)
-    return film_service
+@pytest.fixture(scope='session', autouse=True)
+async def setup_films(conf, elastic, read_json_data):
+    logger.info('setup films')
+    datas = await read_json_data('es_films_data.json')
+    body = ''
+    for data in datas:
+        index = {'index': {'_index': conf.ELASTIC_INDEX, '_id': data['id']}}
+        body += json.dumps(index) + '\n' + json.dumps(data) + '\n'
+    results = await elastic.bulk(body, refresh='wait_for')
+    logger.info(results)
+    yield datas
+    logger.info('films after loop')
+    for data in datas:
+        await elastic.delete(index=conf.ELASTIC_INDEX, id=data['id'])
+    logger.info('films index cleared')
+
+
+@pytest.fixture(scope='session', autouse=True)
+async def setup_genres(conf, elastic, read_json_data):
+    logger.info('setup genres')
+    datas = await read_json_data('es_genres_data.json')
+    body = ''
+    for data in datas:
+        index = {'index': {'_index': conf.ELASTIC_GENRE_INDEX, '_id': data['id']}}
+        body += json.dumps(index) + '\n' + json.dumps(data) + '\n'
+    results = await elastic.bulk(body, refresh='wait_for')
+    logger.info(results)
+    yield datas
+    logger.info('genres after loop')
+    for data in datas:
+        await elastic.delete(index=conf.ELASTIC_GENRE_INDEX, id=data['id'])
+    logger.info('index cleared')
+
+
+@pytest.fixture(scope='session', autouse=True)
+async def setup_persons(conf, elastic, read_json_data):
+    logger.info('setup persons')
+    datas = await read_json_data('es_persons_data.json')
+    body = ''
+    for data in datas:
+        index = {'index': {'_index': conf.ELASTIC_PERSON_INDEX, '_id': data['id']}}
+        body += json.dumps(index) + '\n' + json.dumps(data) + '\n'
+    results = await elastic.bulk(body, refresh='wait_for')
+    logger.info(results)
+    yield datas
+    logger.info('persons after loop')
+    for data in datas:
+        await elastic.delete(index=conf.ELASTIC_PERSON_INDEX, id=data['id'])
+    logger.info('person index cleared')
 
 
 # https://stackoverflow.com/questions/50329629/how-to-access-a-json-filetest-data-like-config-json-in-conftest-py
-@pytest.fixture
+@pytest.fixture(scope='session')
 async def read_json_data(request):
     async def inner(datafilename: str) -> dict:
         jsonpath = Path(Path.cwd(), TEST_JSON_PATH, datafilename)
@@ -116,3 +160,10 @@ async def read_json_data(request):
             data = json.load(fp)
         return data
     return inner
+
+
+@pytest.fixture
+async def film_service(redis, elastic):
+    logger.info('start film_service')
+    film_service: FilmService = FilmService(redis, elastic)
+    return film_service

@@ -9,23 +9,6 @@ from models.film import SFilm
 from services import movie as mov_db
 
 
-@pytest.fixture(autouse=True)
-async def setup_films(conf, elastic, read_json_data):
-    logger.info('setup films')
-    datas = await read_json_data('es_films_data.json')
-    body = ''
-    for data in datas:
-        index = {'index': {'_index': conf.ELASTIC_INDEX, '_id': data['id']}}
-        body += json.dumps(index) + '\n' + json.dumps(data) + '\n'
-    results = await elastic.bulk(body, refresh='wait_for')
-    logger.info(results)
-    yield datas
-    logger.info('films after loop')
-    for data in datas:
-        await elastic.delete(index=conf.ELASTIC_INDEX, id=data['id'])
-    logger.info('films index cleared')
-
-
 @pytest.fixture(scope='module')
 async def movie(conf, datastore):
     logger.info('setup movie class')

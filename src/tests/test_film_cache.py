@@ -10,12 +10,9 @@ from services.cache import Cache
 
 
 @pytest.mark.asyncio
-async def test_old_film_cache(redis: Redis, read_json_data):
+async def test_old_film_cache(redis, cache, read_json_data):
     logger.info('test old data cache film service')
     logger.info('test cache film service')
-    redis_db.redis = redis
-    redis_storage = redis_db.RedisStorage()
-    cache = Cache(redis_storage)
     data = await read_json_data('cache_test.json')
     assert cache.genkey(data['testkey']['input']) == data['testkey']['output']
     await cache.put_data(data['storagetest']['text'], data['storagetest']['expire'], data['storagetest']['key'])
@@ -36,11 +33,8 @@ async def test_cache_genkey(read_json_data):
 
 
 @pytest.mark.asyncio
-async def test_storage(redis: Redis, read_json_data):
+async def test_storage(redis, cache, read_json_data):
     logger.info('test redis storage')
-    redis_db.redis = redis
-    redis_storage = redis_db.RedisStorage()
-    cache = Cache(redis_storage)
     data = await read_json_data('cache_test.json')
     data = data['storagetest']
     await redis.delete(cache.genkey(data['key']))
