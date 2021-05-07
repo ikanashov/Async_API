@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Any, List, Optional
 
-from models.film import SFilm
+from models.film import SFilm, SFilmGenre
 
 
 # done
@@ -27,6 +27,25 @@ class AbstractMovie(ABC):
         self,
         query: str, page_size: int, page_number: int
     ) -> Optional[List[SFilm]]:
+        pass
+
+
+# done
+class AbstractGenre(ABC):
+    @abstractmethod
+    def set_genre_index(self, genreindex: str) -> None:
+        pass
+
+    @abstractmethod
+    def get_genre_by_id(self, genre_id: str) -> Optional[SFilmGenre]:
+        pass
+
+    @abstractmethod
+    def get_all_genre(
+        self,
+        sort: str,
+        page_size: int, page_number: int
+    ) -> Optional[List[SFilmGenre]]:
         pass
 
 
