@@ -7,6 +7,10 @@ from models.film import SFilm
 # done
 class AbstractMovie(ABC):
     @abstractmethod
+    def set_movie_index(self, movieindex: str) -> None:
+        pass
+
+    @abstractmethod
     def get_film_by_id(self, film_id: str) -> Optional[SFilm]:
         pass
 
