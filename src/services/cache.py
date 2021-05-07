@@ -32,5 +32,6 @@ class Cache(AbstractCache):
 
 cache: Cache = None
 
+
 async def get_cache() -> Cache:
     return cache

@@ -9,7 +9,6 @@ from models.film import SFilm
 from services import movie as mov_db
 
 
-
 @pytest.fixture(autouse=True)
 async def setup_films(conf, elastic, read_json_data):
     logger.info('setup films')
