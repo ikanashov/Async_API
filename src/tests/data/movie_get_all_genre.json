@@ -1,0 +1,42 @@
+[
+    {
+        "name" : "get_all_default",
+        "parameter" : {
+            "page_size": 50,
+            "page_number": 1,
+            "sort": "name:asc"
+        },
+        "lenght" : "31",
+        "body" : "get_all_default_body.json"
+    },
+    {
+        "name" : "get_all_sort_test_4",
+        "parameter" : {
+            "page_size": 50,
+            "page_number": 1,
+            "sort": "name:desc"
+        },
+        "lenght" : "31",
+        "body" : "get_all_sort_desc.json"
+    },
+    {
+        "name" : "get_all_page_size_1",
+        "parameter" : {
+            "page_size": 1,
+            "page_number": 1,
+            "sort": "name:asc"
+        },
+        "lenght" : "1",
+        "body" : "get_all_page_size_1.json"
+    },
+    {
+        "name" : "get_all_page_number_85",
+        "parameter" : {
+            "page_size": 50,
+            "page_number": 85,
+            "sort": "name:asc"
+        },
+        "lenght" : "0",
+        "body" : "empty.json"
+    }
+]

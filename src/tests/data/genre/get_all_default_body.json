@@ -1,0 +1,157 @@
+[
+  {
+    "uuid": "0bff26e2-700a-43e7-9ea4-ab01003c4784",
+    "name": "Action",
+    "description": "Action"
+  },
+  {
+    "id": "f53ed0c6-166d-4ab1-8b76-607087f64c27",
+    "name": "ActionTest",
+    "description": "Action for test"
+  },  
+  {
+    "uuid": "a400f878-3a9d-406c-aab9-8fa478bb68a1",
+    "name": "Adventure",
+    "description": "Adventure"
+  },
+  {
+    "id": "44fcb83d-89db-4595-a5e7-6690a24140fd",
+    "name": "AdventureTest",
+    "description": "Adventure for test"
+  },
+  {
+    "uuid": "c58fbf05-0f1e-4599-8ae4-01bbdc89afb0",
+    "name": "Animation",
+    "description": "Animation"
+  },
+  {
+    "uuid": "e01f769c-c5f2-4b51-94c2-3939fe579b6e",
+    "name": "Biography",
+    "description": "Biography"
+  },
+  {
+    "uuid": "20000338-339d-468b-a07a-df1a40f694df",
+    "name": "Comedy",
+    "description": "Comedy"
+  },
+  {
+    "uuid": "5701a8ce-4b7f-4dcf-8e4d-99bc144de5ce",
+    "name": "Crime",
+    "description": "Crime"
+  },
+  {
+    "uuid": "5f45dd67-f993-4cb7-95f4-a05c3bd356f6",
+    "name": "Documentary",
+    "description": "Documentary"
+  },
+  {
+    "uuid": "ea01616b-2080-46dc-aa0c-ee5a7fcea368",
+    "name": "Drama",
+    "description": "Drama"
+  },
+  {
+    "uuid": "fea9ef9f-d4ba-418e-970d-e84ee8176a93",
+    "name": "Family",
+    "description": "Family"
+  },
+  {
+    "uuid": "b61cce86-5ad4-450e-9f59-4779eb317aa9",
+    "name": "Fantasy",
+    "description": "Fantasy"
+  },
+  {
+    "id": "31cc909a-51c3-4487-939c-9157aa5fba9a",
+    "name": "FantasyTest",
+    "description": "Fantasy for test"
+  },
+  {
+    "uuid": "b5e9330e-7a02-4f29-bcf0-21bacd269d22",
+    "name": "Game-Show",
+    "description": "Game-Show"
+  },
+  {
+    "uuid": "583deddf-0ef1-414e-b479-a9084f677bcb",
+    "name": "History",
+    "description": "History"
+  },
+  {
+    "uuid": "92ae2dcf-c268-463d-bebf-a69d83ccce7f",
+    "name": "Horror",
+    "description": "Horror"
+  },
+  {
+    "uuid": "41b82896-caee-493f-b9ea-9a6fcb8e5301",
+    "name": "Music",
+    "description": "Music"
+  },
+  {
+    "uuid": "05e4c05d-e148-479d-aa1c-c3faabd0a867",
+    "name": "Musical",
+    "description": "Musical"
+  },
+  {
+    "uuid": "b0decdff-ad08-4c16-9a78-f6881a6cd9d3",
+    "name": "Mystery",
+    "description": "Mystery"
+  },
+  {
+    "uuid": "a9b628f3-8438-4fdb-98e4-177102e36320",
+    "name": "News",
+    "description": "News"
+  },
+  {
+    "uuid": "0e76f7b9-f974-49c8-a61c-0a98986f25c2",
+    "name": "Philosophical",
+    "description": ""
+  },
+  {
+    "uuid": "47aa154a-dc3f-44b8-9f96-a3baf562709c",
+    "name": "Reality-TV",
+    "description": "Reality-TV"
+  },
+  {
+    "uuid": "4c40e64c-2a72-4aac-b22e-feaef9281f9f",
+    "name": "Romance",
+    "description": "Romance"
+  },
+  {
+    "uuid": "301e7174-1948-4ab0-bb3f-ea8a6069a6ee",
+    "name": "Sci-Fi",
+    "description": "Sci-Fi"
+  },
+  {
+    "uuid": "5bd77168-c5b1-4c9d-bd1f-1193582d9e66",
+    "name": "Science fiction",
+    "description": "Advanced science and technology, space exploration, time travel, parallel universes, and extraterrestrial life."
+  },
+  {
+    "uuid": "35b92298-8534-4ba5-baef-9b8abaa2c347",
+    "name": "Short",
+    "description": "Short"
+  },
+  {
+    "uuid": "2a3a0c4b-f681-47e9-bac7-79ce276e7d1b",
+    "name": "Sport",
+    "description": "Sport"
+  },
+  {
+    "uuid": "77274242-a612-41ad-b2c2-cf40f30d0a2a",
+    "name": "Talk-Show",
+    "description": "Talk-Show"
+  },
+  {
+    "uuid": "37cc8c6c-5028-4225-a28f-1a93ef1ae337",
+    "name": "Thriller",
+    "description": "Thriller"
+  },
+  {
+    "uuid": "71a4a4e5-948a-4a37-8052-efff2978ff74",
+    "name": "War",
+    "description": "War 1"
+  },
+  {
+    "uuid": "febaec3c-c6fa-444c-831c-87c91a574a8a",
+    "name": "Western",
+    "description": "Western"
+  }
+]
