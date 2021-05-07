@@ -1,26 +1,17 @@
 import json
 
-from aioredis.commands import Redis
-
-from elasticsearch import AsyncElasticsearch
-
 from loguru import logger
 
 import pytest
 
-
-from db import elastic as es_db
-from db import redis as redis_db
-
 from models.film import SFilm
 
 from services import movie as mov_db
-from services.cache import Cache
-from services.datastore import DataStore
+
 
 
 @pytest.fixture(autouse=True)
-async def setup_films(conf, elastic: AsyncElasticsearch, read_json_data):
+async def setup_films(conf, elastic, read_json_data):
     logger.info('setup films')
     datas = await read_json_data('es_films_data.json')
     body = ''
@@ -37,28 +28,9 @@ async def setup_films(conf, elastic: AsyncElasticsearch, read_json_data):
 
 
 @pytest.fixture(scope='module')
-async def storage(elastic):
-    logger.info('setup storage')
-    es_db.es = elastic
-    storage = es_db.ElasticStorage()
-    yield storage
-    logger.info('end setup storage')
-
-
-@pytest.fixture(scope='module')
-async def cache(redis):
-    logger.info('setup cache')
-    redis_db.redis = redis
-    redis_storage = redis_db.RedisStorage()
-    cache = Cache(redis_storage)
-    yield cache
-    logger.info('end setup cache')
-
-
-@pytest.fixture(scope='module')
-async def movie(conf, storage: es_db.ElasticStorage(), cache: Cache):
+async def movie(conf, datastore):
     logger.info('setup movie class')
-    mov_db.datastore = DataStore(storage, cache, conf.CLIENTAPI_CACHE_EXPIRE)
+    mov_db.datastore = datastore
     movie = mov_db.Movie()
     await movie.set_movie_index(conf.ELASTIC_INDEX)
     yield movie
@@ -66,7 +38,7 @@ async def movie(conf, storage: es_db.ElasticStorage(), cache: Cache):
 
 
 @pytest.mark.asyncio
-async def test_film_Movie_Class(conf, movie: mov_db.Movie, cache: Cache, redis, read_json_data):
+async def test_film_Movie_Class(conf, movie: mov_db.Movie, cache, redis, read_json_data):
     logger.info('test film movie class')
     datas = await read_json_data('es_films_data.json')
     for data in datas:

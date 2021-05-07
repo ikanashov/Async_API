@@ -12,11 +12,15 @@ from loguru import logger
 
 import pytest
 
-
 # this need to add script start dir to import path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 from core.config import config
 
+from db import elastic as es_db
+from db import redis as redis_db
+
+from services.cache import Cache
+from services.datastore import DataStore
 from services.film import FilmService
 
 
@@ -67,6 +71,33 @@ async def elastic():
     yield elastic
     logger.info('elastic after yield')
     await elastic.close()
+
+
+@pytest.fixture(scope='session')
+async def storage(elastic):
+    logger.info('setup storage')
+    es_db.es = elastic
+    storage = es_db.ElasticStorage()
+    yield storage
+    logger.info('end setup storage')
+
+
+@pytest.fixture(scope='session')
+async def cache(redis):
+    logger.info('setup cache')
+    redis_db.redis = redis
+    redis_storage = redis_db.RedisStorage()
+    cache = Cache(redis_storage)
+    yield cache
+    logger.info('end setup cache')
+
+
+@pytest.fixture(scope='session')
+async def datastore(storage, cache, conf):
+    logger.info('setup datastor')
+    datastore = DataStore(storage, cache, conf.CLIENTAPI_CACHE_EXPIRE)
+    yield datastore
+    logger.info('end setup datastore')
 
 
 @pytest.fixture
