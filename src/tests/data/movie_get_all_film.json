@@ -57,12 +57,12 @@
     {
         "name" : "get_all_page_size_1000",
         "parameter" : {
-            "page_size": 1000,
+            "page_size": 2000,
             "page_number": 1,
             "sort": "imdb_rating:asc",
             "genre_filter": null
         },
-        "lenght" : "999",
+        "lenght" : "1004",
         "body" : ""
     },
     {
