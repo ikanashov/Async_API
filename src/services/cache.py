@@ -28,3 +28,9 @@ class Cache(AbstractCache):
         key = self.genkey(*args, **kwargs)
         data = orjson.dumps(data)
         await self.storage.put_data(key, data, expire)
+
+
+cache: Cache = None
+
+async def get_cache() -> Cache:
+    return cache
