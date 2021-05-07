@@ -1,10 +1,6 @@
-from aioredis import Redis
-
 from loguru import logger
 
 import pytest
-
-from db import redis as redis_db
 
 from services.cache import Cache
 
