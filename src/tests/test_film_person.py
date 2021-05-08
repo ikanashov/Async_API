@@ -43,20 +43,20 @@ async def test_films_search_Person_Class(person: person_db.Person, read_json_dat
         logger.info(f"{test['name']} passed")
     logger.info('end test films search person')
 
-"""
+
 @pytest.mark.asyncio
-async def test_films_get_all_film_Movie_Class(movie: mov_db.Movie, read_json_data):
-    logger.info('test films get_all movie')
-    testsconfig = await read_json_data('movie_get_all_film.json')
+async def test_films_get_all_person_Person_Class(person: person_db.Person, read_json_data):
+    logger.info('test films get_all person')
+    testsconfig = await read_json_data('person_get_all.json')
     for test in testsconfig:
         logger.info(f"start test : {test['name']} ")
-        docs = await movie.get_all_film(**test['parameter'])
+        docs = await person.get_all_person(**test['parameter'])
         assert len(docs) == int(test['lenght'])
         if test['body'] != '':
-            assert docs == [SFilm(**doc) for doc in await read_json_data('movie/' + test['body'])]
+            assert docs == [SFilmPersonDetail(**doc) for doc in await read_json_data('person/' + test['body'])]
         logger.info(f"{test['name']} passed")
-    logger.info('end test films get_all movie')
-"""
+    logger.info('end test films get_all person')
+
 
 @pytest.mark.asyncio
 async def test_films_bad_parameter_Person_class(person: person_db.Person):
