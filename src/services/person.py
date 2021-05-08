@@ -1,4 +1,8 @@
-from typing import List, Optional
+import json
+
+from typing import Dict, List, Optional
+
+from loguru import logger
 
 from models.elastic import ESFilterGenre, ESQuery
 from models.film import SFilmPersonDetail
@@ -23,8 +27,19 @@ class Person(AbstractPerson):
     async def get_all_person(self, sort: str, page_size: int, page_number: int) -> Optional[List[SFilmPersonDetail]]:
         return super().get_all_person(sort, page_size, page_number)
 
-    async def search_person(self, query: str, page_size: int, page_number: int) -> Optional[List[SFilmPersonDetail]]:
-        return super().search_person(query, page_size, page_number)
+    async def search_person(
+        self,
+        query: str, page_size: int, page_number: int
+    ) -> Optional[List[SFilmPersonDetail]]:
+        query_body: Dict = {'query': {'match': {'full_name': {'query': query, 'fuzziness': 'AUTO'}}}}
+        body = json.dumps(query_body)        
+        persons = await datastore.search(
+            self.personindex,
+            page_size=page_size, page_number=page_number,
+            sort=None, body=body
+        )
+        persons = [SFilmPersonDetail(**person) for person in persons]
+        return persons
 
 """
     async def get_all_film(
@@ -40,19 +55,6 @@ class Person(AbstractPerson):
             self.movieindex,
             page_size=page_size, page_number=page_number,
             sort=sort, body=genre_filter
-        )
-        movies = [SFilm(**movie) for movie in movies]
-        return movies
-
-    async def search_film(
-        self,
-        query: str, page_size: int, page_number: int
-    ) -> Optional[List[SFilm]]:
-        body = ESQuery(query={'multi_match': {'query': query}}).json(by_alias=True)
-        movies = await datastore.search(
-            self.movieindex,
-            page_size=page_size, page_number=page_number,
-            sort=None, body=body
         )
         movies = [SFilm(**movie) for movie in movies]
         return movies

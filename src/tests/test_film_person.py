@@ -29,21 +29,21 @@ async def test_film_Movie_Class(conf, person: person_db.Person, cache, redis, re
         assert doc == SFilmPersonDetail(**cache_doc)
     logger.info('end test film person class')
 
-"""
+
 @pytest.mark.asyncio
-async def test_films_search_Movie_Class(movie: mov_db.Movie, read_json_data):
-    logger.info('test films search movie')
-    testsconfig = await read_json_data('movie_search.json')
+async def test_films_search_Person_Class(person: person_db.Person, read_json_data):
+    logger.info('test films search person')
+    testsconfig = await read_json_data('person_search.json')
     for test in testsconfig:
         logger.info(f"start test : {test['name']} ")
-        docs = await movie.search_film(**test['parameter'])
+        docs = await person.search_person(**test['parameter'])
         assert len(docs) == int(test['lenght'])
         if test['body'] != '':
-            assert docs == [SFilm(**doc) for doc in await read_json_data('movie/' + test['body'])]
+            assert docs == [SFilmPersonDetail(**doc) for doc in await read_json_data('person/' + test['body'])]
         logger.info(f"{test['name']} passed")
-    logger.info('end test films search movie')
+    logger.info('end test films search person')
 
-
+"""
 @pytest.mark.asyncio
 async def test_films_get_all_film_Movie_Class(movie: mov_db.Movie, read_json_data):
     logger.info('test films get_all movie')

@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "search_lucas",
+        "parameter" : {
+            "query" : "lucas",
+            "page_size": 50,
+            "page_number": 1
+        },
+        "lenght" : "11",
+        "body" : "search_lucas.json"
+    },
+    {
+        "name" : "search_jhon_doe",
+        "parameter" : {
+            "query" : "jhon",
+            "page_size": 50,
+            "page_number": 1
+        },
+        "lenght" : "50",
+        "body" : "search_jhon_doe.json"
+    },
+    {
+        "name" : "search_tom_with_page",
+        "parameter" : {
+            "query" : "tom",
+            "page_size": 6,
+            "page_number": 7
+        },
+        "lenght" : "6",
+        "body" : "search_tom_with_page.json"
+    }
+]
