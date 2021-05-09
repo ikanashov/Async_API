@@ -55,3 +55,7 @@ class ElasticStorage(AbstractStorage):
             body=body
         )
         return [doc['_source'] for doc in docs['hits']['hits']]
+
+async def get_elastic_storage() -> ElasticStorage:
+    elasticstorage = ElasticStorage()
+    return elasticstorage
