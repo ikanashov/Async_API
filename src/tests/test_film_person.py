@@ -4,21 +4,20 @@ import pytest
 
 from models.film import SFilmPersonDetail
 
-from services import person as person_db
+from services.person import Person
 
 
 @pytest.fixture(scope='module')
 async def person(conf, datastore):
     logger.info('setup person class')
-    person_db.datastore = datastore
-    person = person_db.Person()
+    person = Person(datastore)
     person.set_person_index(conf.ELASTIC_PERSON_INDEX)
     yield person
     logger.info('end setup person class')
 
 
 @pytest.mark.asyncio
-async def test_film_Movie_Class(conf, person: person_db.Person, cache, redis, read_json_data):
+async def test_film_Person_Class(conf, person: Person, cache, redis, read_json_data):
     logger.info('test film person class')
     datas = await read_json_data('es_persons_data.json')
     for data in datas:
@@ -31,7 +30,7 @@ async def test_film_Movie_Class(conf, person: person_db.Person, cache, redis, re
 
 
 @pytest.mark.asyncio
-async def test_films_search_Person_Class(person: person_db.Person, read_json_data):
+async def test_films_search_Person_Class(person: Person, read_json_data):
     logger.info('test films search person')
     testsconfig = await read_json_data('person_search.json')
     for test in testsconfig:
@@ -45,7 +44,7 @@ async def test_films_search_Person_Class(person: person_db.Person, read_json_dat
 
 
 @pytest.mark.asyncio
-async def test_films_get_all_person_Person_Class(person: person_db.Person, read_json_data):
+async def test_films_get_all_person_Person_Class(person: Person, read_json_data):
     logger.info('test films get_all person')
     testsconfig = await read_json_data('person_get_all.json')
     for test in testsconfig:
@@ -59,7 +58,7 @@ async def test_films_get_all_person_Person_Class(person: person_db.Person, read_
 
 
 @pytest.mark.asyncio
-async def test_films_bad_parameter_Person_class(person: person_db.Person):
+async def test_films_bad_parameter_Person_class(person: Person):
     logger.info('start test bad parameter')
     assert await person.get_person_by_id('not_found') is None
     try:

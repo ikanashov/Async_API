@@ -4,21 +4,20 @@ import pytest
 
 from models.film import SFilm
 
-from services import movie as mov_db
+from services.movie import Movie
 
 
 @pytest.fixture(scope='module')
 async def movie(conf, datastore):
     logger.info('setup movie class')
-    mov_db.datastore = datastore
-    movie = mov_db.Movie()
+    movie = Movie(datastore)
     movie.set_movie_index(conf.ELASTIC_INDEX)
     yield movie
     logger.info('end setup movie class')
 
 
 @pytest.mark.asyncio
-async def test_film_Movie_Class(conf, movie: mov_db.Movie, cache, redis, read_json_data):
+async def test_film_Movie_Class(conf, movie: Movie, cache, redis, read_json_data):
     logger.info('test film movie class')
     datas = await read_json_data('es_films_data.json')
     for data in datas:
@@ -31,7 +30,7 @@ async def test_film_Movie_Class(conf, movie: mov_db.Movie, cache, redis, read_js
 
 
 @pytest.mark.asyncio
-async def test_films_search_Movie_Class(movie: mov_db.Movie, read_json_data):
+async def test_films_search_Movie_Class(movie: Movie, read_json_data):
     logger.info('test films search movie')
     testsconfig = await read_json_data('movie_search.json')
     for test in testsconfig:
@@ -45,7 +44,7 @@ async def test_films_search_Movie_Class(movie: mov_db.Movie, read_json_data):
 
 
 @pytest.mark.asyncio
-async def test_films_get_all_film_Movie_Class(movie: mov_db.Movie, read_json_data):
+async def test_films_get_all_film_Movie_Class(movie: Movie, read_json_data):
     logger.info('test films get_all movie')
     testsconfig = await read_json_data('movie_get_all_film.json')
     for test in testsconfig:
@@ -59,7 +58,7 @@ async def test_films_get_all_film_Movie_Class(movie: mov_db.Movie, read_json_dat
 
 
 @pytest.mark.asyncio
-async def test_films_bad_parameter_Movie_class(movie: mov_db.Movie):
+async def test_films_bad_parameter_Movie_class(movie: Movie):
     logger.info('start test bad parameter')
     assert await movie.get_film_by_id('not_found') is None
     try:

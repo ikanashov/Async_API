@@ -112,7 +112,7 @@ async def setup_films(conf, elastic, read_json_data):
     yield datas
     logger.info('films after loop')
     for data in datas:
-        await elastic.delete(index=conf.ELASTIC_INDEX, id=data['id'])
+        await elastic.delete(index=conf.ELASTIC_INDEX, id=data['id'], refresh='wait_for')
     logger.info('films index cleared')
 
 
@@ -129,7 +129,7 @@ async def setup_genres(conf, elastic, read_json_data):
     yield datas
     logger.info('genres after loop')
     for data in datas:
-        await elastic.delete(index=conf.ELASTIC_GENRE_INDEX, id=data['id'])
+        await elastic.delete(index=conf.ELASTIC_GENRE_INDEX, id=data['id'], refresh='wait_for')
     logger.info('index cleared')
 
 
@@ -146,7 +146,7 @@ async def setup_persons(conf, elastic, read_json_data):
     yield datas
     logger.info('persons after loop')
     for data in datas:
-        await elastic.delete(index=conf.ELASTIC_PERSON_INDEX, id=data['id'])
+        await elastic.delete(index=conf.ELASTIC_PERSON_INDEX, id=data['id'], refresh='wait_for')
     logger.info('person index cleared')
 
 

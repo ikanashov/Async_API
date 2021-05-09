@@ -4,21 +4,20 @@ import pytest
 
 from models.film import SFilmGenre
 
-from services import genre as genre_db
+from services.genre import Genre
 
 
 @pytest.fixture(scope='module')
 async def genre(conf, datastore):
     logger.info('setup genre class')
-    genre_db.datastore = datastore
-    genre = genre_db.Genre()
+    genre = Genre(datastore)
     genre.set_genre_index(conf.ELASTIC_GENRE_INDEX)
     yield genre
     logger.info('end setup genre class')
 
 
 @pytest.mark.asyncio
-async def test_film_Genre_Class(conf, genre: genre_db.Genre, cache, redis, read_json_data):
+async def test_film_Genre_Class(conf, genre: Genre, cache, redis, read_json_data):
     logger.info('test film genre class')
     datas = await read_json_data('es_genres_data.json')
     for data in datas:
@@ -31,7 +30,7 @@ async def test_film_Genre_Class(conf, genre: genre_db.Genre, cache, redis, read_
 
 
 @pytest.mark.asyncio
-async def test_film_get_all_genre_Genre_Class(genre: genre_db.Genre, read_json_data):
+async def test_film_get_all_genre_Genre_Class(genre: Genre, read_json_data):
     logger.info('test film get_all genre')
     testsconfig = await read_json_data('movie_get_all_genre.json')
     for test in testsconfig:
@@ -45,7 +44,7 @@ async def test_film_get_all_genre_Genre_Class(genre: genre_db.Genre, read_json_d
 
 
 @pytest.mark.asyncio
-async def test_films_bad_parameter_Genre_class(genre: genre_db.Genre):
+async def test_films_bad_parameter_Genre_class(genre: Genre):
     logger.info('start test bad parameter')
     assert await genre.get_genre_by_id('not_found') is None
     try:
