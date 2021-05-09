@@ -1,7 +1,12 @@
 from typing import Optional
 
+from core.config import config
+
+from db.elastic import get_elastic_storage
+
 from models.interface import AbstractCache, AbstractDataStore, AbstractStorage
 
+from services.cache import get_cache
 
 class DataStore(AbstractDataStore):
     def __init__(self, storage: AbstractStorage, cache: AbstractCache, expire: int) -> None:
@@ -45,3 +50,10 @@ class DataStore(AbstractDataStore):
                     sort=sort, body=body
                 )
             return datas
+
+
+async def get_data_store() -> DataStore:
+    storage = await get_elastic_storage()
+    cache = await get_cache()
+    datastore = DataStore(storage, cache, config.CLIENTAPI_CACHE_EXPIRE)
+    return datastore
