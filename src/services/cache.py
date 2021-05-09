@@ -3,6 +3,8 @@ from typing import Optional
 
 import orjson
 
+from db.redis import get_redis_storage
+
 from models.interface import AbstractCache, AbstractCacheStorage
 
 
@@ -30,8 +32,6 @@ class Cache(AbstractCache):
         await self.storage.put_data(key, data, expire)
 
 
-cache: Cache = None
-
-
 async def get_cache() -> Cache:
+    cache = Cache(storage = await get_redis_storage())
     return cache

@@ -40,3 +40,8 @@ class RedisStorage(AbstractCacheStorage):
 
     async def put_data(self, key: str, data: str, expire: int):
         await self.redis.set(key, data, expire=expire)
+
+
+async def get_redis_storage() -> RedisStorage:
+    redis_storage = RedisStorage()
+    return redis_storage
