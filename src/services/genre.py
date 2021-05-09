@@ -11,7 +11,7 @@ class Genre(AbstractGenre):
     def __init__(self) -> None:
         self.datastore = datastore
 
-    async def set_genre_index(self, genreindex: str) -> None:
+    def set_genre_index(self, genreindex: str) -> None:
         self.genreindex = genreindex
 
     async def get_genre_by_id(self, genre_id: str) -> Optional[SFilmGenre]:

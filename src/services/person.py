@@ -15,7 +15,7 @@ class Person(AbstractPerson):
     def __init__(self) -> None:
         self.datastore = datastore
 
-    async def set_person_index(self, personindex: str) -> None:
+    def set_person_index(self, personindex: str) -> None:
         self.personindex = personindex
 
     async def get_person_by_id(self, person_id: str) -> Optional[SFilmPersonDetail]:

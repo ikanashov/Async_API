@@ -12,7 +12,7 @@ class Movie(AbstractMovie):
     def __init__(self) -> None:
         self.datastore = datastore
 
-    async def set_movie_index(self, movieindex: str) -> None:
+    def set_movie_index(self, movieindex: str) -> None:
         self.movieindex = movieindex
 
     async def get_film_by_id(self, film_id: str) -> Optional[SFilm]:

@@ -12,7 +12,7 @@ async def genre(conf, datastore):
     logger.info('setup genre class')
     genre_db.datastore = datastore
     genre = genre_db.Genre()
-    await genre.set_genre_index(conf.ELASTIC_GENRE_INDEX)
+    genre.set_genre_index(conf.ELASTIC_GENRE_INDEX)
     yield genre
     logger.info('end setup genre class')
 

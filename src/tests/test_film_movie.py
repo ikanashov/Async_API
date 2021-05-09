@@ -12,7 +12,7 @@ async def movie(conf, datastore):
     logger.info('setup movie class')
     mov_db.datastore = datastore
     movie = mov_db.Movie()
-    await movie.set_movie_index(conf.ELASTIC_INDEX)
+    movie.set_movie_index(conf.ELASTIC_INDEX)
     yield movie
     logger.info('end setup movie class')
 

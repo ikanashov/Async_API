@@ -12,7 +12,7 @@ async def person(conf, datastore):
     logger.info('setup person class')
     person_db.datastore = datastore
     person = person_db.Person()
-    await person.set_person_index(conf.ELASTIC_PERSON_INDEX)
+    person.set_person_index(conf.ELASTIC_PERSON_INDEX)
     yield person
     logger.info('end setup person class')
 
