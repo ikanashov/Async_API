@@ -21,7 +21,6 @@ from db import redis as redis_db
 
 from services.cache import Cache
 from services.datastore import DataStore
-from services.film import FilmService
 
 
 TEST_JSON_PATH = 'tests/data/'
@@ -160,10 +159,3 @@ async def read_json_data(request):
             data = json.load(fp)
         return data
     return inner
-
-
-@pytest.fixture
-async def film_service(redis, elastic):
-    logger.info('start film_service')
-    film_service: FilmService = FilmService(redis, elastic)
-    return film_service

@@ -2,42 +2,6 @@ from loguru import logger
 
 import pytest
 
-from models.film import SFilmGenre
-
-from services.film import FilmService
-
-
-@pytest.mark.asyncio
-async def test_genre_elastic(film_service: FilmService, read_json_data):
-    logger.info('test get single data from genres index elastic')
-    datas = await read_json_data('es_genres_data.json')
-    for data in datas:
-        doc = await film_service._get_genre_from_elastic(data['id'])
-        logger.info(doc.dict())
-        logger.info(data)
-        assert doc.dict() == data
-        assert doc == SFilmGenre(**data)
-    assert await film_service._get_genre_from_elastic('not_found') is None
-    logger.info('end test genres index')
-
-
-@pytest.mark.asyncio
-async def test_genres_elastic(film_service: FilmService, read_json_data):
-    logger.info('test get many genres from elastic')
-    try:
-        await film_service._get_genres_from_elastic()
-    except Exception as err:
-        assert err.__class__ == TypeError, err
-
-    testsconfig = await read_json_data('config_es_genres.json')
-    for test in testsconfig:
-        datas = await film_service._get_genres_from_elastic(
-            page_size=test['page_size'], page_number=test['page_number'])
-        assert len(datas) == test['page_size'], datas
-        if test['body'] != '':
-            assert datas == await read_json_data(test['body']), test
-    logger.info('end test genres index')
-
 
 @pytest.mark.asyncio
 async def test_genre_elastic_storage(conf, storage, read_json_data):
