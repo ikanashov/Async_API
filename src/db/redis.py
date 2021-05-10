@@ -1,6 +1,8 @@
 from typing import Optional
 
-from aioredis import Redis, create_redis_pool
+from aioredis import Redis, create_redis_pool, RedisError
+
+import backoff
 
 from core.config import config
 
@@ -15,6 +17,7 @@ async def get_redis() -> Redis:
     return redis
 
 
+@backoff.on_exception(backoff.expo, RedisError)
 async def start_redis():
     global redis
     redis = await create_redis_pool(
@@ -32,12 +35,14 @@ class RedisStorage(AbstractCacheStorage):
     def __init__(self) -> None:
         self.redis: Redis = redis
 
+    @backoff.on_exception(backoff.expo, RedisError)
     async def get_data(self, key: str) -> Optional[str]:
         data = await self.redis.get(key)
         if not data:
             return None
         return data.decode('utf-8')
 
+    @backoff.on_exception(backoff.expo, RedisError)
     async def put_data(self, key: str, data: str, expire: int):
         await self.redis.set(key, data, expire=expire)
 
