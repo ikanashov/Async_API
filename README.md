@@ -9,9 +9,9 @@
 
 ## Перечень заданий на 5 спринт
 0. [00 Ревью в проекте (Оценка 5)](./tasks/00_review.md) 
-1. ~~[01 SOLID. Elastic Search (Оценка 5)](./tasks/01_SOLID_ES.md) ~~Выполнено: ikanashov
-2. ~~[02 SOLID. Redis (Оценка 5)](./tasks/02_SOLID_redis.md) ~~Выполнено: ikanashov
-3. ~~[03 SOLID. Views (Оценка 8)](./tasks/03_SOLID_views.md) ~~Выполнено: ikanashov
+1. ~~[01 SOLID. Elastic Search (Оценка 5)](./tasks/01_SOLID_ES.md)~~ Выполнено: ikanashov
+2. ~~[02 SOLID. Redis (Оценка 5)](./tasks/02_SOLID_redis.md)~~ Выполнено: ikanashov
+3. ~~[03 SOLID. Views (Оценка 8)](./tasks/03_SOLID_views.md)~~ Выполнено: ikanashov
 4. ~~[04 Инфраструктура для функциональных тестов (Оценка 13)](./tasks/04_functional_test_infra.md)~~ Выполнено: ikanashov
 5. ~~[05 Функциональные тесты - film api (Оценка 5)](./tasks/05_functional_test_film.md)~~ Выполнено: ikanashov
 6. ~~[06 Функциональные тесты - person api (Оценка 5)](./tasks/06_functional_test_person.md)~~ Выполнено: ikanashov
