@@ -8,11 +8,17 @@ from models.api.v1 import FilmDetail, FilmGenreFilter, FilmQuery, FilmShort, Fil
 from services.film import FilmService, get_film_service
 
 
-# Объект router, в котором регистрируем обработчики
 router = APIRouter()
 
 
-@router.get('', response_model=List[FilmShort], tags=['genre'])
+@router.get(
+    '',
+    response_model=List[FilmShort],
+    summary='Список фильмов',
+    description='Список фильмов с пагинацией, фильтрацией по жанрам и сортировкой по рейтингу',
+    response_description='uuid, название и рейтинг',
+    tags=['Жанры']
+)
 async def get_all_film(
     genre_filter: FilmGenreFilter = Depends(),
     sort: FilmSort = Depends(),
@@ -23,7 +29,13 @@ async def get_all_film(
     return films
 
 
-@router.get('/search', response_model=List[FilmShort])
+@router.get(
+    '/search',
+    response_model=List[FilmShort],
+    summary='Поиск по фильмам',
+    description='Поиск по фильмам (по названию и описанию)',
+    response_description='uuid, название и рейтинг'
+)
 async def search_film(
     query: FilmQuery = Depends(),
     page: Page = Depends(),
@@ -33,8 +45,13 @@ async def search_film(
     return films
 
 
-# Внедряем FilmService с помощью Depends(get_film_service)
-@router.get('/{film_id}', response_model=FilmDetail)
+@router.get(
+    '/{film_id}',
+    response_model=FilmDetail,
+    summary='Подробная информация о фильме',
+    description='Вывод подробной информации по uuid фильма',
+    response_description='uuid, название, рейтинг, описание, жанры, актеры, сценаристы, режисеры'
+)
 async def film_details(film_id: str, film_service: FilmService = Depends(get_film_service)) -> FilmDetail:
     film = await film_service.get_film_by_id(film_id)
     if not film:
