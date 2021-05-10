@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo docker-compose -f docker-compose-open-ports.yml up --build -d elasticcinema01 rediscinema
+
 cd src
 
 if [ -d venv ]; then

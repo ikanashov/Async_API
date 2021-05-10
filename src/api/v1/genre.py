@@ -8,11 +8,16 @@ from models.api.v1 import FilmGenre, FilmGenreDetail, FilmGenreSort, Page
 from services.film import FilmService, get_film_service
 
 
-# Объект router, в котором регистрируем обработчики
 router = APIRouter()
 
 
-@router.get('', response_model=List[FilmGenre])
+@router.get(
+    '',
+    response_model=List[FilmGenre],
+    summary='Список жанров',
+    description='Список жанров с пагинацией',
+    response_description='uuid, название'
+)
 async def get_all_genre(
     sort: FilmGenreSort = Depends(),
     page: Page = Depends(),
@@ -22,11 +27,15 @@ async def get_all_genre(
     return genres
 
 
-# Для примера берем 5bd77168-c5b1-4c9d-bd1f-1193582d9e66
-@router.get('/{genre_id}', response_model=FilmGenreDetail)
+@router.get(
+    '/{genre_id}',
+    response_model=FilmGenreDetail,
+    summary='Подробная информация о жанре',
+    description='Вывод подробной информации о жанре',
+    response_description='uuid, название, описание'
+)
 async def genre_details(genre_id: str, film_service: FilmService = Depends(get_film_service)) -> FilmGenreDetail:
     genre = await film_service.get_genre_by_id(genre_id)
     if not genre:
-        # Если жанр не найден, отдаём 404 статус
         raise HTTPException(status_code=HTTPStatus.NOT_FOUND, detail='genre not found')
     return genre

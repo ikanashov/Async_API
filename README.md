@@ -1,11 +1,11 @@
 # [Порядок запуска сервисов с помощью docker-compose](docker_service.md)
-# [Порядок запуска функциональных тестов](./tests/README.md)
+# [Порядок запуска тестов](./tests.md)
 
 # Назначение и имена контейнеров в docker-compose
-**rediscinema** - redis for cache  
+**rediscinema** - хранилище кэша redis  
 **elasticcinema01** - хранилище elastic  
 **clientapicinema** - собственно сам модуль FastApi  
-**nginxcinema** - nginx который отдает это все во внешний мир  
+**nginxcinema** - nginx который отдает это сервис во внешний мир  
 
 ## Перечень заданий на 5 спринт
 0. [00 Ревью в проекте (Оценка 5)](./tasks/00_review.md) 
