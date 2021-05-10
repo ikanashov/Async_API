@@ -8,6 +8,7 @@ from models.interface import AbstractCache, AbstractDataStore, AbstractStorage
 
 from services.cache import get_cache
 
+
 class DataStore(AbstractDataStore):
     def __init__(self, storage: AbstractStorage, cache: AbstractCache, expire: int) -> None:
         self.cache = cache

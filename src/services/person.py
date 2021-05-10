@@ -1,5 +1,4 @@
 import json
-
 from typing import Dict, List, Optional
 
 from models.film import SFilmPersonDetail
@@ -37,7 +36,7 @@ class Person(AbstractPerson):
     ) -> Optional[List[SFilmPersonDetail]]:
 
         query_body: Dict = {'query': {'match': {'full_name': {'query': query, 'fuzziness': 'AUTO'}}}}
-        body = json.dumps(query_body)        
+        body = json.dumps(query_body)
         persons = await self.datastore.search(
             self.personindex,
             page_size=page_size, page_number=page_number,

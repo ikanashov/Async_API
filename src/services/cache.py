@@ -33,5 +33,5 @@ class Cache(AbstractCache):
 
 
 async def get_cache() -> Cache:
-    cache = Cache(storage = await get_redis_storage())
+    cache = Cache(storage=await get_redis_storage())
     return cache
