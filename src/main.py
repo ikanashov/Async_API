@@ -17,10 +17,14 @@ from db.redis import start_redis, stop_redis
 app = FastAPI(
     # Конфигурируем название проекта. Оно будет отображаться в документации
     title=config.PROJECT_NAME,
+    description=config.PROJECT_DESCRIPTION,
+    version=config.PROJECT_VERSION,
     # Адрес документации в красивом интерфейсе
     docs_url='/api/openapi',
     # Адрес документации в формате OpenAPI
     openapi_url='/api/openapi.json',
+    # Адрес документации в формате ReDoc
+    redoc_url='/api/redoc',
     # Можно сразу сделать небольшую оптимизацию сервиса
     # и заменить стандартный JSON-сереализатор на более шуструю версию, написанную на Rust
     default_response_class=ORJSONResponse,

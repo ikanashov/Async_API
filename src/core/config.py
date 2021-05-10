@@ -24,11 +24,14 @@ class FastAPISettings(BaseSettings):
     ELASTIC_INDEX: str = 'movies'
     ELASTIC_GENRE_INDEX: str = 'genres'
     ELASTIC_PERSON_INDEX: str = 'persons'
-    PROJECT_NAME: str = 'movies'
     UVICORN_HOST: str = '0.0.0.0'
     UVICORN_PORT: int = 8000
     CLIENTAPI_DEFAULT_PAGE_SIZE: int = 50
     CLIENTAPI_CACHE_EXPIRE: int = 60 * 5
+    # конфигурация Swagger-API
+    PROJECT_NAME: str = 'Read-only API для онлайн-кинотеатра'
+    PROJECT_DESCRIPTION="Информация о кинопроизведениях, жанрах и съемочной группе"
+    PROJECT_VERSION="1.0.0"
 
     class Config:
         # Файл .env должен находится в корне проекта
