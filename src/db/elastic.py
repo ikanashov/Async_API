@@ -2,7 +2,7 @@ from typing import Any, Optional
 
 import backoff
 
-from elasticsearch import AsyncElasticsearch, NotFoundError, ElasticsearchException
+from elasticsearch import AsyncElasticsearch, ElasticsearchException, NotFoundError
 
 from core.config import config
 
