@@ -17,8 +17,10 @@ ELASTIC_INDEX=movies
 ELASTIC_USER=elastic
 ELASTIC_PASSWORD=<>
 UVICORN_PORT=8011
-NGINX_HTTP_PORT=8088q
+NGINX_HTTP_PORT=8088
 ```
+
+### Значение не могут содержать пробелы!
 
 DOCKER_PREFIX - Префикс для всех сервисов docker-compose (если запускается более одного экемпляра)  
 DOCKER_NETWORK_ADDRESS - Подсеть для сервисов (например 192.168.10.0/24)  
