@@ -49,10 +49,15 @@ async def redis():
     redis = await aioredis.create_redis_pool(
         (config.REDIS_HOST, config.REDIS_PORT),
         password=config.REDIS_PASSWORD,
+        db=config.REDIS_API_TEST_DB,
         minsize=10, maxsize=20
     )
+    logger.info(f'clear API TEST DB number = {config.REDIS_API_TEST_DB} before tests')
+    await redis.flushdb()
     yield redis
     logger.info('redis after yield')
+    logger.info(f'clear API TEST DB number = {config.REDIS_API_TEST_DB} after tests')
+    await redis.flushdb()
     # aioredis must close like this
     # https://aioredis.readthedocs.io/en/v1.3.0/examples.html
     redis.close()
