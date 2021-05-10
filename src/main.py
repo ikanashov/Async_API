@@ -47,12 +47,23 @@ async def shutdown():
     await stop_elastic()
 
 
-# Фильм на пробу из базы существующих 58bff82e-d892-4799-b9b3-964e9fb26398
-app.include_router(genre.router, prefix='/api/v1/genre', tags=['genre'])
+app.include_router(
+    film.router,
+    prefix='/api/v1/film',
+    tags=['Кинопроизведения']
+)
 
-app.include_router(film.router, prefix='/api/v1/film', tags=['film'])
+app.include_router(
+    genre.router,
+    prefix='/api/v1/genre',
+    tags=['Жанры']
+)
 
-app.include_router(person.router, prefix='/api/v1/person', tags=['person'])
+app.include_router(
+    person.router,
+    prefix='/api/v1/person',
+    tags=['Съемочная группа']
+)
 
 
 if __name__ == '__main__':
