@@ -15,6 +15,7 @@ class FastAPISettings(BaseSettings):
     REDIS_HOST: str = 'localhost'
     REDIS_PORT: int = 6379
     REDIS_PASSWORD: str = ''
+    REDIS_API_TEST_DB: int = 5
     ELASTIC_HOST: str = 'localhost'
     ELASTIC_PORT: int = 9200
     ELASTIC_SCHEME: str = 'http'

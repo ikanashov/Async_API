@@ -1,0 +1,140 @@
+[
+    {
+        "name": "empty_params",
+        "data": {
+            "args": "",
+            "kwargs": {},
+            "key": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+    }
+    ,
+    {
+        "name": "one_args_1",
+        "data": {
+            "args": [1],
+            "kwargs": {},
+            "key": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+        }
+    }
+    ,
+    {
+        "name": "one_args_a",
+        "data": {
+            "args": ["a"],
+            "kwargs": {},
+            "key": "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
+        }
+    }
+    ,
+    {
+        "name": "two_args_1_2",
+        "data": {
+            "args": [1, 2],
+            "kwargs": {},
+            "key": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918"
+        }
+    }
+    ,
+    {
+        "name": "two_args_2_1",
+        "data": {
+            "args": [2, 1],
+            "kwargs": {},
+            "key": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918"
+        }
+    }
+    ,
+    {
+        "name": "two_args_1_a",
+        "data": {
+            "args": [1, "a"],
+            "kwargs": {},
+            "key": "a73fcf339640929207281fb8e038884806e2eb0840f2245694dbba1d5cc89e65"
+        }
+    }
+    ,
+    {
+        "name": "two_args_a_1",
+        "data": {
+            "args": ["a", 1],
+            "kwargs": {},
+            "key": "a73fcf339640929207281fb8e038884806e2eb0840f2245694dbba1d5cc89e65"
+        }
+    }
+    ,
+    {
+        "name": "one_kwargs_1",
+        "data": {
+            "args": "",
+            "kwargs": {
+                "a": 1
+            },
+            "key": "2b2c40a6706d9e5f320d553628313833e3668d8b0c8f5b0a25a2ca7d926df6d4"
+        }
+    }
+    ,
+    {
+        "name": "two_kwargs_a_1",
+        "data": {
+            "args": "",
+            "kwargs": {
+                "a": "a",
+                "b": 1
+            },
+            "key": "312e869ed42f957f686d29f610cc184d1221631cbff650a35317f9207b2b7a57"
+        }
+    }
+    ,
+    {
+        "name": "two_kwargs_1_a",
+        "data": {
+            "args": "",
+            "kwargs": {
+                "b": 1,
+                "a": "a"
+            },
+            "key": "312e869ed42f957f686d29f610cc184d1221631cbff650a35317f9207b2b7a57"
+        }
+    }
+    ,
+    {
+        "name": "two_args_kwargs_1_a",
+        "data": {
+            "args": [1, "a"],
+            "kwargs": {
+                "b": 1,
+                "a": "a"
+            },
+            "key": "44cb3d25ec9156cba062c4327ecf4a35153aa4fea6bd9b300d9c6d000d71c8fb"
+        }
+    }
+    ,
+    {
+        "name": "get_data_by_id",
+        "data": {
+            "args": "",
+            "kwargs": {
+                "index": "genres",
+                "id": "0bff26e2-700a-43e7-9ea4-ab01003c4784"
+            },
+            "key": "2708b6e1a470ccb79be8900aa887dac207f13f28c3ae3deb8db0293ced721cb1"
+        }
+    }
+    ,
+    {
+        "name": "get_data",
+        "data": {
+            "args": "",
+            "kwargs": {
+                "index": "persons",
+                "page_size": 10,
+                "page_number": 32,
+                "sort": "imdb_rating:asc",
+                "body": "this_is_body"
+            },
+            "key": "547bd8f79a889b54ffa01e88de338d84e9503211c781e547115bc7b4d2e81562"
+        }
+    }
+
+
+]

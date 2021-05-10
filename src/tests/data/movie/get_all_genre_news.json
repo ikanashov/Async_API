@@ -1,0 +1,240 @@
+[
+  {
+    "id": "7b65166c-8f6c-4d08-a263-36e1541c606f",
+    "imdb_rating": 3.0,
+    "imdb_tconst": "tt0493184",
+    "filmtype": "tvSeries",
+    "genre": [
+      "News"
+    ],
+    "title": "Exclusiv - Das Star-Magazin",
+    "description": "N/A",
+    "directors_names": null,
+    "actors_names": [
+      "Frauke Ludowig"
+    ],
+    "writers_names": [
+      "Martina Taubert"
+    ],
+    "directors": null,
+    "actors": [
+      {
+        "id": "e03e6131-8c43-4eb2-a587-da2f4abdf991",
+        "name": "Frauke Ludowig"
+      }
+    ],
+    "writers": [
+      {
+        "id": "3ba953cd-88fd-40d1-b9fe-92120154be03",
+        "name": "Martina Taubert"
+      }
+    ]
+  },
+  {
+    "id": "a6a4e4e5-886d-4d66-a2dc-d3165f6cb6a3",
+    "imdb_rating": 5.8,
+    "imdb_tconst": "tt0324063",
+    "filmtype": "tvShort",
+    "genre": [
+      "News",
+      "Short"
+    ],
+    "title": "A Star Is Born World Premiere",
+    "description": "\"Included on the DVD release of \"\"A Star is Born\"\" (1954), this is a live television broadcast of the world premiere. Described by various participants as the biggest world premiere in memory,...\"",
+    "directors_names": null,
+    "actors_names": [
+      "Paula Raymond",
+      "Amanda Blake",
+      "Rosemarie Stack",
+      "George Fisher"
+    ],
+    "writers_names": null,
+    "directors": null,
+    "actors": [
+      {
+        "id": "17eeb11a-3a67-4368-abe6-0e207279dd1a",
+        "name": "Paula Raymond"
+      },
+      {
+        "id": "36e7757d-e94e-4ae8-9e5d-9b8b9112cf0f",
+        "name": "Amanda Blake"
+      },
+      {
+        "id": "43c31eb3-9fd7-4e69-a5c8-55a1fb045909",
+        "name": "Rosemarie Stack"
+      },
+      {
+        "id": "cabecad5-c803-491e-a1b9-49814523284c",
+        "name": "George Fisher"
+      }
+    ],
+    "writers": null
+  },
+  {
+    "id": "eff64d6b-fb62-432b-b53a-3e6ba7547829",
+    "imdb_rating": 7.8,
+    "imdb_tconst": "tt3176284",
+    "filmtype": "movie",
+    "genre": [
+      "Comedy",
+      "Documentary",
+      "History",
+      "News"
+    ],
+    "title": "All About Ann: Governor Richards of the Lone Star State",
+    "description": "The life story of Ann Richards, the hilarious straight-talking Governor of Texas who fought special interests for the people and ultimately lost re-election to the first ever pairing of George W Bush and Karl Rove. Celebrities, family members, and personal friends tell the behind-the-scenes battle stories of how a housewife rose to the most powerful position in a good-old-boy state.",
+    "directors_names": [
+      "Keith Patterson",
+      "Phillip Schopper"
+    ],
+    "actors_names": [
+      "Barbara Bush",
+      "George Bush",
+      "George W. Bush",
+      "Tom Brokaw"
+    ],
+    "writers_names": [
+      "Keith Patterson"
+    ],
+    "directors": [
+      {
+        "id": "5bb02855-c1af-4886-83f0-6d62c0aaa67b",
+        "name": "Keith Patterson"
+      },
+      {
+        "id": "757c2741-c805-4346-96d2-23befe1d1533",
+        "name": "Phillip Schopper"
+      }
+    ],
+    "actors": [
+      {
+        "id": "67644ee4-a1b5-4a4b-923b-f4ba047505a6",
+        "name": "Barbara Bush"
+      },
+      {
+        "id": "6b459d7d-eee7-45a0-8cda-fafacfba32e5",
+        "name": "George Bush"
+      },
+      {
+        "id": "b83cb80e-926a-4697-86a2-5e98acd2c2f9",
+        "name": "George W. Bush"
+      },
+      {
+        "id": "d49d31a4-3ad9-4353-9f1f-489ed1743ffc",
+        "name": "Tom Brokaw"
+      }
+    ],
+    "writers": [
+      {
+        "id": "5bb02855-c1af-4886-83f0-6d62c0aaa67b",
+        "name": "Keith Patterson"
+      }
+    ]
+  },
+  {
+    "id": "af8d25ed-a1c6-4dcb-b2db-64de6dc0a5e2",
+    "imdb_rating": 7.9,
+    "imdb_tconst": "tt0790824",
+    "filmtype": "tvSpecial",
+    "genre": [
+      "News"
+    ],
+    "title": "World Premiere 'Star Wars III: Revenge of the Sith'",
+    "description": "N/A",
+    "directors_names": [
+      "Brodie Ransom"
+    ],
+    "actors_names": null,
+    "writers_names": [
+      "Brodie Ransom"
+    ],
+    "directors": [
+      {
+        "id": "45b67574-1a6e-42c9-a591-e1941df092a3",
+        "name": "Brodie Ransom"
+      }
+    ],
+    "actors": null,
+    "writers": [
+      {
+        "id": "45b67574-1a6e-42c9-a591-e1941df092a3",
+        "name": "Brodie Ransom"
+      }
+    ]
+  },
+  {
+    "id": "da2712f0-d4b7-4144-a868-259e3d34e018",
+    "imdb_rating": 8.5,
+    "imdb_tconst": "tt1578859",
+    "filmtype": "movie",
+    "genre": [
+      "Documentary",
+      "History",
+      "News"
+    ],
+    "title": "Wishes on a Falling Star",
+    "description": "Cuba, in the 50th year of the Revolution. While the Castro brothers face their certain end, an uncertain future hangs over the island. Some people are afraid, many cannot wait, but all shudder and hope that the changes will be positive. This documentary leads the audience through the discovery of this hope, through a tourist's camera which looks to be turned off and oblivious to the conversation at hand, yet is focused on candidly capturing each person's wishes. There is the old guerrillero who took part in the revolution, the lady who met Che Guevara and lives thanks to the government social card, and also the young boys and girls - those who wish to make a career within the rules, as well as those who only try to escape abroad. Clandestine underground shops, businessmen experienced in all things illegal, dodgy pimps, mothers who force their daughters into selling their bodies - the hidden face of the State which welcomes tourists into its luxury resorts is openly displayed beyond censorship's control. One special guide is Yoani Sanchez, the independent blogger, a leader of the new, peaceful revolution - the revolution of ideas. The internet is its main instrument, while the government attempts to limit computer use with any means possible in a pushing and pulling of ideals. In the interview, recorded in a secret location, the young writer speaks about her country's ruin, and where Raul's reforms have no effect on everyday life. Castro's supporters and dissidents, young and old - none deceive themselves that the star of the revolution will shine on for much longer. And this is what this project focuses on: the wishes on a falling star.",
+    "directors_names": [
+      "Paolo Cellammare",
+      "Giammarco Sicuro",
+      "Jacopo Cecconi"
+    ],
+    "actors_names": [
+      "Matthew Mercer",
+      "Giammarco Sicuro",
+      "Jacopo Cecconi",
+      "Yoani Sanchez"
+    ],
+    "writers_names": [
+      "Paolo Cellammare",
+      "Giammarco Sicuro",
+      "Jacopo Cecconi"
+    ],
+    "directors": [
+      {
+        "id": "5221b32f-9f6d-4bce-b99f-9784d400a6da",
+        "name": "Paolo Cellammare"
+      },
+      {
+        "id": "a846563a-824f-486a-b4ca-d3a75fa14246",
+        "name": "Giammarco Sicuro"
+      },
+      {
+        "id": "c6a3fd05-6690-48be-bc42-a875ebae11ef",
+        "name": "Jacopo Cecconi"
+      }
+    ],
+    "actors": [
+      {
+        "id": "7b31587a-c393-4e9c-bfb3-41d6d7aed9be",
+        "name": "Matthew Mercer"
+      },
+      {
+        "id": "a846563a-824f-486a-b4ca-d3a75fa14246",
+        "name": "Giammarco Sicuro"
+      },
+      {
+        "id": "c6a3fd05-6690-48be-bc42-a875ebae11ef",
+        "name": "Jacopo Cecconi"
+      },
+      {
+        "id": "e5f2f796-1010-44b5-b2e8-6e5f736f6bab",
+        "name": "Yoani Sanchez"
+      }
+    ],
+    "writers": [
+      {
+        "id": "5221b32f-9f6d-4bce-b99f-9784d400a6da",
+        "name": "Paolo Cellammare"
+      },
+      {
+        "id": "a846563a-824f-486a-b4ca-d3a75fa14246",
+        "name": "Giammarco Sicuro"
+      },
+      {
+        "id": "c6a3fd05-6690-48be-bc42-a875ebae11ef",
+        "name": "Jacopo Cecconi"
+      }
+    ]
+  }
+]

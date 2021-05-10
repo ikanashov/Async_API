@@ -1,0 +1,61 @@
+[
+  {
+    "id": "bc5e0738-ea3b-4b88-928a-ce208bc03295",
+    "imdb_rating": 0.0,
+    "imdb_tconst": "tt4979886",
+    "filmtype": "short",
+    "genre": [
+      "Drama",
+      "Short"
+    ],
+    "title": "Shooting Star",
+    "description": "How far would a mother go to protect her children?",
+    "directors_names": [
+      "Lyubo Yonchev"
+    ],
+    "actors_names": [
+      "Kalia Kamenova",
+      "Lyudmil Hristov",
+      "Eleni Dekidis",
+      "Sevar Ivanov"
+    ],
+    "writers_names": [
+      "Lyubo Yonchev",
+      "Yassen Genadiev"
+    ],
+    "directors": [
+      {
+        "id": "0901a016-c789-4666-8c8d-42ffa757a67c",
+        "name": "Lyubo Yonchev"
+      }
+    ],
+    "actors": [
+      {
+        "id": "0e5b3e81-66c3-49d5-b841-7dd2d9c9b378",
+        "name": "Kalia Kamenova"
+      },
+      {
+        "id": "55ae701e-b3d4-4c23-a212-3020306acf01",
+        "name": "Lyudmil Hristov"
+      },
+      {
+        "id": "c69963c5-2cf9-490b-b09b-7c8f96c7c72e",
+        "name": "Eleni Dekidis"
+      },
+      {
+        "id": "e62f14e3-8014-4fa8-a6e3-b196222b6cbf",
+        "name": "Sevar Ivanov"
+      }
+    ],
+    "writers": [
+      {
+        "id": "0901a016-c789-4666-8c8d-42ffa757a67c",
+        "name": "Lyubo Yonchev"
+      },
+      {
+        "id": "48a884b5-4acd-4574-8f0d-d1b71ac0b938",
+        "name": "Yassen Genadiev"
+      }
+    ]
+  }
+]

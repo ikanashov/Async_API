@@ -1,0 +1,32 @@
+[
+    {
+        "name" : "search_lucas",
+        "parameter" : {
+            "query" : "lucas",
+            "page_size": 10,
+            "page_number": 1
+        },
+        "lenght" : "8",
+        "body" : "search_lucas.json"
+    },
+    {
+        "name" : "search_star",
+        "parameter" : {
+            "query" : "star",
+            "page_size": 50,
+            "page_number": 1
+        },
+        "lenght" : "50",
+        "body" : ""
+    },
+    {
+        "name" : "search_war_with_page",
+        "parameter" : {
+            "query" : "war",
+            "page_size" : 10,
+            "page_number" : 15
+        },
+        "lenght" : "10",
+        "body" : ""
+    }
+]

@@ -1,0 +1,937 @@
+[
+    {
+        "id": "439c14b4-ce93-4f83-b11e-69604a940169",
+        "full_name": "\u00c9dith Piaf",
+        "imdb_nconst": "nm0681191",
+        "birth_date": "1915-01-01",
+        "death_date": "1963-01-01",
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "0cf76b68-a2e1-43f7-891e-d93d3c9a7fcc"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "0cf76b68-a2e1-43f7-891e-d93d3c9a7fcc"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "6b16d26a-f92a-4dca-8b24-acc1d5ce540e",
+        "full_name": "\u00c1ngeles Gonz\u00e1lez Sinde",
+        "imdb_nconst": "nm0328000",
+        "birth_date": "1965-01-01",
+        "death_date": null,
+        "role": [
+            "writer"
+        ],
+        "filmids": [
+            "62408f9d-ed5f-42ec-84c9-97e6d52d34da"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "62408f9d-ed5f-42ec-84c9-97e6d52d34da"
+        ]
+    },
+    {
+        "id": "ac3df7dd-107b-45c9-8204-696f97d1a666",
+        "full_name": "\u00c1ngel Beltr\u00e1n",
+        "imdb_nconst": "nm4210167",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "b3412c19-68a7-4b4a-b4a9-461a9c4b2dc8"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "b3412c19-68a7-4b4a-b4a9-461a9c4b2dc8"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "c60d8dd5-597d-422b-98b0-df7b2605d3ea",
+        "full_name": "\u00c1lvaro del Amo",
+        "imdb_nconst": "nm0025117",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "writer"
+        ],
+        "filmids": [
+            "62408f9d-ed5f-42ec-84c9-97e6d52d34da"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "62408f9d-ed5f-42ec-84c9-97e6d52d34da"
+        ]
+    },
+    {
+        "id": "3e9796ed-9f3d-4451-9d62-9316d280b223",
+        "full_name": "Zvika Hadar",
+        "imdb_nconst": "nm0352620",
+        "birth_date": "1966-01-01",
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "fa4d8c95-989e-4f0b-bfa9-bff6664e4a7d"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "fa4d8c95-989e-4f0b-bfa9-bff6664e4a7d"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "2d2fb32c-a467-4f0e-84ba-7e19808d4258",
+        "full_name": "Zoe Saldana",
+        "imdb_nconst": "nm0757855",
+        "birth_date": "1978-01-01",
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "3054b6b0-f705-4c98-89ce-859d6a7be2ac",
+            "85d3c966-f33f-4cb4-bff3-509788254e55"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "85d3c966-f33f-4cb4-bff3-509788254e55",
+            "3054b6b0-f705-4c98-89ce-859d6a7be2ac"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "bc02ed4d-e55b-42fa-8ee9-75cc6f65ab4d",
+        "full_name": "Zjanna Klusjantseva",
+        "imdb_nconst": "nm2165885",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "cba9d919-a78b-4b87-b79d-ed12b07dde11"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "cba9d919-a78b-4b87-b79d-ed12b07dde11"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "95a8fc45-d744-483e-9a48-f0fc5f41b3b1",
+        "full_name": "Ziyi Zhang",
+        "imdb_nconst": "nm0955471",
+        "birth_date": "1979-01-01",
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "edc4a55b-2cd9-40e9-8ff5-ad243b4f3fa3"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "edc4a55b-2cd9-40e9-8ff5-ad243b4f3fa3"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "9d6daa4f-102b-41b7-8bc2-cadd9846c35e",
+        "full_name": "Ziv Shemesh",
+        "imdb_nconst": "nm4854086",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "writer"
+        ],
+        "filmids": [
+            "09285c75-21ad-4770-a981-8be3f69f9782"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "09285c75-21ad-4770-a981-8be3f69f9782"
+        ]
+    },
+    {
+        "id": "f6acf31f-857f-463d-8bc0-d67904dd9484",
+        "full_name": "Zitao Huang",
+        "imdb_nconst": "nm7301909",
+        "birth_date": "1993-01-01",
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "9b7f4039-7fc2-4312-bb05-589bc0169a1e"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "9b7f4039-7fc2-4312-bb05-589bc0169a1e"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "fb475d1a-cfb7-4827-a0a8-9762a135129e",
+        "full_name": "Zijie Lin",
+        "imdb_nconst": "nm7449941",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "9b230f73-3969-4add-a6cb-82db04ed8990"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "9b230f73-3969-4add-a6cb-82db04ed8990"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "a58236c5-49e1-46e9-8e8b-e2281a911481",
+        "full_name": "Zi'en Cui",
+        "imdb_nconst": "nm0191287",
+        "birth_date": "1958-01-01",
+        "death_date": null,
+        "role": [
+            "director",
+            "writer"
+        ],
+        "filmids": [
+            "6151ca06-1704-4d35-8c77-1977d1254895"
+        ],
+        "directorsfilmids": [
+            "6151ca06-1704-4d35-8c77-1977d1254895"
+        ],
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "6151ca06-1704-4d35-8c77-1977d1254895"
+        ]
+    },
+    {
+        "id": "369969b0-4fbc-4a4b-b104-80050fd27d71",
+        "full_name": "Zeki Alpan",
+        "imdb_nconst": "nm0022342",
+        "birth_date": "1908-01-01",
+        "death_date": "1992-01-01",
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "336c7aa1-efcb-46bb-91db-202c46ea366f"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "336c7aa1-efcb-46bb-91db-202c46ea366f"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "3adfa371-d7d7-41c6-a207-1c89936098a1",
+        "full_name": "Zeb Wells",
+        "imdb_nconst": "nm2745845",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "writer"
+        ],
+        "filmids": [
+            "af77d81f-35c7-489f-a0f3-bb4422cdcf78",
+            "e81d93e8-b1dd-4bff-849b-020cb10aeea1"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "af77d81f-35c7-489f-a0f3-bb4422cdcf78",
+            "e81d93e8-b1dd-4bff-849b-020cb10aeea1"
+        ]
+    },
+    {
+        "id": "d48b6442-855b-42e5-8719-f5c5c0973928",
+        "full_name": "Zasu Pitts",
+        "imdb_nconst": "nm0686032",
+        "birth_date": "1894-01-01",
+        "death_date": "1963-01-01",
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "c9a923ba-7090-4556-bc01-cf4f7758c2d3"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "c9a923ba-7090-4556-bc01-cf4f7758c2d3"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "66f00c9e-a0a5-46e3-a47a-0bbc382bb569",
+        "full_name": "Zane Grey",
+        "imdb_nconst": "nm0340719",
+        "birth_date": "1872-01-01",
+        "death_date": "1939-01-01",
+        "role": [
+            "writer"
+        ],
+        "filmids": [
+            "c5587c4e-3907-4b13-8cd8-5726652757e8"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "c5587c4e-3907-4b13-8cd8-5726652757e8"
+        ]
+    },
+    {
+        "id": "602419ad-b9a5-4806-bf96-1450aabd8d6d",
+        "full_name": "Zachary Quinto",
+        "imdb_nconst": "nm0704270",
+        "birth_date": "1977-01-01",
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "3054b6b0-f705-4c98-89ce-859d6a7be2ac",
+            "37ba9a00-deda-4a85-b1c0-2cea1fe2b9b0",
+            "4d1f3f33-4335-4298-8854-e28602fb6689",
+            "85d3c966-f33f-4cb4-bff3-509788254e55"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "85d3c966-f33f-4cb4-bff3-509788254e55",
+            "37ba9a00-deda-4a85-b1c0-2cea1fe2b9b0",
+            "3054b6b0-f705-4c98-89ce-859d6a7be2ac",
+            "4d1f3f33-4335-4298-8854-e28602fb6689"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "c6ab6481-3a00-4e56-875f-ffb83e06f31d",
+        "full_name": "Zachary Hamby",
+        "imdb_nconst": "nm6955784",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "a913dc59-7c2d-401c-b572-d4461ab3f78f"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "a913dc59-7c2d-401c-b572-d4461ab3f78f"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "eed99836-eff2-4aa2-a328-93e24ee07e4a",
+        "full_name": "Zacharia Persson",
+        "imdb_nconst": "nm2590818",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "director",
+            "writer"
+        ],
+        "filmids": [
+            "7e1b5159-60dd-4723-8b09-658941ffda84"
+        ],
+        "directorsfilmids": [
+            "7e1b5159-60dd-4723-8b09-658941ffda84"
+        ],
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "7e1b5159-60dd-4723-8b09-658941ffda84"
+        ]
+    },
+    {
+        "id": "de72f1ce-aba1-46e9-bdb8-7a97397c0ef8",
+        "full_name": "Zach Young",
+        "imdb_nconst": "nm2295123",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "writer"
+        ],
+        "filmids": [
+            "a9f5c15a-bf6a-442f-9c4c-db6be03ca826"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "a9f5c15a-bf6a-442f-9c4c-db6be03ca826"
+        ]
+    },
+    {
+        "id": "832ab9a2-8776-490c-a62b-ed72996153e5",
+        "full_name": "Zach Bush",
+        "imdb_nconst": "nm6314769",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "writer"
+        ],
+        "filmids": [
+            "e0961ff8-d7cd-4854-bda6-8dc7e7e300a3"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "e0961ff8-d7cd-4854-bda6-8dc7e7e300a3"
+        ]
+    },
+    {
+        "id": "86d7ac71-4230-4367-8bc0-5fc123dd2c34",
+        "full_name": "Zac Brown",
+        "imdb_nconst": "nm3351875",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "e36895cf-b33b-4d51-a66d-6df80a70139e"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "e36895cf-b33b-4d51-a66d-6df80a70139e"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "56358e5f-14b5-426a-bb64-64c00e2ae787",
+        "full_name": "Y\u00fbto Ikeda",
+        "imdb_nconst": "nm6601652",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "5d37d2b1-574f-4116-b3a5-5667a2772ffa"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "5d37d2b1-574f-4116-b3a5-5667a2772ffa"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "a114641b-0be6-45ee-ac70-8cb9805b3c73",
+        "full_name": "Y\u00fbji Oda",
+        "imdb_nconst": "nm0643880",
+        "birth_date": "1967-01-01",
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "ef099b18-3c17-4c81-851b-7110145d9080"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "ef099b18-3c17-4c81-851b-7110145d9080"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "147edd83-b64b-4d0c-a657-90ebb96cbfc2",
+        "full_name": "Y\u00fbichi Shinbo",
+        "imdb_nconst": "nm3070265",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "writer"
+        ],
+        "filmids": [
+            "5b66f5d6-d31a-4759-857a-198f5dd32781"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "5b66f5d6-d31a-4759-857a-198f5dd32781"
+        ]
+    },
+    {
+        "id": "9c76ff41-72cc-40fb-8e87-624c2cb62a7d",
+        "full_name": "Y\u00fb Mizushima",
+        "imdb_nconst": "nm0594712",
+        "birth_date": "1956-01-01",
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "05a5560d-9865-4615-9013-51f9af8ba836"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "05a5560d-9865-4615-9013-51f9af8ba836"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "134154e6-28f8-4529-889e-9dda48c4c142",
+        "full_name": "Y\u00fb Irie",
+        "imdb_nconst": "nm2790548",
+        "birth_date": "1979-01-01",
+        "death_date": null,
+        "role": [
+            "director",
+            "writer"
+        ],
+        "filmids": [
+            "b2ea1154-3f9c-4f18-949a-ab2f9cd5c04b"
+        ],
+        "directorsfilmids": [
+            "b2ea1154-3f9c-4f18-949a-ab2f9cd5c04b"
+        ],
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "b2ea1154-3f9c-4f18-949a-ab2f9cd5c04b"
+        ]
+    },
+    {
+        "id": "601e4457-0651-405e-a1a5-0ca615a3fd87",
+        "full_name": "Y\u00f4 \u00d4izumi",
+        "imdb_nconst": "nm1126978",
+        "birth_date": "1973-01-01",
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "2d93fd6b-360f-4b28-b061-54a2898edc4d"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "2d93fd6b-360f-4b28-b061-54a2898edc4d"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "981cab7c-aaed-473e-ae02-e65b7de91048",
+        "full_name": "Yvonne Varnier",
+        "imdb_nconst": "nm1901076",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "3a77fcf2-2107-43a7-b0c3-37e7c564d150"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "3a77fcf2-2107-43a7-b0c3-37e7c564d150"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "3b07ac35-c508-482e-bb5e-32bde8f31312",
+        "full_name": "Yvan Fahl",
+        "imdb_nconst": "nm1767048",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "actor",
+            "writer"
+        ],
+        "filmids": [
+            "4b11eb6c-eac4-4f41-8248-d944c04a8530"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "4b11eb6c-eac4-4f41-8248-d944c04a8530"
+        ],
+        "writersfilmids": [
+            "4b11eb6c-eac4-4f41-8248-d944c04a8530"
+        ]
+    },
+    {
+        "id": "e7834266-02ed-4937-b964-ea4e662ae2e1",
+        "full_name": "Yutaka Yoshida",
+        "imdb_nconst": "nm2952816",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "director"
+        ],
+        "filmids": [
+            "fca35e9e-db2c-4e8e-a2f3-9797cd22e56b"
+        ],
+        "directorsfilmids": [
+            "fca35e9e-db2c-4e8e-a2f3-9797cd22e56b"
+        ],
+        "actorsfilmids": null,
+        "writersfilmids": null
+    },
+    {
+        "id": "8547b2e4-effd-4537-a70d-9f43f9e0732d",
+        "full_name": "Yutaka Saito",
+        "imdb_nconst": "nm2484866",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "writer"
+        ],
+        "filmids": [
+            "10bdc3a7-dedd-4665-974c-09234106725c"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "10bdc3a7-dedd-4665-974c-09234106725c"
+        ]
+    },
+    {
+        "id": "2f985aa1-144c-4cff-b7df-1767c6b55eb2",
+        "full_name": "Yutaka Izubuchi",
+        "imdb_nconst": "nm0412808",
+        "birth_date": "1958-01-01",
+        "death_date": null,
+        "role": [
+            "director"
+        ],
+        "filmids": [
+            "6f788244-6ab8-41af-bfd5-881f025d4df8"
+        ],
+        "directorsfilmids": [
+            "6f788244-6ab8-41af-bfd5-881f025d4df8"
+        ],
+        "actorsfilmids": null,
+        "writersfilmids": null
+    },
+    {
+        "id": "efd90d28-cb5f-483f-85ef-484d9d823776",
+        "full_name": "Yuriko Yamamoto",
+        "imdb_nconst": "nm0945514",
+        "birth_date": "1959-01-01",
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "ce4b018e-3d2f-4e23-b281-def9f5370ea7"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "ce4b018e-3d2f-4e23-b281-def9f5370ea7"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "04ca2bb4-b40f-42c8-980c-fab275dbed15",
+        "full_name": "Yuriko Ishida",
+        "imdb_nconst": "nm0410942",
+        "birth_date": "1969-01-01",
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "3f5da975-d447-4331-be1f-e20d877ab26c"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "3f5da975-d447-4331-be1f-e20d877ab26c"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "b27dd89f-b1a1-4784-ad9f-483ee000eb49",
+        "full_name": "Yuri Gusev",
+        "imdb_nconst": "nm0348857",
+        "birth_date": "1936-01-01",
+        "death_date": "1991-01-01",
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "578332e2-6c4c-4529-822b-91457755109c"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "578332e2-6c4c-4529-822b-91457755109c"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "dfa72ec1-a335-4035-ab5f-a87e51322822",
+        "full_name": "Yun-Fat Chow",
+        "imdb_nconst": "nm0000334",
+        "birth_date": "1955-01-01",
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "ad2c4799-0f50-44da-bd48-1942d7e41f7f"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "ad2c4799-0f50-44da-bd48-1942d7e41f7f"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "ef151507-7da5-45b6-8e14-2f73c871835b",
+        "full_name": "Yumiko \u00d4shima",
+        "imdb_nconst": "nm0960014",
+        "birth_date": "1947-01-01",
+        "death_date": null,
+        "role": [
+            "writer"
+        ],
+        "filmids": [
+            "595e2298-dd8c-497c-ac11-9ef2169a116f"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "595e2298-dd8c-497c-ac11-9ef2169a116f"
+        ]
+    },
+    {
+        "id": "55282c35-be8a-44ce-82c7-b19ce8f6a255",
+        "full_name": "Yumi Hara",
+        "imdb_nconst": "nm3782945",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "5349b315-cc16-44ce-87ea-63d7c07a469e"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "5349b315-cc16-44ce-87ea-63d7c07a469e"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "5ff0f190-4ddf-451c-967b-e3650376a4bf",
+        "full_name": "Yuli Dunsky",
+        "imdb_nconst": "nm0243020",
+        "birth_date": "1922-01-01",
+        "death_date": "1982-01-01",
+        "role": [
+            "writer"
+        ],
+        "filmids": [
+            "e19f747c-2166-41f6-a619-16713915fc36"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "e19f747c-2166-41f6-a619-16713915fc36"
+        ]
+    },
+    {
+        "id": "ee929b76-e898-4b64-aa7e-dfd79dfb3bb9",
+        "full_name": "Yukio Mishima",
+        "imdb_nconst": "nm0592758",
+        "birth_date": "1925-01-01",
+        "death_date": "1970-01-01",
+        "role": [
+            "writer"
+        ],
+        "filmids": [
+            "313227e2-8ab4-4da2-b17b-e0b07f357683"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "313227e2-8ab4-4da2-b17b-e0b07f357683"
+        ]
+    },
+    {
+        "id": "64be4c45-c4d3-4dd9-b3d4-e58808f73a49",
+        "full_name": "Yuji Naka",
+        "imdb_nconst": "nm0619913",
+        "birth_date": "1965-01-01",
+        "death_date": null,
+        "role": [
+            "director",
+            "writer"
+        ],
+        "filmids": [
+            "508bec33-e8d3-4b38-8f3c-a2f0e4db92d2",
+            "bf7ef30b-81c9-4cd3-b9f7-2921e2232e17"
+        ],
+        "directorsfilmids": [
+            "508bec33-e8d3-4b38-8f3c-a2f0e4db92d2"
+        ],
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "508bec33-e8d3-4b38-8f3c-a2f0e4db92d2",
+            "bf7ef30b-81c9-4cd3-b9f7-2921e2232e17"
+        ]
+    },
+    {
+        "id": "46e9e15b-1d42-43dd-acc8-ccfdc9f1689e",
+        "full_name": "Yui Horie",
+        "imdb_nconst": "nm0394679",
+        "birth_date": "1976-01-01",
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "87c59937-438c-4b16-a31e-5d93ba3446b0"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "87c59937-438c-4b16-a31e-5d93ba3446b0"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "6a9de473-7169-4c8a-9ceb-3acdf2c54760",
+        "full_name": "Yuen Chor",
+        "imdb_nconst": "nm0159201",
+        "birth_date": "1934-01-01",
+        "death_date": null,
+        "role": [
+            "writer"
+        ],
+        "filmids": [
+            "8dc87953-438f-42ab-8fd4-cf3e10ff62c0"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "8dc87953-438f-42ab-8fd4-cf3e10ff62c0"
+        ]
+    },
+    {
+        "id": "3380cadb-a93b-4b7b-a007-bd79d00c1e7c",
+        "full_name": "Yu-Hsin Chen",
+        "imdb_nconst": "nm1906532",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "8dc87953-438f-42ab-8fd4-cf3e10ff62c0"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "8dc87953-438f-42ab-8fd4-cf3e10ff62c0"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "f61a4629-194a-473b-91fb-3e39206fb962",
+        "full_name": "Yu Tsai",
+        "imdb_nconst": "nm0874623",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "5af46e56-aa28-486c-8500-ada8cccfc7d8"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "5af46e56-aa28-486c-8500-ada8cccfc7d8"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "c06ff0c1-c026-467d-9aef-171b0137771e",
+        "full_name": "Yu Asakawa",
+        "imdb_nconst": "nm0038324",
+        "birth_date": "1975-01-01",
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "6bc28952-367e-44b4-b2ea-3fa0ed856ff3"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "6bc28952-367e-44b4-b2ea-3fa0ed856ff3"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "97d6499b-e359-46b1-b4a3-1203750a59b6",
+        "full_name": "Yoshinobu Kamo",
+        "imdb_nconst": "nm1130094",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "writer"
+        ],
+        "filmids": [
+            "93f8ad66-98f4-49f7-aab1-fbc40a620aa7"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "93f8ad66-98f4-49f7-aab1-fbc40a620aa7"
+        ]
+    },
+    {
+        "id": "b97569d5-f48b-4c14-ad68-901b1d90368c",
+        "full_name": "Yoshiki Arizono",
+        "imdb_nconst": "nm0034984",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "actor"
+        ],
+        "filmids": [
+            "ef099b18-3c17-4c81-851b-7110145d9080"
+        ],
+        "directorsfilmids": null,
+        "actorsfilmids": [
+            "ef099b18-3c17-4c81-851b-7110145d9080"
+        ],
+        "writersfilmids": null
+    },
+    {
+        "id": "fdfdbf5f-4093-4460-ba80-629b07293179",
+        "full_name": "Yoshiharu Gotanda",
+        "imdb_nconst": "nm1065338",
+        "birth_date": null,
+        "death_date": null,
+        "role": [
+            "director",
+            "writer"
+        ],
+        "filmids": [
+            "42221961-d3b0-4ddb-b363-a025737f4693",
+            "4a0eb69e-8909-4828-a3ab-bcecc34b975f",
+            "6bc28952-367e-44b4-b2ea-3fa0ed856ff3"
+        ],
+        "directorsfilmids": [
+            "6bc28952-367e-44b4-b2ea-3fa0ed856ff3",
+            "4a0eb69e-8909-4828-a3ab-bcecc34b975f"
+        ],
+        "actorsfilmids": null,
+        "writersfilmids": [
+            "6bc28952-367e-44b4-b2ea-3fa0ed856ff3",
+            "42221961-d3b0-4ddb-b363-a025737f4693",
+            "4a0eb69e-8909-4828-a3ab-bcecc34b975f"
+        ]
+    }
+]

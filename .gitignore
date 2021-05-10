@@ -1,3 +1,6 @@
+# Ignore temp dir
+temp/
+
 # Ignore vscode dir
 .vscode/
 #elastic db production

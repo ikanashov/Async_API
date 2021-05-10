@@ -1,9 +1,5 @@
 import logging
 
-import aioredis
-
-from elasticsearch import AsyncElasticsearch
-
 from fastapi import FastAPI
 from fastapi.responses import ORJSONResponse
 
@@ -14,8 +10,8 @@ from api.v1 import film, genre, person
 from core.config import config
 from core.logger import LOGGING
 
-from db import elastic
-from db import redis
+from db.elastic import start_elastic, stop_elastic
+from db.redis import start_redis, stop_redis
 
 
 app = FastAPI(
@@ -36,23 +32,15 @@ async def startup():
     # Подключаемся к базам при старте сервера
     # Подключиться можем при работающем event-loop
     # Поэтому логика подключения происходит в асинхронной функции
-    redis.redis = await aioredis.create_redis_pool(
-        (config.REDIS_HOST, config.REDIS_PORT),
-        password=config.REDIS_PASSWORD,
-        minsize=10, maxsize=20
-    )
-    elastic.es = AsyncElasticsearch(
-        hosts=[f'{config.ELASTIC_HOST}:{config.ELASTIC_PORT}'],
-        scheme=config.ELASTIC_SCHEME,
-        http_auth=(config.ELASTIC_USER, config.ELASTIC_PASSWORD)
-    )
+    await start_redis()
+    await start_elastic()
 
 
 @app.on_event('shutdown')
 async def shutdown():
     # Отключаемся от баз при выключении сервера
-    await redis.redis.close()
-    await elastic.es.close()
+    await stop_redis()
+    await stop_elastic()
 
 
 # Фильм на пробу из базы существующих 58bff82e-d892-4799-b9b3-964e9fb26398

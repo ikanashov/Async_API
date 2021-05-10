@@ -1,0 +1,226 @@
+[
+  {
+    "id": "2b59bae9-df5e-4e6a-8cac-71a2d7d6e34e",
+    "imdb_rating": 6.2,
+    "imdb_tconst": "tt0292256",
+    "filmtype": "videoGame",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "title": "Star Wars: Obi-Wan",
+    "description": "This videogame is focused on Obi Wan Kenobi, it tells you the story beneath Chapter One: The Ghost Meneace and how it started and all Obi Wan passed trough in this chapter by playing with him. This videogame is only for Xbox",
+    "directors_names": [
+      "Dan Connors"
+    ],
+    "actors_names": [
+      "Amanda Moody",
+      "Clint Bajakian",
+      "Grey Griffin",
+      "Gregg Berger"
+    ],
+    "writers_names": [
+      "George Lucas"
+    ],
+    "directors": [
+      {
+        "id": "1e1ced02-8b81-4db3-ab76-7a00a9b64a22",
+        "name": "Dan Connors"
+      }
+    ],
+    "actors": [
+      {
+        "id": "57a308b0-1a5d-4709-b787-e21a9291548b",
+        "name": "Amanda Moody"
+      },
+      {
+        "id": "717c1127-ddb5-4c8f-81bc-0516aa8b3725",
+        "name": "Clint Bajakian"
+      },
+      {
+        "id": "73780f84-0af1-479a-af28-aabca17d1833",
+        "name": "Grey Griffin"
+      },
+      {
+        "id": "dceb7e4e-2dc0-4829-9fff-8e0f24c182f0",
+        "name": "Gregg Berger"
+      }
+    ],
+    "writers": [
+      {
+        "id": "81bf1c0e-fa7c-423f-b6d5-c676dca68dc9",
+        "name": "George Lucas"
+      }
+    ]
+  },
+  {
+    "id": "5d37d2b1-574f-4116-b3a5-5667a2772ffa",
+    "imdb_rating": 6.3,
+    "imdb_tconst": "tt4957538",
+    "filmtype": "movie",
+    "genre": [
+      "Sci-Fi"
+    ],
+    "title": "The Whispering Star",
+    "description": "A feminine android delivers packages to the scattered humans in the galaxy. With years to spare the android and us have time to contemplate what it is to be human.",
+    "directors_names": [
+      "Sion Sono"
+    ],
+    "actors_names": [
+      "K\u00f4ko Mori",
+      "Y\u00fbto Ikeda",
+      "Megumi Kagurazaka",
+      "Kenji Endo"
+    ],
+    "writers_names": [
+      "Sion Sono"
+    ],
+    "directors": [
+      {
+        "id": "4a23694f-01fd-4af4-b2f1-eebca1398ded",
+        "name": "Sion Sono"
+      }
+    ],
+    "actors": [
+      {
+        "id": "1fb2ceb1-befd-4986-83a3-8513664827af",
+        "name": "K\u00f4ko Mori"
+      },
+      {
+        "id": "56358e5f-14b5-426a-bb64-64c00e2ae787",
+        "name": "Y\u00fbto Ikeda"
+      },
+      {
+        "id": "75425637-135c-41cb-9ad8-2e4d732a57aa",
+        "name": "Megumi Kagurazaka"
+      },
+      {
+        "id": "80c026a8-45a2-4ea0-84e0-70fa315dcdb4",
+        "name": "Kenji Endo"
+      }
+    ],
+    "writers": [
+      {
+        "id": "4a23694f-01fd-4af4-b2f1-eebca1398ded",
+        "name": "Sion Sono"
+      }
+    ]
+  },
+  {
+    "id": "aa7f5ee4-916d-42cc-9c07-3ca64aaf6522",
+    "imdb_rating": 6.3,
+    "imdb_tconst": "tt0069945",
+    "filmtype": "movie",
+    "genre": [
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "title": "Dark Star",
+    "description": "\"Low-budget story of four astronauts in deep space, whose mission is to destroy unstable planets in star systems which are to be colonised. The late Commander Powell is stored in deep freeze, where he is still able to offer advice. As their mission nears completion, they must cope with a runaway alien which resembles a beach-ball, faulty computer systems, and a \"\"smart bomb\"\" who thinks it is God.\"",
+    "directors_names": [
+      "John Carpenter"
+    ],
+    "actors_names": [
+      "Cal Kuniholm",
+      "Dan O'Bannon",
+      "Brian Narelle",
+      "Dre Pahich"
+    ],
+    "writers_names": [
+      "John Carpenter",
+      "Dan O'Bannon"
+    ],
+    "directors": [
+      {
+        "id": "27b9af49-2443-4034-9fdd-fb6faa001891",
+        "name": "John Carpenter"
+      }
+    ],
+    "actors": [
+      {
+        "id": "07d2def4-45ca-410d-943a-0e967ae64881",
+        "name": "Cal Kuniholm"
+      },
+      {
+        "id": "35955e7d-568a-4486-b409-b6864ac1f4bf",
+        "name": "Dan O'Bannon"
+      },
+      {
+        "id": "c0fda803-98d7-4f80-8ae3-4077bb67148b",
+        "name": "Brian Narelle"
+      },
+      {
+        "id": "feb3ead6-0f9a-434d-a491-9ae2abcdacdd",
+        "name": "Dre Pahich"
+      }
+    ],
+    "writers": [
+      {
+        "id": "27b9af49-2443-4034-9fdd-fb6faa001891",
+        "name": "John Carpenter"
+      },
+      {
+        "id": "35955e7d-568a-4486-b409-b6864ac1f4bf",
+        "name": "Dan O'Bannon"
+      }
+    ]
+  },
+  {
+    "id": "68376fc1-024f-40f7-ac5a-996949a44a1a",
+    "imdb_rating": 6.3,
+    "imdb_tconst": "tt5270848",
+    "filmtype": "tvSeries",
+    "genre": [
+      "Sci-Fi"
+    ],
+    "title": "Star Trek: Progeny",
+    "description": "\"Set 50 years after the events of Star Trek: The Original Series, Star Trek: Progeny is reportedly based on the events from the episode \"\"Bread and Circuses\"\". The series takes place in the year 2316 and stars Cassie Scerbo as Livia Avitus, the granddaughter of the infamous Captain Kirk, who serves as a Special Agent for the Federation of Planets.\"",
+    "directors_names": null,
+    "actors_names": [
+      "Cassandra Scerbo"
+    ],
+    "writers_names": [
+      "Gene Roddenberry"
+    ],
+    "directors": null,
+    "actors": [
+      {
+        "id": "f93d527a-514c-4ded-8d7b-2bd8fb7aa720",
+        "name": "Cassandra Scerbo"
+      }
+    ],
+    "writers": [
+      {
+        "id": "9d480c4d-0890-4aaf-a9b3-d2587843344e",
+        "name": "Gene Roddenberry"
+      }
+    ]
+  },
+  {
+    "id": "3b531598-93e8-412c-b72f-93f37d894cdb",
+    "imdb_rating": 6.3,
+    "imdb_tconst": "tt0369693",
+    "filmtype": "tvShort",
+    "genre": [
+      "Documentary",
+      "Sci-Fi",
+      "Short"
+    ],
+    "title": "The Making of 'Star Trek: First Contact'",
+    "description": "N/A",
+    "directors_names": [
+      "Natalie Barandes"
+    ],
+    "actors_names": null,
+    "writers_names": null,
+    "directors": [
+      {
+        "id": "767a0a03-6133-4fcc-be96-6850ffc3a9df",
+        "name": "Natalie Barandes"
+      }
+    ],
+    "actors": null,
+    "writers": null
+  }
+]

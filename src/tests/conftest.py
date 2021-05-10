@@ -12,13 +12,15 @@ from loguru import logger
 
 import pytest
 
-
 # this need to add script start dir to import path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 from core.config import config
-# from db import elastic
-# from db import redis
-from services.film import FilmService
+
+from db import elastic as es_db
+from db import redis as redis_db
+
+from services.cache import Cache
+from services.datastore import DataStore
 
 
 TEST_JSON_PATH = 'tests/data/'
@@ -47,10 +49,15 @@ async def redis():
     redis = await aioredis.create_redis_pool(
         (config.REDIS_HOST, config.REDIS_PORT),
         password=config.REDIS_PASSWORD,
+        db=config.REDIS_API_TEST_DB,
         minsize=10, maxsize=20
     )
+    logger.info(f'clear API TEST DB number = {config.REDIS_API_TEST_DB} before tests')
+    await redis.flushdb()
     yield redis
     logger.info('redis after yield')
+    logger.info(f'clear API TEST DB number = {config.REDIS_API_TEST_DB} after tests')
+    await redis.flushdb()
     # aioredis must close like this
     # https://aioredis.readthedocs.io/en/v1.3.0/examples.html
     redis.close()
@@ -70,15 +77,86 @@ async def elastic():
     await elastic.close()
 
 
-@pytest.fixture
-async def film_service(redis, elastic):
-    logger.info('start film_service')
-    film_service: FilmService = FilmService(redis, elastic)
-    return film_service
+@pytest.fixture(scope='session')
+async def storage(elastic):
+    logger.info('setup storage')
+    es_db.es = elastic
+    storage = es_db.ElasticStorage()
+    yield storage
+    logger.info('end setup storage')
+
+
+@pytest.fixture(scope='session')
+async def cache(redis):
+    logger.info('setup cache')
+    redis_db.redis = redis
+    redis_storage = redis_db.RedisStorage()
+    cache = Cache(redis_storage)
+    yield cache
+    logger.info('end setup cache')
+
+
+@pytest.fixture(scope='session')
+async def datastore(storage, cache, conf):
+    logger.info('setup datastor')
+    datastore = DataStore(storage, cache, conf.CLIENTAPI_CACHE_EXPIRE)
+    yield datastore
+    logger.info('end setup datastore')
+
+
+@pytest.fixture(scope='session', autouse=True)
+async def setup_films(conf, elastic, read_json_data):
+    logger.info('setup films')
+    datas = await read_json_data('es_films_data.json')
+    body = ''
+    for data in datas:
+        index = {'index': {'_index': conf.ELASTIC_INDEX, '_id': data['id']}}
+        body += json.dumps(index) + '\n' + json.dumps(data) + '\n'
+    results = await elastic.bulk(body, refresh='wait_for')
+    logger.info(results)
+    yield datas
+    logger.info('films after loop')
+    for data in datas:
+        await elastic.delete(index=conf.ELASTIC_INDEX, id=data['id'], refresh='wait_for')
+    logger.info('films index cleared')
+
+
+@pytest.fixture(scope='session', autouse=True)
+async def setup_genres(conf, elastic, read_json_data):
+    logger.info('setup genres')
+    datas = await read_json_data('es_genres_data.json')
+    body = ''
+    for data in datas:
+        index = {'index': {'_index': conf.ELASTIC_GENRE_INDEX, '_id': data['id']}}
+        body += json.dumps(index) + '\n' + json.dumps(data) + '\n'
+    results = await elastic.bulk(body, refresh='wait_for')
+    logger.info(results)
+    yield datas
+    logger.info('genres after loop')
+    for data in datas:
+        await elastic.delete(index=conf.ELASTIC_GENRE_INDEX, id=data['id'], refresh='wait_for')
+    logger.info('index cleared')
+
+
+@pytest.fixture(scope='session', autouse=True)
+async def setup_persons(conf, elastic, read_json_data):
+    logger.info('setup persons')
+    datas = await read_json_data('es_persons_data.json')
+    body = ''
+    for data in datas:
+        index = {'index': {'_index': conf.ELASTIC_PERSON_INDEX, '_id': data['id']}}
+        body += json.dumps(index) + '\n' + json.dumps(data) + '\n'
+    results = await elastic.bulk(body, refresh='wait_for')
+    logger.info(results)
+    yield datas
+    logger.info('persons after loop')
+    for data in datas:
+        await elastic.delete(index=conf.ELASTIC_PERSON_INDEX, id=data['id'], refresh='wait_for')
+    logger.info('person index cleared')
 
 
 # https://stackoverflow.com/questions/50329629/how-to-access-a-json-filetest-data-like-config-json-in-conftest-py
-@pytest.fixture
+@pytest.fixture(scope='session')
 async def read_json_data(request):
     async def inner(datafilename: str) -> dict:
         jsonpath = Path(Path.cwd(), TEST_JSON_PATH, datafilename)
