@@ -31,6 +31,4 @@ class FilmService(Genre, Movie, Person):
 def get_film_service(
     datastore: DataStore = Depends(get_data_store),
 ) -> FilmService:
-    logger.debug('test')
-    logger.debug(datastore)
     return FilmService(datastore)
