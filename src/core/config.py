@@ -30,8 +30,8 @@ class FastAPISettings(BaseSettings):
     CLIENTAPI_CACHE_EXPIRE: int = 60 * 5
     # конфигурация Swagger-API
     PROJECT_NAME: str = 'Read-only API для онлайн-кинотеатра'
-    PROJECT_DESCRIPTION="Информация о кинопроизведениях, жанрах и съемочной группе"
-    PROJECT_VERSION="1.0.0"
+    PROJECT_DESCRIPTION: str = 'Информация о кинопроизведениях, жанрах и съемочной группе'
+    PROJECT_VERSION: str = '1.0.0'
 
     class Config:
         # Файл .env должен находится в корне проекта
