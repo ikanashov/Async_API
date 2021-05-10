@@ -1,6 +1,8 @@
 from typing import Any, Optional
 
-from elasticsearch import AsyncElasticsearch, NotFoundError
+import backoff
+
+from elasticsearch import AsyncElasticsearch, NotFoundError, ElasticsearchException
 
 from core.config import config
 
@@ -15,6 +17,7 @@ async def get_elastic() -> AsyncElasticsearch:
     return es
 
 
+@backoff.on_exception(backoff.expo, ElasticsearchException)
 async def start_elastic():
     global es
     es = AsyncElasticsearch(
@@ -32,6 +35,7 @@ class ElasticStorage(AbstractStorage):
     def __init__(self) -> None:
         self.es: AsyncElasticsearch = es
 
+    @backoff.on_exception(backoff.expo, ElasticsearchException)
     async def get_data_by_id(self, index: str, id: str) -> Optional[Any]:
         try:
             data = await self.es.get_source(index, id)
@@ -39,6 +43,7 @@ class ElasticStorage(AbstractStorage):
             return None
         return data
 
+    @backoff.on_exception(backoff.expo, ElasticsearchException)
     async def get_data(
         self,
         index: str,
