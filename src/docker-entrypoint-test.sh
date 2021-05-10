@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ -d /tmp ]; then
+    echo "client api tests stared" >/tmp/clientapistart
+fi
+
 if [[ -z "${REDIS_HOST}" ]]; then
     echo "REDIS_HOST is unset, maybe run locally"
 else
@@ -16,3 +20,8 @@ else
 fi
 
 pytest -vv
+
+if [ -f /tmp/clientapistart ]; then
+    echo "delete api start file"
+    rm /tmp/clientapistart
+fi
