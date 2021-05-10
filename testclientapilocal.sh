@@ -13,8 +13,6 @@ else
 fi
 
 echo "Install requirements"
-# pip install -q -r requirements.txt
+pip install -q -r requirements.txt
 
-#./docker-entrypoint-test.sh
-
-pytest -s -q  tests/test_film_es.py
+./docker-entrypoint-test.sh
