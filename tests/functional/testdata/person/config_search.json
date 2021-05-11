@@ -2,33 +2,33 @@
     {
         "name" : "empty_search",
         "parameter" : "",
-        "status" : "422",
-        "lenght" : "1",
+        "status" : 422,
+        "lenght" : 1,
         "body" : "search_error.json"
     },
     {
         "name" : "search_lucas",
         "parameter" : {"query" : "lucas"},
-        "status" : "200",
-        "lenght" : "7",
+        "status" : 200,
+        "lenght" : 7,
         "body" : "search_lucas.json"
     },
     {
         "name" : "search_jhon_doe",
         "parameter" : {"query" : "jhon"},
-        "status" : "200",
-        "lenght" : "50",
+        "status" : 200,
+        "lenght" : 50,
         "body" : "search_jhon_doe.json"
     },
     {
         "name" : "search_tom_with_page",
         "parameter" : {
             "query" : "tom",
-            "page[size]" : "6",
-            "page[number]" : "7"
+            "page[size]" : 6,
+            "page[number]" : 7
         },
-        "status" : "200",
-        "lenght" : "6",
+        "status" : 200,
+        "lenght" : 6,
         "body" : "search_tom_with_page.json"
     }
 ]

@@ -9,8 +9,8 @@ async def test_genre(make_get_request, read_json_data):
     for test in testsconfig:
         logger.info(f"start test : {test['name']} ")
         response = await make_get_request('genre', params=test['parameter'])
-        assert response.status == int(test['status']), test
-        assert len(response.body) == int(test['lenght']), test
+        assert response.status == test['status'], test
+        assert len(response.body) == test['lenght'], test
         if test['body'] != '':
             assert response.body == await read_json_data('genre/' + test['body']), test
         logger.info(f"{test['name']} passed")
@@ -22,8 +22,8 @@ async def test_get_person_by_id(make_get_request, read_json_data):
     for test in testsconfig:
         logger.info(f"start test : {test['name']} ")
         response = await make_get_request('genre/' + test['person_id'])
-        assert response.status == int(test['status']), test
-        assert len(response.body) == int(test['lenght']), test
+        assert response.status == test['status'], test
+        assert len(response.body) == test['lenght'], test
         if test['body'] != '':
             assert response.body == await read_json_data('genre/' + test['body']), test
         logger.info(f"{test['name']} passed")

@@ -3,24 +3,24 @@
         "name" : "get_person_film_by_id_1",
         "person_id" : "81bf1c0e-fa7c-423f-b6d5-c676dca68dc9",
         "parameter" : "",
-        "status" : "200",
-        "lenght" : "46",
+        "status" : 200,
+        "lenght" : 46,
         "body" : "get_person_film_by_id_1.json"
     },
     {
         "name" : "get_person_film_by_id_2",
         "person_id" : "c684a561-5f05-4800-985c-9a00c0ecc6ba",
         "parameter" : "",
-        "status" : "200",
-        "lenght" : "0",
+        "status" : 200,
+        "lenght" : 0,
         "body" : "empty.json"
     },
     {
         "name" : "get_person_by_id_not_found",
         "person_id" : "not_found",
         "parameter" : "",
-        "status" : "404",
-        "lenght" : "1",
+        "status" : 404,
+        "lenght" : 1,
         "body" : "get_by_id_not_found.json"
     }
 ]
