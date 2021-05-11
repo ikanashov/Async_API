@@ -7,7 +7,7 @@
             "sort": "imdb_rating:asc",
             "genre_filter": null
         },
-        "lenght" : "50",
+        "lenght" : 50,
         "body" : ""
     },
     {
@@ -18,7 +18,7 @@
             "sort": "imdb_rating:desc",
             "genre_filter": null
         },
-        "lenght" : "50",
+        "lenght" : 50,
         "body" : ""
     },
     {
@@ -29,7 +29,7 @@
             "sort": "imdb_rating:asc",
             "genre_filter": "News"
         },
-        "lenght" : "5",
+        "lenght" : 5,
         "body" : "get_all_genre_news.json"
     },
     {
@@ -40,7 +40,7 @@
             "sort": "imdb_rating:asc",
             "genre_filter": "not_found"
         },
-        "lenght" : "0",
+        "lenght" : 0,
         "body" : "empty.json"
     },
     {
@@ -51,7 +51,7 @@
             "sort": "imdb_rating:asc",
             "genre_filter": null
         },
-        "lenght":"1",
+        "lenght": 1,
         "body" : "get_all_page_size_1.json"
     },
     {
@@ -62,7 +62,7 @@
             "sort": "imdb_rating:asc",
             "genre_filter": null
         },
-        "lenght" : "1004",
+        "lenght" : 1004,
         "body" : ""
     },
     {
@@ -73,7 +73,7 @@
             "sort": "imdb_rating:asc",
             "genre_filter": null
         },
-        "lenght" : "4",
+        "lenght" : 4,
         "body" : ""
     },
     {
@@ -84,7 +84,7 @@
             "sort": "imdb_rating:asc",
             "genre_filter": null
         },
-        "lenght" : "0",
+        "lenght" : 0,
         "body" : "empty.json"
     },
     {
@@ -95,7 +95,7 @@
             "sort": "imdb_rating:asc",
             "genre_filter": "Sci-Fi"
         },
-        "lenght" : "5",
+        "lenght" : 5,
         "body" : "get_all_full_parameter.json"
     }
 ]

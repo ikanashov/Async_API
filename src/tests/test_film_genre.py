@@ -36,7 +36,7 @@ async def test_film_get_all_genre_Genre_Class(genre: Genre, read_json_data):
     for test in testsconfig:
         logger.info(f"start test : {test['name']} ")
         docs = await genre.get_all_genre(**test['parameter'])
-        assert len(docs) == int(test['lenght'])
+        assert len(docs) == test['lenght']
         if test['body'] != '':
             assert docs == [SFilmGenre(**doc) for doc in await read_json_data('genre/' + test['body'])]
         logger.info(f"{test['name']} passed")

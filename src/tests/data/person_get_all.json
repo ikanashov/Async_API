@@ -6,7 +6,7 @@
             "page_number": 1,
             "sort": "full_name.raw:asc"
         },
-        "lenght" : "50",
+        "lenght" : 50,
         "body" : "get_all_default_body.json"
     },
     {
@@ -16,7 +16,7 @@
             "page_number": 1,
             "sort": "full_name.raw:desc"
         },
-        "lenght" : "50",
+        "lenght" : 50,
         "body" : "get_all_sort_desc.json"
     },
     {
@@ -26,7 +26,7 @@
             "page_number": 1,
             "sort": "full_name.raw:asc"
         },
-        "lenght" : "1",
+        "lenght" : 1,
         "body" : "get_all_page_size_1.json"
     },
     {
@@ -36,7 +36,7 @@
             "page_number": 1,
             "sort": "full_name.raw:asc"
         },
-        "lenght" : "4174",
+        "lenght" : 4174,
         "body" : ""
     },
     {
@@ -46,7 +46,7 @@
             "page_number": 39,
             "sort": "full_name.raw:asc"
         },
-        "lenght" : "50",
+        "lenght" : 50,
         "body" : "get_all_page_number_39.json"
     },
     {
@@ -56,7 +56,7 @@
             "page_number": 85,
             "sort": "full_name.raw:asc"
         },
-        "lenght" : "0",
+        "lenght" : 0,
         "body" : "empty.json"
     }
 ]

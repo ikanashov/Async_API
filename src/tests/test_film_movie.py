@@ -36,7 +36,7 @@ async def test_films_search_Movie_Class(movie: Movie, read_json_data):
     for test in testsconfig:
         logger.info(f"start test : {test['name']} ")
         docs = await movie.search_film(**test['parameter'])
-        assert len(docs) == int(test['lenght'])
+        assert len(docs) == test['lenght']
         if test['body'] != '':
             assert docs == [SFilm(**doc) for doc in await read_json_data('movie/' + test['body'])]
         logger.info(f"{test['name']} passed")
@@ -50,7 +50,7 @@ async def test_films_get_all_film_Movie_Class(movie: Movie, read_json_data):
     for test in testsconfig:
         logger.info(f"start test : {test['name']} ")
         docs = await movie.get_all_film(**test['parameter'])
-        assert len(docs) == int(test['lenght'])
+        assert len(docs) == test['lenght']
         if test['body'] != '':
             assert docs == [SFilm(**doc) for doc in await read_json_data('movie/' + test['body'])]
         logger.info(f"{test['name']} passed")

@@ -6,7 +6,7 @@
             "page_size": 10,
             "page_number": 1
         },
-        "lenght" : "8",
+        "lenght" : 8,
         "body" : "search_lucas.json"
     },
     {
@@ -16,7 +16,7 @@
             "page_size": 50,
             "page_number": 1
         },
-        "lenght" : "50",
+        "lenght" : 50,
         "body" : ""
     },
     {
@@ -26,7 +26,7 @@
             "page_size" : 10,
             "page_number" : 15
         },
-        "lenght" : "10",
+        "lenght" : 10,
         "body" : ""
     }
 ]
