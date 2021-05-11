@@ -6,7 +6,7 @@
             "page_size": 50,
             "page_number": 1
         },
-        "lenght" : "11",
+        "lenght" : 11,
         "body" : "search_lucas.json"
     },
     {
@@ -16,7 +16,7 @@
             "page_size": 50,
             "page_number": 1
         },
-        "lenght" : "50",
+        "lenght" : 50,
         "body" : "search_jhon_doe.json"
     },
     {
@@ -26,7 +26,7 @@
             "page_size": 6,
             "page_number": 7
         },
-        "lenght" : "6",
+        "lenght" : 6,
         "body" : "search_tom_with_page.json"
     }
 ]

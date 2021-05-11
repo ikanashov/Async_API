@@ -36,7 +36,7 @@ async def test_films_search_Person_Class(person: Person, read_json_data):
     for test in testsconfig:
         logger.info(f"start test : {test['name']} ")
         docs = await person.search_person(**test['parameter'])
-        assert len(docs) == int(test['lenght'])
+        assert len(docs) == test['lenght']
         if test['body'] != '':
             assert docs == [SFilmPersonDetail(**doc) for doc in await read_json_data('person/' + test['body'])]
         logger.info(f"{test['name']} passed")
@@ -50,7 +50,7 @@ async def test_films_get_all_person_Person_Class(person: Person, read_json_data)
     for test in testsconfig:
         logger.info(f"start test : {test['name']} ")
         docs = await person.get_all_person(**test['parameter'])
-        assert len(docs) == int(test['lenght'])
+        assert len(docs) == test['lenght']
         if test['body'] != '':
             assert docs == [SFilmPersonDetail(**doc) for doc in await read_json_data('person/' + test['body'])]
         logger.info(f"{test['name']} passed")

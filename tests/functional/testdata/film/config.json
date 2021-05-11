@@ -2,99 +2,99 @@
     {
         "name" : "get_all_default",
         "parameter" : "",
-        "status" : "200",
-        "lenght" : "50",
+        "status" : 200,
+        "lenght" : 50,
         "body" : ""
     },
     {
         "name" : "get_all_sort_test_1",
         "parameter" : {"sort" : "-imdb_rating"},
-        "status" : "200",
-        "lenght" : "50",
+        "status" : 200,
+        "lenght" : 50,
         "body" : ""
     },
     {
         "name" : "get_all_sort_test_2",
         "parameter" : {"sort" : "imdb_rating"},
-        "status" : "200",
-        "lenght" : "50",
+        "status" : 200,
+        "lenght" : 50,
         "body" : ""
     },
     {
         "name" : "get_all_sort_test_3",
         "parameter" : {"sort" : "imdb_rating:asc"},
-        "status" : "200",
-        "lenght" : "50",
+        "status" : 200,
+        "lenght" : 50,
         "body" : ""
     },
     {
         "name" : "get_all_sort_test_4",
         "parameter" : {"sort" : "imdb_rating:desc"},
-        "status" : "200",
-        "lenght" : "50",
+        "status" : 200,
+        "lenght" : 50,
         "body" : ""
     },
     {
         "name" : "get_all_genre_news",
         "parameter" : {"filter[genre]" : "News"},
-        "status" : "200",
-        "lenght" : "5",
+        "status" : 200,
+        "lenght" : 5,
         "body" : "get_all_genre_news.json"
     },
     {
         "name" : "get_all_genre_not_exists",
         "parameter" : {"filter[genre]" : "not_genre"},
-        "status" : "200",
-        "lenght" : "0",
+        "status" : 200,
+        "lenght" : 0,
         "body" : "empty.json"
     },
     {
         "name" : "get_all_page_size_error",
         "parameter" : {"page[size]" : "-1"},
-        "status" : "422",
-        "lenght" : "1",
+        "status" : 422,
+        "lenght" : 1,
         "body" : "get_all_page_size_error.json"
     },
     {
         "name" : "get_all_page_size_1",
         "parameter" : {"page[size]" : "1"},
-        "status" : "200",
-        "lenght" : "1",
+        "status" : 200,
+        "lenght" : 1,
         "body" : "get_all_page_size_1.json"
     },
     {
         "name" : "get_all_page_size_1000",
         "parameter" : {"page[size]" : "1000"},
-        "status" : "200",
-        "lenght" : "999",
+        "status" : 200,
+        "lenght" : 999,
         "body" : ""
     },
     {
         "name" : "get_all_page_number_error",
         "parameter" : {"page[number]" : "-1"},
-        "status" : "422",
-        "lenght" : "1",
+        "status" : 422,
+        "lenght" : 1,
         "body" : "get_all_page_number_error.json"
     },
     {
         "name" : "get_all_page_number_1",
         "parameter" : {"page[number]" : "1"},
-        "status" : "200",
-        "lenght" : "50",
+        "status" : 200,
+        "lenght" : 50,
         "body" : ""
     },
     {
         "name" : "get_all_page_number_20",
         "parameter" : {"page[number]" : "20"},
-        "status" : "200",
-        "lenght" : "49",
+        "status" : 200,
+        "lenght" : 49,
         "body" : "get_all_page_number_20.json"
     },
     {
         "name" : "get_all_page_number_50",
         "parameter" : {"page[number]" : "50"},
-        "status" : "200",
-        "lenght" : "0",
+        "status" : 200,
+        "lenght" : 0,
         "body" : "empty.json"
     },
     {
@@ -105,8 +105,8 @@
             "page[size]" : "5",
             "page[number]" : "16"
         },
-        "status" : "200",
-        "lenght" : "5",
+        "status" : 200,
+        "lenght" : 5,
         "body" : "get_all_full_parameter.json"
     }
 ]

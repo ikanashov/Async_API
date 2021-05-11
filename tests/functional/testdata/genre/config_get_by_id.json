@@ -3,24 +3,24 @@
         "name" : "get_genre_by_id_1",
         "person_id" : "5bd77168-c5b1-4c9d-bd1f-1193582d9e66",
         "parameter" : "",
-        "status" : "200",
-        "lenght" : "3",
+        "status" : 200,
+        "lenght" : 3,
         "body" : "get_by_id_1.json"
     },
     {
         "name" : "get_genre_by_id_2",
         "person_id" : "0bff26e2-700a-43e7-9ea4-ab01003c4784",
         "parameter" : "",
-        "status" : "200",
-        "lenght" : "3",
+        "status" : 200,
+        "lenght" : 3,
         "body" : "get_by_id_2.json"
     },
     {
         "name" : "get_genre_by_id_not_found",
         "person_id" : "not_found",
         "parameter" : "",
-        "status" : "404",
-        "lenght" : "1",
+        "status" : 404,
+        "lenght" : 1,
         "body" : "get_by_id_not_found.json"
     }
 ]

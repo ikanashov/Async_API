@@ -6,7 +6,7 @@
             "page_number": 1,
             "sort": "name:asc"
         },
-        "lenght" : "31",
+        "lenght" : 31,
         "body" : "get_all_default_body.json"
     },
     {
@@ -16,7 +16,7 @@
             "page_number": 1,
             "sort": "name:desc"
         },
-        "lenght" : "31",
+        "lenght" : 31,
         "body" : "get_all_sort_desc.json"
     },
     {
@@ -26,7 +26,7 @@
             "page_number": 1,
             "sort": "name:asc"
         },
-        "lenght" : "1",
+        "lenght" : 1,
         "body" : "get_all_page_size_1.json"
     },
     {
@@ -36,7 +36,7 @@
             "page_number": 85,
             "sort": "name:asc"
         },
-        "lenght" : "0",
+        "lenght" : 0,
         "body" : "empty.json"
     }
 ]
