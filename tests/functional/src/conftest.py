@@ -14,6 +14,7 @@ import pytest
 # this need to add script start dir to import path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 from core.config import cnf
+from core.urljoin import urljoin
 
 
 @dataclass
@@ -45,7 +46,7 @@ async def session():
 def make_get_request(session):
     async def inner(service: str, method: str = '', params: dict = None) -> HTTPResponse:
         params = params or {}
-        url = cnf.NGINX_URL + cnf.API_URL + service + method  # в боевых системах старайтесь так не делать!
+        url = urljoin(cnf.NGINX_URL, cnf.API_URL, service, method)
         async with session.get(url, params=params) as response:
             return HTTPResponse(
                 body=await response.json(),
